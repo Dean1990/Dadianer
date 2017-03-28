@@ -36,7 +36,7 @@ cc.Class({
         var self = this;
 
         //出牌合法性
-        if(com.checkChuPai(self.player.xuanPai,com.firstPlayer==0)){
+        if(com.checkChuPai(self.player.xuanPai,0)){
 
             //移除TOUCH监听
             for(var m = 0;m<self.player.shouPai.length;m++){
@@ -89,9 +89,16 @@ cc.Class({
 
             indexArr.reverse();
 
-            //清空上家出的牌 准备记录此次出牌
-            com.lastPai.splice(0,com.lastPai.length);
+            if(com.lastPai!=null){
+                //清空上家出的牌 准备记录此次出牌
+                com.lastPai.splice(0,com.lastPai.length);
 
+            }else {
+
+                com.lastPai = new Array();
+
+            }
+            
             //从手牌中删除
             for(var n = 0;n<indexArr.length;n++){
                 //记录出牌，更新到lastPai

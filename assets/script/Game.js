@@ -158,11 +158,11 @@ cc.Class({
             type:cc.Prefab,
         },
 
-        e1:{
+        E0:{
             default:null,
             type:cc.Prefab,
         },
-        e2:{
+        E1:{
             default:null,
             type:cc.Prefab,
         },
@@ -187,7 +187,7 @@ cc.Class({
 
         var self = this;
 
-        var pais = new Array(self.a1,self.a2,self.a3,self.a5,self.a10,self.a11,self.a12,self.a13,self.b1,self.b2,self.b3,self.b5,self.b10,self.b11,self.b12,self.b13,self.c1,self.c2,self.c3,self.c5,self.c10,self.c11,self.c12,self.c13,self.d1,self.d2,self.d3,self.d5,self.d10,self.d11,self.d12,self.d13,self.e1,self.e2);
+        var pais = new Array(self.a1,self.a2,self.a3,self.a5,self.a10,self.a11,self.a12,self.a13,self.b1,self.b2,self.b3,self.b5,self.b10,self.b11,self.b12,self.b13,self.c1,self.c2,self.c3,self.c5,self.c10,self.c11,self.c12,self.c13,self.d1,self.d2,self.d3,self.d5,self.d10,self.d11,self.d12,self.d13,self.E0,self.E1);
 
         //打乱数组
         pais.sort(function(){

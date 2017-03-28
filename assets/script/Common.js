@@ -8,39 +8,46 @@ module.exports = {
 
     lastPai:null,//上家出的牌
 
-    _firstPlayer:0,//第一个出牌的玩家
+    //_firstPlayer:0,//第一个出牌的玩家
 
     _currentPlayer:0,//当前出牌的玩家
 
     setFirstPlayer:function(firstPlayer){
         
-        this._firstPlayer = firstPlayer;
+        //this._firstPlayer = firstPlayer;
         this._currentPlayer = firstPlayer;
 
     },
 
     nextPlayer:function(){
 
-        this._currentPlayer = this._currentPlayer%this.playerNum;
+        this._currentPlayer = (this._currentPlayer+1)%this.playerNum;
+
+        //cc.log(this.players[this._currentPlayer]);
+
+        this.players[this._currentPlayer].getComponent("Player").toggle();
 
     },
         
     /**
      * 检查出牌的合法性
      */
-    checkChuPai:function(xuanPai,isFirst){
+    checkChuPai:function(xuanPai,p){
 
-        //得到上家出的牌
-        if(this.lastPai==null && !isFirst){
+        var isCurrent = p==this._currentPlayer;
+
+        // isCurrent = true;
+
+        //是否该出牌
+        if(!isCurrent){
 
             return false;
-
         }
 
         //判断选中的牌
         if(xuanPai!=null){
 
-            if(isFirst){
+            if(this.lastPai==null || this.lastPai.length==0){
 
                  return this.composeCheck(xuanPai);
 
@@ -106,7 +113,7 @@ module.exports = {
 
             for(var i = 0;i<length;i++){
                 //鬼是一个特殊的组合
-                if(arr[i]._name.substring(0,1)=="e"){
+                if(arr[i]._name.substring(0,1)=="E"){
 
                     if(isClown){
 
@@ -159,7 +166,8 @@ module.exports = {
     },
 
     /**
-     * 权值转换
+     * 权值转换 
+     * 不包括大小鬼
      */
     convertValue:function(l){
 
@@ -172,6 +180,17 @@ module.exports = {
             return l;
 
         }
+
+    },
+
+    /**
+     * 大小鬼权值转换 
+     * 
+     */
+    convertClownValue:function(l){
+        //大鬼 l = 0  小鬼 l=1
+        //小鬼要大于最大的单
+        return 13+3+2-l;
 
     },
 
@@ -192,10 +211,10 @@ module.exports = {
 
             var l = parseInt(arr[0]._name.substring(1));
 
-            if(f == "e"){
+            if(f == "E"){
                 //鬼
-                weight = 13+3+l;
-                //大鬼的权值大于最小的对
+                weight = this.convertClownValue(l);
+                
 
             }else {
 
@@ -213,15 +232,15 @@ module.exports = {
 
                     var value = f.charCodeAt()+arr[1]._name.substring(0,1).charCodeAt();
                                     
-                    if(value == 195){
+                    if(value == 196){
                         //对黑5
                         return 67;//比对红5大1
-                    }else if(value == 199){
+                    }else if(value == 198){
                         //对红5
                         return 66//比对鬼大1
                     }
                     
-                }else if(f == "e"){
+                }else if(f == "E"){
 
                     return 65;//比四个3大1
 
@@ -269,7 +288,36 @@ module.exports = {
 
                 }else if(name1.substring(1)==name2.substring(1)){
 
-                    if(name1.substring(0,1).charCodeAt()>name2.substring(0,1).charCodeAt()){
+                    var code1 = name1.substring(0,1).charCodeAt();
+                    var code2 = name2.substring(0,1).charCodeAt();
+
+                    //5的特殊排序
+                    if(name1.substring(1)=="5"){
+                        //把对黑5或对红5放到一起
+                        //把红桃与草花互换
+                        if(code1==99){
+
+                            code1 = 98;
+
+                        }else if(code1==98){
+
+                            code1 = 99;
+
+                        }
+
+                        if(code2==99){
+
+                            code2 = 98;
+
+                        }else if(code2==98){
+
+                            code2 = 99;
+
+                        }
+
+                    }
+
+                    if(code1>code2){
 
                         var temp = spriteArr[i];
 
@@ -280,7 +328,6 @@ module.exports = {
                     }
 
                 }
-
             }
             
 

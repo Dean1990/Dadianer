@@ -1,4 +1,5 @@
 var com = require('Common');
+var ai = require('AI');
 
 cc.Class({
     extends: cc.Component,
@@ -14,6 +15,8 @@ cc.Class({
             default:null,
             type:cc.Sprite,
         },
+
+        isAI:true,
 
         shouPai:null,//手牌
 
@@ -34,6 +37,20 @@ cc.Class({
         if(this.shouPai!=null){
             this.shouPaiNum.string = this.shouPai.length;
         }
+    },
+
+    toggle: function(){
+
+        if(this.isAI){
+
+            ai.chuPai(this);
+
+        }else {
+
+
+
+        }
+
     },
 
 });
