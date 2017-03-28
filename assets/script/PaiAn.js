@@ -104,7 +104,7 @@ cc.Class({
                 //记录出牌，更新到lastPai
                 com.lastPai.push(self.player.shouPai[indexArr[n]]);
 
-                self.player.shouPai.splice(indexArr[n],1,);
+                self.player.shouPai.splice(indexArr[n],1);
 
             }
 
@@ -145,7 +145,7 @@ cc.Class({
 
             var num = self.player.shouPai.length;
 
-            var size = self.node.getContentSize();
+            //var size = self.node.getContentSize();
 
             for(var i = 0;i<num;i++){
 

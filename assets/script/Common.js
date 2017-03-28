@@ -173,11 +173,11 @@ module.exports = {
 
         if(l<4){
 
-            return 13+l;
+            return (13+l)*10;
 
         }else {
 
-            return l;
+            return l*10;
 
         }
 
@@ -190,7 +190,7 @@ module.exports = {
     convertClownValue:function(l){
         //大鬼 l = 0  小鬼 l=1
         //小鬼要大于最大的单
-        return 13+3+2-l;
+        return (13+3+2-l)*10;
 
     },
 
@@ -213,12 +213,20 @@ module.exports = {
 
             if(f == "E"){
                 //鬼
-                weight = this.convertClownValue(l);
+                weight = 13+3+2-l;
                 
 
             }else {
 
-                weight = this.convertValue(l);
+                if(l<4){
+
+                    weight = 13+l;
+
+                }else {
+
+                    weight = l;
+
+                }
 
             }
             //特例
@@ -226,7 +234,7 @@ module.exports = {
 
                 if(l == 10){
 
-                    return 33;//比对3大1
+                    return 16*Math.pow(10,2)+1;//比对3大1
 
                 }else if(l == 5){
 
@@ -234,23 +242,23 @@ module.exports = {
                                     
                     if(value == 196){
                         //对黑5
-                        return 67;//比对红5大1
+                        return 16*Math.pow(10,4)+3;//比对红5大1
                     }else if(value == 198){
                         //对红5
-                        return 66//比对鬼大1
+                        return 16*Math.pow(10,4)+2//比对鬼大1
                     }
                     
                 }else if(f == "E"){
 
-                    return 65;//比四个3大1
+                    return 16*Math.pow(10,4)+1;//比四个3大1
 
                 }
 
             }
 
-            
+            //cc.log("weight:"+weight);
 
-            return weight * arr.length;
+            return weight * Math.pow(10,arr.length);
 
 
         }

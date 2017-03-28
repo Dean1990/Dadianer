@@ -15,15 +15,63 @@ module.exports = {
 
         }else {
 
-            var weight = com.convertValueMore(com.lastPai);
+            var lastWeight = com.convertValueMore(com.lastPai);
 
             var weightArr = this.analyze(player.node.shouPai);
 
-            cc.log(weightArr);
+            //cc.log(weightArr);
 
-            weightArr.sort();
+            this.sortWeightArr(weightArr);
 
-            cc.log(weightArr);
+            for(var i = 0;i<weightArr.length;i++){
+
+                var weight = weightArr[i][0];
+
+                if(weight>lastWeight && (((com.lastPai.length==1 && (weight<=180 || weight>=1000))||com.lastPai.length>1))){
+
+                    //  var canvas = cc.director.getScene().getChildByName('Canvas');
+
+                    //  cc.log(canvas);
+
+                     var size = cc.winSize;
+
+                    //出牌
+                    var pais = player.node.shouPai.splice(weightArr[i][1],weightArr[i][2]);
+
+                     //清空lastPai
+                    if(com.lastPai!=null){
+                        //清空上家出的牌 准备记录此次出牌
+                        com.lastPai.splice(0,com.lastPai.length);
+
+                    }else {
+
+                        com.lastPai = new Array();
+
+                    }
+
+                    //展示
+                    for(var j = 0;j<pais.length;j++){
+
+                        var node = pais[j];
+
+                        cc.director.getScene().addChild(node);
+
+                        node.setPosition(cc.p(size.width/2 + j*30,size.height/2));
+
+                        //更新到lastPai
+                        com.lastPai.push(pais[j]);
+
+                    }
+                    
+
+                    com.nextPlayer();
+
+                    break;
+
+                }
+
+            }
+
             
         }
 
@@ -32,9 +80,25 @@ module.exports = {
     /**
      * 排序权值列表
      */
-    sortweightArr:function(weightArr){
+    sortWeightArr:function(weightArr){
 
+        for(var i = 0;i<weightArr.length;i++){
 
+            for(var j = i;j<weightArr.length;j++){
+
+                if(weightArr[i][0]>weightArr[j][0]){
+
+                    var tempArr = weightArr[i];
+
+                    weightArr[i] = weightArr[j];
+
+                    weightArr[j] = tempArr;
+
+                }
+
+            }
+
+        }
 
     },
 
@@ -45,30 +109,30 @@ module.exports = {
 
         var weightArr = new Array();//[权值,开始下标,长度]
 
-        var lastLength = com.lastPai.length;
+        // var lastLength = com.lastPai.length;
 
         if(pais!=null){
 
-            for(var j = 0;j<pais.length;j++){
-                cc.log(pais[j]._name);
-            }
+            // for(var j = 0;j<pais.length;j++){
+            //     cc.log(pais[j]._name);
+            // }
                 
 
             for(var i = 0;i<pais.length;i++){
 
-                cc.log("i:"+i);
-                cc.log(weightArr.length);
-                cc.log(pais[i]._name);
+                // cc.log("i:"+i);
+                // cc.log(weightArr.length);
+                // cc.log(pais[i]._name);
 
                 var f = pais[i]._name.substring(0,1);
 
                 var l = parseInt(pais[i]._name.substring(1));
 
                 if(f == "E"){
-                    if(lastLength==1){
+                    // if(lastLength==1){
                         //鬼 单张
                         weightArr.push([com.convertClownValue(l),i,1]);
-                    }
+                    // }
 
                     var j = i+1;
 
@@ -78,18 +142,16 @@ module.exports = {
                         if(f2 == "E"){
                             //存储对鬼的权值
                             weightArr.push([com.convertValueMore(pais.slice(i,j+1)),i,2]);
-                            //去除重复权值计算
-                            i = j;
 
                         }
 
                     }
 
                 }else {
-                    if(lastLength==1){
+                    // if(lastLength==1){
                         //对单张的权值保存
                         weightArr.push([com.convertValue(l),i,1]);
-                    }
+                    // }
 
                     var j = 0;
 
@@ -104,27 +166,28 @@ module.exports = {
 
                             isCompose = l==l2;
 
-                            var isDifferentFive = false;
-                            //对花5的处理
-                            if(l==5 && j==1){
+                            // var isDifferentFive = false;
+                            // //对花5的处理
+                            // if(l==5 && j==1){
 
-                                var f2 = pais[i+j]._name.substring(0,1);
+                            //     var f2 = pais[i+j]._name.substring(0,1);
 
-                                var code = f.charCodeAt()+f2.charCodeAt();
+                            //     var code = f.charCodeAt()+f2.charCodeAt();
 
-                                //不是对黑5红5
-                                if(code!=196 && code!=198){
+                            //     //不是对黑5红5
+                            //     if(code!=196 && code!=198){
 
-                                    isDifferentFive = true;
+                            //         isDifferentFive = true;
 
-                                }
+                            //     }
 
-                            }
+                            // }
 
-                            if(isCompose && (!(lastLength==1 && j==1) || (l==5 && !isDifferentFive))){
+                            // if(isCompose && (!(lastLength==1 && j==1) || (l==5 && !isDifferentFive))){
+                            if(isCompose){
 
                                 //对多张的权值保存
-                                weightArr.push([com.convertValueMore(pais.slice(i,i+j+1)),i,j]);
+                                weightArr.push([com.convertValueMore(pais.slice(i,i+j+1)),i,j+1]);
                                 
                             }
 

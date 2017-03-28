@@ -1,0 +1,99 @@
+2017-03-28T13:08:14.535Z - normal: Load ~/.CocosCreator/settings.json
+2017-03-28T13:08:14.541Z - normal: checking language setting...
+2017-03-28T13:08:14.542Z - normal: Language: zh
+2017-03-28T13:08:16.977Z - success: protocol editor-framework registered
+2017-03-28T13:08:16.977Z - success: protocol app registered
+2017-03-28T13:08:16.977Z - success: protocol theme registered
+2017-03-28T13:08:16.977Z - success: protocol profile registered
+2017-03-28T13:08:16.977Z - success: protocol packages registered
+2017-03-28T13:08:16.978Z - success: protocol unpack registerred
+2017-03-28T13:08:16.978Z - success: protocol disable-commonjs registerred
+2017-03-28T13:08:17.090Z - normal: connected!
+2017-03-28T13:08:17.098Z - normal: Check project K:\Code\CocosCreatorProjects\Dadianer
+2017-03-28T13:08:17.102Z - normal: Initializing Cocos2d
+2017-03-28T13:08:19.141Z - normal: Initializing Asset Database
+2017-03-28T13:08:19.190Z - success: protocol uuid registerred
+2017-03-28T13:08:19.190Z - success: protocol db registerred
+2017-03-28T13:08:19.190Z - success: protocol thumbnail registerred
+2017-03-28T13:08:19.191Z - normal: Loading editor/builtin packages
+2017-03-28T13:08:19.503Z - success: assets loaded
+2017-03-28T13:08:19.506Z - success: builder loaded
+2017-03-28T13:08:19.510Z - success: hierarchy loaded
+2017-03-28T13:08:19.514Z - success: inspector loaded
+2017-03-28T13:08:19.515Z - success: keystore loaded
+2017-03-28T13:08:19.519Z - success: node-library loaded
+2017-03-28T13:08:19.522Z - success: preferences loaded
+2017-03-28T13:08:19.539Z - success: project-importer loaded
+2017-03-28T13:08:19.542Z - success: project-settings loaded
+2017-03-28T13:08:19.544Z - success: ui-kit loaded
+2017-03-28T13:08:19.554Z - success: ui-grid loaded
+2017-03-28T13:08:19.576Z - success: scene loaded
+2017-03-28T13:08:19.579Z - success: sprite-editor loaded
+2017-03-28T13:08:19.751Z - success: store loaded
+2017-03-28T13:08:19.763Z - success: timeline loaded
+2017-03-28T13:08:19.763Z - normal: Loading builtin packages
+2017-03-28T13:08:19.777Z - success: anysdk loaded
+2017-03-28T13:08:19.782Z - success: asset-db-debugger loaded
+2017-03-28T13:08:19.784Z - success: code-editor loaded
+2017-03-28T13:08:19.794Z - success: color-picker loaded
+2017-03-28T13:08:19.799Z - success: console loaded
+2017-03-28T13:08:19.801Z - success: package-manager loaded
+2017-03-28T13:08:19.806Z - success: tester loaded
+2017-03-28T13:08:19.808Z - success: ui-kit-preview-extra loaded
+2017-03-28T13:08:19.810Z - success: ui-kit-preview loaded
+2017-03-28T13:08:19.813Z - success: ui-tree loaded
+2017-03-28T13:08:19.983Z - normal: Initializing project K:\Code\CocosCreatorProjects\Dadianer
+2017-03-28T13:08:19.992Z - normal: Loading packages
+2017-03-28T13:08:19.998Z - normal: Watching packages
+2017-03-28T13:08:20.049Z - normal: Run Application
+2017-03-28T13:08:25.859Z - success: preview server running at http://localhost:7456
+2017-03-28T13:08:25.860Z - normal: Compiling scripts...
+2017-03-28T13:08:28.549Z - normal: Compiled project javascript file successfully
+2017-03-28T13:08:34.300Z - normal: 1.4.0
+2017-03-28T13:38:39.098Z - normal: Compiled project javascript file successfully
+2017-03-28T13:41:38.730Z - normal: Compiled project javascript file successfully
+2017-03-28T14:10:23.665Z - failed: [db-task][sync-changes] Failed to import asset K:\Code\CocosCreatorProjects\Dadianer\assets\script\AI.js, message: Compile error: SyntaxError: unknown: Unexpected token (148:25)
+                            }
+
+                        }else{
+
+                            break;
+
+    at Parser.pp.raise (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
+    at Parser.pp.unexpected (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
+    at Parser.pp.expect (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\parser\util.js:76:33)
+    at Parser.pp.parseDoStatement (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\parser\statement.js:215:8)
+    at Parser.pp.parseStatement (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\parser\statement.js:74:19)
+    at Parser.parseStatement (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:655:22)
+    at Parser.pp.parseBlock (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\parser\statement.js:442:21)
+    at Parser.pp.parseStatement (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\parser\statement.js:105:19)
+    at Parser.parseStatement (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:655:22)
+    at Parser.pp.parseIfStatement (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\parser\statement.js:269:65)
+2017-03-28T14:11:36.093Z - normal: Compiled project javascript file successfully
+2017-03-28T14:12:13.535Z - normal: Compiled project javascript file successfully
+2017-03-28T14:13:44.455Z - normal: Compiled project javascript file successfully
+2017-03-28T14:20:14.913Z - normal: Compiled project javascript file successfully
+2017-03-28T14:21:21.806Z - normal: Compiled project javascript file successfully
+2017-03-28T14:21:43.349Z - normal: Compiled project javascript file successfully
+2017-03-28T14:23:06.161Z - normal: Compiled project javascript file successfully
+2017-03-28T14:25:30.141Z - normal: Compiled project javascript file successfully
+2017-03-28T14:30:40.605Z - normal: Compiled project javascript file successfully
+2017-03-28T14:32:12.059Z - normal: Compiled project javascript file successfully
+2017-03-28T14:33:09.372Z - normal: Compiled project javascript file successfully
+2017-03-28T14:35:50.884Z - normal: Compiled project javascript file successfully
+2017-03-28T14:37:25.079Z - normal: Compiled project javascript file successfully
+2017-03-28T14:39:27.293Z - normal: Compiled project javascript file successfully
+2017-03-28T15:21:25.484Z - normal: Compiled project javascript file successfully
+2017-03-28T15:24:14.611Z - normal: Compiled project javascript file successfully
+2017-03-28T15:28:49.072Z - normal: Compiled project javascript file successfully
+2017-03-28T15:29:48.431Z - normal: Compiled project javascript file successfully
+2017-03-28T15:31:20.004Z - normal: Compiled project javascript file successfully
+2017-03-28T15:32:36.863Z - normal: Compiled project javascript file successfully
+2017-03-28T15:33:25.671Z - normal: Compiled project javascript file successfully
+2017-03-28T15:36:24.691Z - normal: Compiled project javascript file successfully
+2017-03-28T15:37:03.578Z - normal: Compiled project javascript file successfully
+2017-03-28T15:38:17.301Z - normal: Compiled project javascript file successfully
+2017-03-28T15:41:13.270Z - normal: Compiled project javascript file successfully
+2017-03-28T15:43:49.827Z - normal: Compiled project javascript file successfully
+2017-03-28T15:45:45.193Z - normal: Compiled project javascript file successfully
+2017-03-28T16:17:44.902Z - info: shutdown preview server

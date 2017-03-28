@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,GAAG,GAAG,OAAO,CAAC,QAAQ,CAAC,CAAC;AAC5B,IAAI,EAAE,GAAG,OAAO,CAAC,IAAI,CAAC,CAAC;;AAEvB,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;;AAER,kBAAU,EAAC;AACP,uBAAQ,IAAI;AACZ,gBAAI,EAAC,EAAE,CAAC,KAAK;SAChB;;AAED,iBAAS,EAAC;AACN,uBAAQ,IAAI;AACZ,gBAAI,EAAC,EAAE,CAAC,MAAM;SACjB;;AAED,YAAI,EAAC,IAAI;;AAET,eAAO,EAAC,IAAI;;AAEZ,eAAO,EAAC,IAAI,EAGf;;;;;AAGD,UAAM,EAAE,kBAAY,EAGnB;;;AAGD,UAAM,EAAE,gBAAU,EAAE,EAAE;;AAElB,YAAG,IAAI,CAAC,OAAO,IAAE,IAAI,EAAC;AAClB,gBAAI,CAAC,UAAU,CAAC,MAAM,GAAG,IAAI,CAAC,OAAO,CAAC,MAAM,CAAC;SAChD;KACJ;;AAED,UAAM,EAAE,kBAAU;;AAEd,YAAG,IAAI,CAAC,IAAI,EAAC;;AAET,cAAE,CAAC,MAAM,CAAC,IAAI,CAAC,CAAC;SAEnB,MAAK,EAIL;KAEJ;;CAEJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var com = require('Common');\nvar ai = require('AI');\n\ncc.Class({\n    extends: cc.Component,\n\n    properties: {\n\n        shouPaiNum:{\n            default:null,\n            type:cc.Label,\n        },\n\n        playerImg:{\n            default:null,\n            type:cc.Sprite,\n        },\n\n        isAI:true,\n\n        shouPai:null,//手牌\n\n        xuanPai:null,//选中的牌\n\n        \n    },\n\n    // use this for initialization\n    onLoad: function () {\n        \n\n    },\n\n    // called every frame, uncomment this function to activate update callback\n    update: function (dt) {\n\n        if(this.shouPai!=null){\n            this.shouPaiNum.string = this.shouPai.length;\n        }\n    },\n\n    toggle: function(){\n\n        if(this.isAI){\n\n            ai.chuPai(this);\n\n        }else {\n\n\n\n        }\n\n    },\n\n});\n"
+  ]
+}
