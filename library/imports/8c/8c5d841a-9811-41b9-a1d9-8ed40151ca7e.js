@@ -52,7 +52,7 @@ cc.Class({
             this.scheduleOnce(function () {
 
                 ai.chuPai(this);
-            }, 5);
+            }, 1);
         } else {
 
             //不是AI

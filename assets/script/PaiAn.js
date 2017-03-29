@@ -107,7 +107,7 @@ cc.Class({
             }
             
 
-            //indexArr.reverse();
+            indexArr.reverse();
             
             //从手牌中删除
             for(var n = 0;n<indexArr.length;n++){
@@ -158,7 +158,10 @@ cc.Class({
         for(var i = 0;i<num;i++){
 
             var pai = self.player.shouPai[i];
+            // cc.log("pai i:"+i);
             // cc.log(pai);
+            // cc.log("self.node:");
+            // cc.log(self.node);
             self.node.addChild(pai);
             // pai.setScale(0.5);
             pai.setPosition(cc.p(-(pai.width+(num-1)*30)/2+pai.width/2+i*30,0));

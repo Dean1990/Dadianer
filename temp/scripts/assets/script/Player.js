@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, '8c5d8QamBFBuaHZjtQBUcp+', 'Player');
-// script/Player.js
+// script\Player.js
 
 var com = require('Common');
 var ai = require('AI');
@@ -56,7 +56,7 @@ cc.Class({
             this.scheduleOnce(function () {
 
                 ai.chuPai(this);
-            }, 5);
+            }, 1);
         } else {
 
             //不是AI

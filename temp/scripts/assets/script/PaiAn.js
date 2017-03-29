@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, 'b3ac1KyqV9HV74OMXSKmVzK', 'PaiAn');
-// script/PaiAn.js
+// script\PaiAn.js
 
 var com = require('Common');
 cc.Class({
@@ -104,7 +104,7 @@ cc.Class({
                 // sprite.runAction(cc.moveTo(0.5,cc.p(x,y)));
             }
 
-            //indexArr.reverse();
+            indexArr.reverse();
 
             //从手牌中删除
             for (var n = 0; n < indexArr.length; n++) {
@@ -148,7 +148,10 @@ cc.Class({
         for (var i = 0; i < num; i++) {
 
             var pai = self.player.shouPai[i];
+            // cc.log("pai i:"+i);
             // cc.log(pai);
+            // cc.log("self.node:");
+            // cc.log(self.node);
             self.node.addChild(pai);
             // pai.setScale(0.5);
             pai.setPosition(cc.p(-(pai.width + (num - 1) * 30) / 2 + pai.width / 2 + i * 30, 0));

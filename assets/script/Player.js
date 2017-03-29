@@ -37,7 +37,6 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        
 
     },
 
@@ -57,7 +56,7 @@ cc.Class({
 
                 ai.chuPai(this);
 
-            },5);
+            },1);
 
         }else {
 

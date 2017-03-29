@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, '2ce3dajz81FDajDPh6cF69x', 'Common');
-// script/Common.js
+// script\Common.js
 
 module.exports = {
 
@@ -18,43 +18,94 @@ module.exports = {
 
     _buChuNum: 0, //记录不出牌次数
 
+    winPlayer: null, //记录胜出者序号
+
     setFirstPlayer: function setFirstPlayer(firstPlayer) {
 
         this._currentPlayer = firstPlayer;
+
+        this.players[this._currentPlayer].currentTag.setVisible(true);
     },
 
     nextPlayer: function nextPlayer(lastPai) {
 
-        if (lastPai == null || lastPai.length == 0) {
+        cc.log("cp:" + this._currentPlayer);
 
-            this._buChuNum = this._buChuNum + 1;
-            //不出
-            this.players[this._currentPlayer].getComponent("Player").actionLabel.string = "不出";
+        cc.log("winPlayer->");
+
+        var isWiner = false;
+
+        for (var i = 0; i < this.winPlayer.length; i++) {
+
+            cc.log(this.winPlayer[i]);
+
+            if (this.winPlayer[i] == (this._currentPlayer + 1) % this.playerNum) {
+
+                cc.log("winer i:" + this.winPlayer[i]);
+
+                isWiner = true;
+
+                break;
+            }
+        }
+
+        cc.log("for end");
+
+        cc.log("isWiner:" + isWiner);
+
+        if (isWiner) {
+
+            this._currentPlayer = (this._currentPlayer + 1) % this.playerNum;
+
+            this.nextPlayer(lastPai);
         } else {
 
-            this._buChuNum = 0;
-            //清理牌桌
-            this.clearPaiZhuo();
-            //赋值
-            this._lastPai = lastPai;
-            //展示
-            this.showLastPai();
+            if (lastPai == null || lastPai.length == 0) {
+
+                this._buChuNum = this._buChuNum + 1;
+                //不出
+                this.players[this._currentPlayer].getComponent("Player").actionLabel.string = "不出";
+            } else {
+
+                this._buChuNum = 0;
+                //清理牌桌
+                this.clearPaiZhuo();
+                //赋值
+                this._lastPai = lastPai;
+                //展示
+                this.showLastPai();
+            }
+
+            //三个不出，说明又轮到上次出牌的玩家
+            if (this._buChuNum == 3 - this.winPlayer.length) {
+
+                //清理牌桌
+                this.clearPaiZhuo();
+
+                this._lastPai = null;
+            }
+
+            this.players[this._currentPlayer].currentTag.setVisible(false);
+
+            if (this.players[this._currentPlayer].shouPai.length == 0) {
+
+                cc.log("wp lenght:" + this.winPlayer.length);
+
+                this.winPlayer.push(this._currentPlayer);
+
+                this.players[this._currentPlayer].getComponent("Player").actionLabel.string = "NO. " + this.winPlayer.length;
+            }
+
+            this._currentPlayer = (this._currentPlayer + 1) % this.playerNum;
+
+            //cc.log(this.players[this._currentPlayer]);
+
+            this.players[this._currentPlayer].currentTag.setVisible(true);
+
+            this.players[this._currentPlayer].actionLabel.string = "";
+
+            this.players[this._currentPlayer].toggle();
         }
-
-        //三个不出，说明又轮到上次出牌的玩家
-        if (this._buChuNum == 3) {
-
-            //清理牌桌
-            this.clearPaiZhuo();
-
-            this._lastPai = null;
-        }
-
-        this._currentPlayer = (this._currentPlayer + 1) % this.playerNum;
-
-        //cc.log(this.players[this._currentPlayer]);
-
-        this.players[this._currentPlayer].toggle();
     },
 
     /**

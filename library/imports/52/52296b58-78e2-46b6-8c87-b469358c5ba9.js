@@ -202,6 +202,8 @@ cc.Class({
 
             node.getComponent('Player').shouPai = new Array();
 
+            node.getComponent('Player').currentTag.setVisible(false);
+
             com.players.push(node.getComponent('Player'));
         }
 
@@ -218,6 +220,8 @@ cc.Class({
                 com.setFirstPlayer(j);
             }
         }
+
+        com.winPlayer = new Array();
 
         com.players[0].isAI = false;
         com.players[1].isAI = true;
