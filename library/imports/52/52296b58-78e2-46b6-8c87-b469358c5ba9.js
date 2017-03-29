@@ -200,9 +200,9 @@ cc.Class({
 
             var node = cc.instantiate(this.player);
 
-            node.shouPai = new Array();
+            node.getComponent('Player').shouPai = new Array();
 
-            com.players.push(node);
+            com.players.push(node.getComponent('Player'));
         }
 
         for (var i = 0; i < com.paiNum; i++) {
@@ -219,7 +219,41 @@ cc.Class({
             }
         }
 
+        com.players[0].isAI = false;
+        com.players[1].isAI = true;
+        com.players[2].isAI = true;
+        com.players[3].isAI = true;
+
+        //设置玩家位置
+        var size = cc.winSize;
+
+        var node1 = com.players[1].node;
+
+        cc.director.getScene().addChild(node1);
+
+        node1.setPosition(cc.p(size.width - node1.width / 3 * 2, size.height / 2));
+
+        var node2 = com.players[2].node;
+
+        cc.director.getScene().addChild(node2);
+
+        node2.setPosition(cc.p(size.width / 2, size.height - node1.height / 3 * 2));
+
+        var node3 = com.players[3].node;
+
+        cc.director.getScene().addChild(node3);
+
+        node3.setPosition(cc.p(node3.width / 3 * 2, size.height / 2));
+
+        //cc.log(com.players[0]);
+
         self.paiAn.getComponent('PaiAn').player = com.players[0];
+
+        //如果是机器人，指定出牌
+        if (com._currentPlayer != 0 && com.players[com._currentPlayer].isAI) {
+
+            com.players[com._currentPlayer].toggle();
+        }
 
         // for(var n = 0;n<pp.length;n++){
 

@@ -3,68 +3,49 @@ module.exports = {
 
     chuPai: function (player){
 
-        //var node = com.players[com._currentPlayer];
+        com.sortPai(player.shouPai)
 
-        //cc.log(player.node.shouPai);
+        var weightArr = this.analyze(player.shouPai);
 
-        com.sortPai(player.node.shouPai)
+        this.sortWeightArr(weightArr);
 
-        if(com.lastPai==null||com.lastPai.length==0){
+        if(com._lastPai==null||com._lastPai.length==0){
 
             //出一个最小权值的组合
+            if(weightArr.length>0){
+
+                var pais = player.shouPai.splice(weightArr[0][1],weightArr[0][2]);
+
+                com.nextPlayer(pais);
+
+            }
 
         }else {
 
-            var lastWeight = com.convertValueMore(com.lastPai);
+            var lastWeight = com.convertValueMore(com._lastPai);
 
-            var weightArr = this.analyze(player.node.shouPai);
-
-            //cc.log(weightArr);
-
-            this.sortWeightArr(weightArr);
+            var isBuChuPai = true;
 
             for(var i = 0;i<weightArr.length;i++){
 
                 var weight = weightArr[i][0];
 
-                if(weight>lastWeight && (((com.lastPai.length==1 && (weight<=180 || weight>=1000))||com.lastPai.length>1))){
+                if(weight>lastWeight && (((com._lastPai.length==1 && (weight<=180 || weight>1600))||com._lastPai.length>1))){
 
                     //  var canvas = cc.director.getScene().getChildByName('Canvas');
 
                     //  cc.log(canvas);
-
-                     var size = cc.winSize;
-
                     //出牌
-                    var pais = player.node.shouPai.splice(weightArr[i][1],weightArr[i][2]);
+                    var pais = player.shouPai.splice(weightArr[i][1],weightArr[i][2]);
 
-                     //清空lastPai
-                    if(com.lastPai!=null){
-                        //清空上家出的牌 准备记录此次出牌
-                        com.lastPai.splice(0,com.lastPai.length);
+                    //清空牌桌
+                    //com.clearPaiZhuo();
 
-                    }else {
+                    //this.chuPaiAction(pais);
 
-                        com.lastPai = new Array();
+                    com.nextPlayer(pais);
 
-                    }
-
-                    //展示
-                    for(var j = 0;j<pais.length;j++){
-
-                        var node = pais[j];
-
-                        cc.director.getScene().addChild(node);
-
-                        node.setPosition(cc.p(size.width/2 + j*30,size.height/2));
-
-                        //更新到lastPai
-                        com.lastPai.push(pais[j]);
-
-                    }
-                    
-
-                    com.nextPlayer();
+                    isBuChuPai = false;
 
                     break;
 
@@ -72,10 +53,50 @@ module.exports = {
 
             }
 
+            if(isBuChuPai){
+
+                com.nextPlayer();
+
+            }
+
             
         }
 
     },
+
+    /**
+     * 出牌动作
+     */
+    // chuPaiAction:function(pais){
+
+    //     var size = cc.winSize;
+
+    //     // //清空lastPai
+    //     // if(com._lastPai!=null){
+    //     //     //清空上家出的牌 准备记录此次出牌
+    //     //     com._lastPai.splice(0,com._lastPai.length);
+
+    //     // }else {
+
+    //     //     com._lastPai = new Array();
+
+    //     // }
+
+    //     //展示
+    //     for(var j = 0;j<pais.length;j++){
+
+    //         var node = pais[j];
+
+    //         cc.director.getScene().addChild(node);
+
+    //         node.setPosition(cc.p(size.width/2 + j*30,size.height/2));
+
+    //         //更新到lastPai
+    //         // com._lastPai.push(pais[j]);
+
+    //     }
+
+    // },
 
     /**
      * 排序权值列表
@@ -109,7 +130,7 @@ module.exports = {
 
         var weightArr = new Array();//[权值,开始下标,长度]
 
-        // var lastLength = com.lastPai.length;
+        // var lastLength = com._lastPai.length;
 
         if(pais!=null){
 

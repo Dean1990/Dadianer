@@ -16,7 +16,17 @@ cc.Class({
             type: cc.Sprite
         },
 
-        isAI: true,
+        currentTag: {
+            'default': null,
+            type: cc.Sprite
+        },
+
+        actionLabel: {
+            'default': null,
+            type: cc.Label
+        },
+
+        isAI: null, //是否是AI
 
         shouPai: null, //手牌
 
@@ -39,8 +49,15 @@ cc.Class({
 
         if (this.isAI) {
 
-            ai.chuPai(this);
-        } else {}
+            this.scheduleOnce(function () {
+
+                ai.chuPai(this);
+            }, 5);
+        } else {
+
+            //不是AI
+
+        }
     }
 
 });

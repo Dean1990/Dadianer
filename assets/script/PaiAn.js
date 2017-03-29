@@ -18,6 +18,16 @@ cc.Class({
 
         this.player.xuanPai = new Array();
 
+        
+
+        var node = this.player.node;
+
+        // cc.director.getScene().addChild(node);
+
+        this.node.addChild(node);
+
+        node.setPosition(cc.p(-this.node.width/2-(node.width/3*2),0));
+
         //展示手牌
         this.drawPai();
 
@@ -69,40 +79,38 @@ cc.Class({
 
             indexArr.sort();
 
-                //出牌动作
-                for(var i = 0;i<indexArr.length;i++){
+            //清空牌桌
+            //com.clearPaiZhuo();
 
-                    var sprite = self.player.shouPai[indexArr[i]];
+            var lastPai = new Array();
 
-                    var p = sprite.convertToWorldSpace(cc.p(0,0));
+            //出牌动作
+            for(var i = 0;i<indexArr.length;i++){
 
-                    var nodeP = self.node.convertToWorldSpace(cc.p(self.node.getContentSize().width/2,self.node.getContentSize().height/2));
+                var sprite = self.player.shouPai[indexArr[i]];
 
-                    var x = windowSize.width/2-nodeP.x+30*i;
+                //记录出牌
+                lastPai.push(sprite);
 
-                    var y = windowSize.height/2-p.y;
+                sprite.removeFromParent();
 
-                    sprite.runAction(cc.moveTo(0.5,cc.p(x,y)));
+                // var p = sprite.convertToWorldSpace(cc.p(0,0));
 
-                }
-            
+                // var nodeP = self.node.convertToWorldSpace(cc.p(self.node.getContentSize().width/2,self.node.getContentSize().height/2));
 
-            indexArr.reverse();
+                // var x = windowSize.width/2-nodeP.x+30*i;
 
-            if(com.lastPai!=null){
-                //清空上家出的牌 准备记录此次出牌
-                com.lastPai.splice(0,com.lastPai.length);
+                // var y = windowSize.height/2-p.y;
 
-            }else {
-
-                com.lastPai = new Array();
+                // sprite.runAction(cc.moveTo(0.5,cc.p(x,y)));
 
             }
             
+
+            //indexArr.reverse();
+            
             //从手牌中删除
             for(var n = 0;n<indexArr.length;n++){
-                //记录出牌，更新到lastPai
-                com.lastPai.push(self.player.shouPai[indexArr[n]]);
 
                 self.player.shouPai.splice(indexArr[n],1);
 
@@ -111,7 +119,7 @@ cc.Class({
             //刷新手牌展示
             self.drawPai();
 
-            com.nextPlayer();
+            com.nextPlayer(lastPai);
 
         }else {
             //不合法
@@ -141,22 +149,22 @@ cc.Class({
 
         var self = this;
 
-            com.sortPai(self.player.shouPai);
+        com.sortPai(self.player.shouPai);
 
-            var num = self.player.shouPai.length;
+        var num = self.player.shouPai.length;
 
-            //var size = self.node.getContentSize();
+        //var size = self.node.getContentSize();
 
-            for(var i = 0;i<num;i++){
+        for(var i = 0;i<num;i++){
 
-                var pai = self.player.shouPai[i];
-                // cc.log(pai);
-                self.node.addChild(pai);
-                // pai.setScale(0.5);
-                pai.setPosition(cc.p(i*30,0));
-                pai.on(cc.Node.EventType.TOUCH_START,self.touchPai,this);
+            var pai = self.player.shouPai[i];
+            // cc.log(pai);
+            self.node.addChild(pai);
+            // pai.setScale(0.5);
+            pai.setPosition(cc.p(-(pai.width+(num-1)*30)/2+pai.width/2+i*30,0));
+            pai.on(cc.Node.EventType.TOUCH_START,self.touchPai,this);
 
-            }
+        }
         
 
     },

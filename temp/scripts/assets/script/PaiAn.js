@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, 'b3ac1KyqV9HV74OMXSKmVzK', 'PaiAn');
-// script\PaiAn.js
+// script/PaiAn.js
 
 var com = require('Common');
 cc.Class({
@@ -21,6 +21,14 @@ cc.Class({
     onLoad: function onLoad() {
 
         this.player.xuanPai = new Array();
+
+        var node = this.player.node;
+
+        // cc.director.getScene().addChild(node);
+
+        this.node.addChild(node);
+
+        node.setPosition(cc.p(-this.node.width / 2 - node.width / 3 * 2, 0));
 
         //展示手牌
         this.drawPai();
@@ -70,36 +78,36 @@ cc.Class({
 
             indexArr.sort();
 
+            //清空牌桌
+            //com.clearPaiZhuo();
+
+            var lastPai = new Array();
+
             //出牌动作
             for (var i = 0; i < indexArr.length; i++) {
 
                 var sprite = self.player.shouPai[indexArr[i]];
 
-                var p = sprite.convertToWorldSpace(cc.p(0, 0));
+                //记录出牌
+                lastPai.push(sprite);
 
-                var nodeP = self.node.convertToWorldSpace(cc.p(self.node.getContentSize().width / 2, self.node.getContentSize().height / 2));
+                sprite.removeFromParent();
 
-                var x = windowSize.width / 2 - nodeP.x + 30 * i;
+                // var p = sprite.convertToWorldSpace(cc.p(0,0));
 
-                var y = windowSize.height / 2 - p.y;
+                // var nodeP = self.node.convertToWorldSpace(cc.p(self.node.getContentSize().width/2,self.node.getContentSize().height/2));
 
-                sprite.runAction(cc.moveTo(0.5, cc.p(x, y)));
+                // var x = windowSize.width/2-nodeP.x+30*i;
+
+                // var y = windowSize.height/2-p.y;
+
+                // sprite.runAction(cc.moveTo(0.5,cc.p(x,y)));
             }
 
-            indexArr.reverse();
-
-            if (com.lastPai != null) {
-                //清空上家出的牌 准备记录此次出牌
-                com.lastPai.splice(0, com.lastPai.length);
-            } else {
-
-                com.lastPai = new Array();
-            }
+            //indexArr.reverse();
 
             //从手牌中删除
             for (var n = 0; n < indexArr.length; n++) {
-                //记录出牌，更新到lastPai
-                com.lastPai.push(self.player.shouPai[indexArr[n]]);
 
                 self.player.shouPai.splice(indexArr[n], 1);
             }
@@ -107,7 +115,7 @@ cc.Class({
             //刷新手牌展示
             self.drawPai();
 
-            com.nextPlayer();
+            com.nextPlayer(lastPai);
         } else {
             //不合法
             var length = self.player.xuanPai.length;
@@ -143,7 +151,7 @@ cc.Class({
             // cc.log(pai);
             self.node.addChild(pai);
             // pai.setScale(0.5);
-            pai.setPosition(cc.p(i * 30, 0));
+            pai.setPosition(cc.p(-(pai.width + (num - 1) * 30) / 2 + pai.width / 2 + i * 30, 0));
             pai.on(cc.Node.EventType.TOUCH_START, self.touchPai, this);
         }
     },

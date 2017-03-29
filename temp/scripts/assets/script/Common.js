@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, '2ce3dajz81FDajDPh6cF69x', 'Common');
-// script\Common.js
+// script/Common.js
 
 module.exports = {
 
@@ -10,25 +10,51 @@ module.exports = {
 
     players: null, //所有玩家的容器
 
-    lastPai: null, //上家出的牌
+    _lastPai: null, //上家出的牌
 
     //_firstPlayer:0,//第一个出牌的玩家
 
     _currentPlayer: 0, //当前出牌的玩家
 
+    _buChuNum: 0, //记录不出牌次数
+
     setFirstPlayer: function setFirstPlayer(firstPlayer) {
 
-        //this._firstPlayer = firstPlayer;
         this._currentPlayer = firstPlayer;
     },
 
-    nextPlayer: function nextPlayer() {
+    nextPlayer: function nextPlayer(lastPai) {
+
+        if (lastPai == null || lastPai.length == 0) {
+
+            this._buChuNum = this._buChuNum + 1;
+            //不出
+            this.players[this._currentPlayer].getComponent("Player").actionLabel.string = "不出";
+        } else {
+
+            this._buChuNum = 0;
+            //清理牌桌
+            this.clearPaiZhuo();
+            //赋值
+            this._lastPai = lastPai;
+            //展示
+            this.showLastPai();
+        }
+
+        //三个不出，说明又轮到上次出牌的玩家
+        if (this._buChuNum == 3) {
+
+            //清理牌桌
+            this.clearPaiZhuo();
+
+            this._lastPai = null;
+        }
 
         this._currentPlayer = (this._currentPlayer + 1) % this.playerNum;
 
         //cc.log(this.players[this._currentPlayer]);
 
-        this.players[this._currentPlayer].getComponent("Player").toggle();
+        this.players[this._currentPlayer].toggle();
     },
 
     /**
@@ -49,31 +75,31 @@ module.exports = {
         //判断选中的牌
         if (xuanPai != null) {
 
-            if (this.lastPai == null || this.lastPai.length == 0) {
+            if (this._lastPai == null || this._lastPai.length == 0) {
 
                 return this.composeCheck(xuanPai);
             } else {
 
                 var length = xuanPai.length;
 
-                var lastLength = this.lastPai.length;
+                var lastLength = this._lastPai.length;
 
                 if (lastLength == 1) {
                     //单
                     if (length == 1) {
 
-                        return this.convertValueMore(xuanPai) > this.convertValueMore(this.lastPai);
+                        return this.convertValueMore(xuanPai) > this.convertValueMore(this._lastPai);
                     } else {
-                        //炸 大于32为炸
+                        //炸 大于1600为炸
                         var value = this.convertValueMore(xuanPai);
 
-                        return value > 32 && value > this.convertValueMore(this.lastPai);
+                        return value > 1600 && value > this.convertValueMore(this._lastPai);
                     }
                 } else if (lastLength >= 2 && lastLength < 5) {
                     //对
                     if (length >= 2) {
                         //可以出对，也可以出炸
-                        return this.convertValueMore(xuanPai) > this.convertValueMore(this.lastPai);
+                        return this.convertValueMore(xuanPai) > this.convertValueMore(this._lastPai);
                     } else {
                         //不能出单
                         return false;
@@ -291,6 +317,54 @@ module.exports = {
                         spriteArr[j] = temp;
                     }
                 }
+            }
+        }
+    },
+
+    /**
+     * 展示在牌桌上
+     */
+    showLastPai: function showLastPai() {
+
+        cc.log("player:" + this._currentPlayer);
+
+        if (this._lastPai != null && this._lastPai.length != 0) {
+
+            var size = cc.winSize;
+
+            //展示
+            for (var j = 0; j < this._lastPai.length; j++) {
+
+                var node = this._lastPai[j];
+
+                cc.log("node:");
+                cc.log(node);
+
+                cc.director.getScene().addChild(node);
+
+                node.setPosition(cc.p(size.width / 2 + j * 30, size.height / 2));
+            }
+        }
+    },
+
+    /**
+     * 清空牌桌
+     */
+    clearPaiZhuo: function clearPaiZhuo() {
+
+        cc.log("clearPaiZhuo");
+
+        if (this._lastPai != null && this._lastPai.length != 0) {
+
+            for (var i = 0; i < this._lastPai.length; i++) {
+
+                var node = this._lastPai[i];
+
+                cc.log(node);
+
+                node.removeFromParent();
+
+                node.destroy();
             }
         }
     }
