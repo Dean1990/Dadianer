@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, '3865cNvozdCB615DN8X95x0', 'AI');
-// script\AI.js
+// script/AI.js
 
 var com = require('Common');
 module.exports = {
@@ -8,6 +8,22 @@ module.exports = {
     chuPai: function chuPai(player) {
 
         com.sortPai(player.shouPai);
+
+        var isEnableXuanZhan = com.checkEnableXuanZhan(player.shouPai);
+
+        if (isEnableXuanZhan != 0) {
+            //可以宣战
+            //设置宣战
+            player.isXuanZhan = true;
+
+            if (isEnableXuanZhan == 1) {
+
+                player.actionLabel.string = "宣战";
+            } else if (isEnableXuanZhan == 2) {
+
+                player.actionLabel.string = "跟";
+            }
+        }
 
         var weightArr = this.analyze(player.shouPai);
 

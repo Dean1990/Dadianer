@@ -5,6 +5,26 @@ module.exports = {
 
         com.sortPai(player.shouPai)
 
+        var isEnableXuanZhan = com.checkEnableXuanZhan(player.shouPai);
+
+        if(isEnableXuanZhan!=0){
+            //可以宣战
+            //设置宣战
+            player.isXuanZhan = true;
+
+            if(isEnableXuanZhan==1){
+
+                player.actionLabel.string = "宣战";
+
+            }else if(isEnableXuanZhan==2){
+
+                player.actionLabel.string = "跟";
+
+            }
+            
+
+        }
+
         var weightArr = this.analyze(player.shouPai);
 
         this.sortWeightArr(weightArr);

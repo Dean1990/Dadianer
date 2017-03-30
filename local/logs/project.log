@@ -1,67 +1,210 @@
-2017-03-29T13:24:45.407Z - normal: Load ~/.CocosCreator/settings.json
-2017-03-29T13:24:45.412Z - normal: checking language setting...
-2017-03-29T13:24:45.413Z - normal: Language: zh
-2017-03-29T13:24:47.134Z - success: protocol editor-framework registered
-2017-03-29T13:24:47.134Z - success: protocol app registered
-2017-03-29T13:24:47.134Z - success: protocol theme registered
-2017-03-29T13:24:47.135Z - success: protocol profile registered
-2017-03-29T13:24:47.135Z - success: protocol packages registered
-2017-03-29T13:24:47.135Z - success: protocol unpack registerred
-2017-03-29T13:24:47.135Z - success: protocol disable-commonjs registerred
-2017-03-29T13:24:47.247Z - normal: connected!
-2017-03-29T13:24:47.253Z - normal: Check project K:\Code\CocosCreatorProjects\Dadianer
-2017-03-29T13:24:47.257Z - normal: Initializing Cocos2d
-2017-03-29T13:24:48.680Z - normal: Initializing Asset Database
-2017-03-29T13:24:48.712Z - success: protocol uuid registerred
-2017-03-29T13:24:48.712Z - success: protocol db registerred
-2017-03-29T13:24:48.712Z - success: protocol thumbnail registerred
-2017-03-29T13:24:48.712Z - normal: Loading editor/builtin packages
-2017-03-29T13:24:48.890Z - success: assets loaded
-2017-03-29T13:24:48.893Z - success: builder loaded
-2017-03-29T13:24:48.896Z - success: hierarchy loaded
-2017-03-29T13:24:48.900Z - success: inspector loaded
-2017-03-29T13:24:48.901Z - success: keystore loaded
-2017-03-29T13:24:48.904Z - success: node-library loaded
-2017-03-29T13:24:48.907Z - success: preferences loaded
-2017-03-29T13:24:48.928Z - success: project-importer loaded
-2017-03-29T13:24:48.930Z - success: project-settings loaded
-2017-03-29T13:24:48.933Z - success: ui-kit loaded
-2017-03-29T13:24:48.943Z - success: ui-grid loaded
-2017-03-29T13:24:48.947Z - success: scene loaded
-2017-03-29T13:24:48.950Z - success: sprite-editor loaded
-2017-03-29T13:24:49.158Z - success: store loaded
-2017-03-29T13:24:49.172Z - success: timeline loaded
-2017-03-29T13:24:49.172Z - normal: Loading builtin packages
-2017-03-29T13:24:49.184Z - success: anysdk loaded
-2017-03-29T13:24:49.188Z - success: asset-db-debugger loaded
-2017-03-29T13:24:49.191Z - success: code-editor loaded
-2017-03-29T13:24:49.200Z - success: color-picker loaded
-2017-03-29T13:24:49.206Z - success: console loaded
-2017-03-29T13:24:49.211Z - success: package-manager loaded
-2017-03-29T13:24:49.216Z - success: tester loaded
-2017-03-29T13:24:49.218Z - success: ui-kit-preview-extra loaded
-2017-03-29T13:24:49.221Z - success: ui-kit-preview loaded
-2017-03-29T13:24:49.226Z - success: ui-tree loaded
-2017-03-29T13:24:49.352Z - normal: Initializing project K:\Code\CocosCreatorProjects\Dadianer
-2017-03-29T13:24:49.355Z - normal: Loading packages
-2017-03-29T13:24:49.359Z - normal: Watching packages
-2017-03-29T13:24:49.394Z - normal: Run Application
-2017-03-29T13:24:55.090Z - success: preview server running at http://localhost:7456
-2017-03-29T13:24:55.091Z - normal: Compiling scripts...
-2017-03-29T13:24:57.265Z - normal: Compiled project javascript file successfully
-2017-03-29T13:25:02.761Z - normal: 1.4.0
-2017-03-29T13:28:53.449Z - normal: Compiled project javascript file successfully
-2017-03-29T13:47:51.724Z - normal: Compiled project javascript file successfully
-2017-03-29T13:50:56.086Z - normal: Compiled project javascript file successfully
-2017-03-29T13:52:30.000Z - normal: Compiled project javascript file successfully
-2017-03-29T13:56:03.226Z - normal: Compiled project javascript file successfully
-2017-03-29T14:16:23.574Z - normal: Compiled project javascript file successfully
-2017-03-29T14:23:13.596Z - normal: Compiled project javascript file successfully
-2017-03-29T14:25:52.768Z - normal: Compiled project javascript file successfully
-2017-03-29T14:35:49.644Z - normal: Compiled project javascript file successfully
-2017-03-29T14:40:26.215Z - normal: Compiled project javascript file successfully
-2017-03-29T16:12:50.613Z - normal: Compiled project javascript file successfully
-2017-03-29T16:15:26.338Z - normal: Compiled project javascript file successfully
-2017-03-29T16:23:21.456Z - normal: Compiled project javascript file successfully
-2017-03-29T16:35:16.772Z - normal: Compiled project javascript file successfully
-2017-03-29T16:37:42.327Z - info: shutdown preview server
+2017-03-30T01:37:14.741Z - normal: Load ~/.CocosCreator/settings.json
+2017-03-30T01:37:14.748Z - normal: checking language setting...
+2017-03-30T01:37:14.749Z - normal: Language: zh
+2017-03-30T01:37:15.338Z - success: protocol editor-framework registered
+2017-03-30T01:37:15.339Z - success: protocol app registered
+2017-03-30T01:37:15.339Z - success: protocol theme registered
+2017-03-30T01:37:15.339Z - success: protocol profile registered
+2017-03-30T01:37:15.339Z - success: protocol packages registered
+2017-03-30T01:37:15.343Z - success: protocol unpack registerred
+2017-03-30T01:37:15.343Z - success: protocol disable-commonjs registerred
+2017-03-30T01:37:17.812Z - normal: connected!
+2017-03-30T01:37:17.823Z - normal: Check project /Users/dean/Dev/code/CocosCreator/DaDianer
+2017-03-30T01:37:17.831Z - normal: Initializing Cocos2d
+2017-03-30T01:37:18.216Z - normal: Initializing Asset Database
+2017-03-30T01:37:18.262Z - success: protocol uuid registerred
+2017-03-30T01:37:18.263Z - success: protocol db registerred
+2017-03-30T01:37:18.263Z - success: protocol thumbnail registerred
+2017-03-30T01:37:18.264Z - normal: Loading editor/builtin packages
+2017-03-30T01:37:18.500Z - success: assets loaded
+2017-03-30T01:37:18.506Z - success: builder loaded
+2017-03-30T01:37:18.516Z - success: hierarchy loaded
+2017-03-30T01:37:18.523Z - success: inspector loaded
+2017-03-30T01:37:18.526Z - success: keystore loaded
+2017-03-30T01:37:18.540Z - success: node-library loaded
+2017-03-30T01:37:18.547Z - success: preferences loaded
+2017-03-30T01:37:18.573Z - success: project-importer loaded
+2017-03-30T01:37:18.578Z - success: project-settings loaded
+2017-03-30T01:37:18.588Z - success: ui-kit loaded
+2017-03-30T01:37:18.595Z - success: ui-grid loaded
+2017-03-30T01:37:18.602Z - success: scene loaded
+2017-03-30T01:37:18.604Z - success: sprite-editor loaded
+2017-03-30T01:37:18.687Z - success: store loaded
+2017-03-30T01:37:18.696Z - success: timeline loaded
+2017-03-30T01:37:18.696Z - normal: Loading builtin packages
+2017-03-30T01:37:18.703Z - success: anysdk loaded
+2017-03-30T01:37:18.709Z - success: asset-db-debugger loaded
+2017-03-30T01:37:18.711Z - success: code-editor loaded
+2017-03-30T01:37:18.714Z - success: color-picker loaded
+2017-03-30T01:37:18.722Z - success: console loaded
+2017-03-30T01:37:18.728Z - success: package-manager loaded
+2017-03-30T01:37:18.739Z - success: tester loaded
+2017-03-30T01:37:18.745Z - success: ui-kit-preview-extra loaded
+2017-03-30T01:37:18.750Z - success: ui-kit-preview loaded
+2017-03-30T01:37:18.758Z - success: ui-tree loaded
+2017-03-30T01:37:18.850Z - normal: Initializing project /Users/dean/Dev/code/CocosCreator/DaDianer
+2017-03-30T01:37:18.855Z - normal: Loading packages
+2017-03-30T01:37:18.862Z - normal: Watching packages
+2017-03-30T01:37:18.889Z - normal: Run Application
+2017-03-30T01:37:22.193Z - success: preview server running at http://localhost:7456
+2017-03-30T01:37:22.195Z - normal: Compiling scripts...
+2017-03-30T01:37:24.023Z - normal: Compiled project javascript file successfully
+2017-03-30T01:37:27.710Z - normal: 1.4.0
+2017-03-30T01:37:38.594Z - normal: Simulator: WORKAREA WIDTH 1280.00, HEIGHT 690.00
+2017-03-30T01:37:38.595Z - normal: Simulator: FRAME SCALE = 1.00
+2017-03-30T01:37:38.607Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
+2017-03-30T01:37:38.720Z - normal: Simulator: 
+2017-03-30T01:37:38.720Z - normal: Simulator: {
+2017-03-30T01:37:38.720Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
+2017-03-30T01:37:38.721Z - normal: Simulator: 	gl.supports_vertex_array_object: true
+2017-03-30T01:37:38.721Z - normal: Simulator: 	cocos2d.x.version: 1.4.0-lite
+2017-03-30T01:37:38.721Z - normal: Simulator: 	gl.vendor: Intel Inc.
+2017-03-30T01:37:38.721Z - normal: Simulator: 	gl.supports_PVRTC: false
+2017-03-30T01:37:38.722Z - normal: Simulator: 	gl.renderer: Intel Iris OpenGL Engine
+2017-03-30T01:37:38.722Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
+2017-03-30T01:37:38.722Z - normal: Simulator: 	gl.max_texture_size: 16384
+2017-03-30T01:37:38.723Z - normal: Simulator: 	gl.supports_ETC1: false
+2017-03-30T01:37:38.724Z - normal: Simulator: 	gl.supports_BGRA8888: false
+2017-03-30T01:37:38.724Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
+2017-03-30T01:37:38.724Z - normal: Simulator: 	gl.max_texture_units: 16
+2017-03-30T01:37:38.725Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
+2017-03-30T01:37:38.727Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
+2017-03-30T01:37:38.728Z - normal: Simulator: 	gl.supports_NPOT: true
+2017-03-30T01:37:38.728Z - normal: Simulator: 	gl.version: 2.1 INTEL-10.22.29
+2017-03-30T01:37:38.729Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
+2017-03-30T01:37:38.729Z - normal: Simulator: 	gl.supports_OES_depth24: false
+2017-03-30T01:37:38.729Z - normal: Simulator: }
+2017-03-30T01:37:38.730Z - normal: Simulator: 
+2017-03-30T01:37:38.730Z - normal: Simulator: 
+2017-03-30T01:37:38.730Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
+2017-03-30T01:37:38.730Z - normal: Simulator: Project Config:
+2017-03-30T01:37:38.731Z - normal: Simulator:     project dir: /Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/
+2017-03-30T01:37:38.731Z - normal: Simulator:     writable path: $(PROJDIR)/
+2017-03-30T01:37:38.731Z - normal: Simulator:     script file: $(PROJDIR)/main.js
+2017-03-30T01:37:38.732Z - normal: Simulator:     frame size: 960 x 640
+2017-03-30T01:37:38.732Z - normal: Simulator:     frame scale: 1.00
+2017-03-30T01:37:38.732Z - normal: Simulator:     show console: NO
+2017-03-30T01:37:38.732Z - normal: Simulator:     write debug log: NO ()
+2017-03-30T01:37:38.733Z - normal: Simulator:     listen: 
+2017-03-30T01:37:38.733Z - normal: Simulator:     debugger: none
+2017-03-30T01:37:38.733Z - normal: Simulator:     add searching path:
+2017-03-30T01:37:38.734Z - normal: Simulator: ------------------------------------------------
+2017-03-30T01:37:38.734Z - normal: Simulator: LOAD Js FILE: main.js
+2017-03-30T01:37:38.734Z - normal: Simulator: ------------------------------------------------
+2017-03-30T01:37:39.275Z - normal: Simulator: Cocos2d-JS v3.14
+2017-03-30T01:37:39.347Z - normal: Simulator: iShow!
+2017-03-30T01:37:52.139Z - normal: Simulator: /Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:107:Error: Assert 1605, please go to https://github.com/cocos-creator/engine/blob/master/EngineErrorMap.md#1605 to see details. 
+2017-03-30T01:38:11.645Z - normal: Simulator: cp:0
+2017-03-30T01:38:11.646Z - normal: Simulator: winPlayer->
+2017-03-30T01:38:11.646Z - normal: Simulator: for end
+2017-03-30T01:38:11.646Z - normal: Simulator: isWiner:false
+2017-03-30T01:38:12.664Z - normal: Simulator: cp:1
+2017-03-30T01:38:12.665Z - normal: Simulator: winPlayer->
+2017-03-30T01:38:12.665Z - normal: Simulator: for end
+2017-03-30T01:38:12.665Z - normal: Simulator: isWiner:false
+2017-03-30T01:38:12.665Z - normal: Simulator: clearPaiZhuo
+2017-03-30T01:38:12.665Z - normal: Simulator: player:1
+2017-03-30T01:38:12.666Z - normal: Simulator: node:
+2017-03-30T01:38:12.666Z - normal: Simulator: [object Object]
+2017-03-30T01:38:13.680Z - normal: Simulator: cp:2
+2017-03-30T01:38:13.680Z - normal: Simulator: winPlayer->
+2017-03-30T01:38:13.680Z - normal: Simulator: for end
+2017-03-30T01:38:13.681Z - normal: Simulator: isWiner:false
+2017-03-30T01:38:13.681Z - normal: Simulator: clearPaiZhuo
+2017-03-30T01:38:13.681Z - normal: Simulator: [object Object]
+2017-03-30T01:38:13.682Z - normal: Simulator: player:2
+2017-03-30T01:38:13.682Z - normal: Simulator: node:
+2017-03-30T01:38:13.682Z - normal: Simulator: [object Object]
+2017-03-30T01:38:14.795Z - normal: Simulator: cp:3
+2017-03-30T01:38:14.798Z - normal: Simulator: winPlayer->
+2017-03-30T01:38:14.798Z - normal: Simulator: for end
+2017-03-30T01:38:14.798Z - normal: Simulator: isWiner:false
+2017-03-30T01:38:14.799Z - normal: Simulator: clearPaiZhuo
+2017-03-30T01:38:14.799Z - normal: Simulator: [object Object]
+2017-03-30T01:38:14.800Z - normal: Simulator: player:3
+2017-03-30T01:38:14.801Z - normal: Simulator: node:
+2017-03-30T01:38:14.801Z - normal: Simulator: [object Object]
+2017-03-30T01:38:14.983Z - normal: Simulator: basic_object_finalize 0xcd42910 ...
+2017-03-30T01:38:14.983Z - normal: Simulator: jsbindings: finalizing JS object 0xcd42940 (WebSocket)
+2017-03-30T01:38:14.983Z - normal: Simulator: jsbindings: finalizing JS object 0xcd42970 (SocketIO)
+2017-03-30T01:38:14.984Z - normal: Simulator: basic_object_finalize 0xcd42a00 ...
+2017-03-30T01:38:14.984Z - normal: Simulator: basic_object_finalize 0xcd42d00 ...
+2017-03-30T02:14:27.175Z - normal: Compiled project javascript file successfully
+2017-03-30T02:30:28.365Z - normal: Compiled project javascript file successfully
+2017-03-30T02:36:34.750Z - normal: Compiled project javascript file successfully
+2017-03-30T02:44:14.924Z - normal: Compiled project javascript file successfully
+2017-03-30T02:53:07.000Z - normal: Compiled project javascript file successfully
+2017-03-30T02:57:29.679Z - normal: Compiled project javascript file successfully
+2017-03-30T03:03:00.432Z - normal: Compiled project javascript file successfully
+2017-03-30T03:54:38.691Z - normal: Compiled project javascript file successfully
+2017-03-30T05:07:12.239Z - normal: Compiled project javascript file successfully
+2017-03-30T05:13:39.432Z - normal: Compiled project javascript file successfully
+2017-03-30T05:17:01.272Z - normal: Compiled project javascript file successfully
+2017-03-30T05:26:37.316Z - normal: Compiled project javascript file successfully
+2017-03-30T05:27:21.393Z - error: TypeError: Cannot read property '_uuid' of null
+    at Object.PrefabUtils.linkPrefab (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/prefab-utils.js:1:5140)
+    at cc_Node._onHierarchyChanged (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/CCNode.js:1064:36)
+    at cc_Node.set (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/utils/base-node.js:164:26)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:8757
+    at cc_Prefab.cc.Class.createNode (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/assets/CCPrefab.js:56:9)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils.js:1:1068
+    at CCLoader.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/CCAssetLibrary.js:101:17)
+    at /Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/load-pipeline/CCLoader.js:229:38
+    at /Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/utils.js:65:21
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+2017-03-30T05:33:47.963Z - failed: [db-task][sync-changes] Failed to import asset /Users/dean/Dev/code/CocosCreator/DaDianer/assets/script/PaiAn.js, message: Compile error: SyntaxError: unknown: Unexpected token (24:11)
+    onLoad: function () {
+
+        if(){
+
+
+
+    at Parser.pp.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/location.js:24:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/util.js:82:8)
+    at Parser.pp.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:425:12)
+    at Parser.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/plugins/jsx/index.js:412:22)
+    at Parser.pp.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:236:19)
+    at Parser.pp.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:217:19)
+    at Parser.pp.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:163:19)
+    at Parser.pp.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:145:19)
+    at Parser.pp.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:112:19)
+    at Parser.pp.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:79:19)
+2017-03-30T05:34:06.377Z - failed: [db-task][sync-changes] Failed to import asset /Users/dean/Dev/code/CocosCreator/DaDianer/assets/script/PaiAn.js, message: Compile error: SyntaxError: unknown: Unexpected token (24:11)
+    onLoad: function () {
+
+        if(){
+
+
+
+    at Parser.pp.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/location.js:24:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/util.js:82:8)
+    at Parser.pp.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:425:12)
+    at Parser.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/plugins/jsx/index.js:412:22)
+    at Parser.pp.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:236:19)
+    at Parser.pp.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:217:19)
+    at Parser.pp.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:163:19)
+    at Parser.pp.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:145:19)
+    at Parser.pp.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:112:19)
+    at Parser.pp.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:79:19)
+2017-03-30T05:37:18.708Z - normal: Compiled project javascript file successfully
+2017-03-30T05:46:34.989Z - normal: Compiled project javascript file successfully
+2017-03-30T05:50:15.722Z - normal: Compiled project javascript file successfully
+2017-03-30T05:52:12.190Z - normal: Compiled project javascript file successfully
+2017-03-30T05:53:09.319Z - normal: Compiled project javascript file successfully
+2017-03-30T05:54:56.450Z - normal: Compiled project javascript file successfully
+2017-03-30T06:01:23.523Z - normal: Compiled project javascript file successfully
+2017-03-30T06:02:47.707Z - normal: Compiled project javascript file successfully
+2017-03-30T06:05:43.285Z - normal: Compiled project javascript file successfully
+2017-03-30T06:06:51.748Z - normal: Compiled project javascript file successfully
+2017-03-30T06:10:09.752Z - normal: Compiled project javascript file successfully
+2017-03-30T06:11:54.975Z - normal: Compiled project javascript file successfully
+2017-03-30T06:16:24.668Z - normal: Compiled project javascript file successfully
+2017-03-30T06:19:54.784Z - normal: Compiled project javascript file successfully
+2017-03-30T06:20:48.605Z - normal: Compiled project javascript file successfully
+2017-03-30T06:23:30.246Z - normal: Compiled project javascript file successfully
+2017-03-30T06:29:36.208Z - normal: Compiled project javascript file successfully
+2017-03-30T06:31:16.897Z - normal: Compiled project javascript file successfully
+2017-03-30T06:32:24.658Z - normal: Compiled project javascript file successfully
+2017-03-30T06:46:53.668Z - normal: Compiled project javascript file successfully
+2017-03-30T06:46:59.932Z - info: shutdown preview server

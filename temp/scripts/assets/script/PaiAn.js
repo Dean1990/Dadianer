@@ -1,18 +1,23 @@
 "use strict";
 cc._RFpush(module, 'b3ac1KyqV9HV74OMXSKmVzK', 'PaiAn');
-// script\PaiAn.js
+// script/PaiAn.js
 
 var com = require('Common');
 cc.Class({
-    'extends': cc.Component,
+    "extends": cc.Component,
 
     properties: {
 
         player: {
 
-            'default': null,
+            "default": null,
             type: cc.Sprite
 
+        },
+
+        xuanZhuanBtn: {
+            "default": null,
+            type: cc.Button
         }
 
     },
@@ -20,8 +25,13 @@ cc.Class({
     // use this for initialization
     onLoad: function onLoad() {
 
+        //cc.log(this.xuanZhuanBtn);
+
+        this.xuanZhuanBtn.enabled = com.checkEnableXuanZhan(this.player.shouPai) != 0;
+
         this.player.xuanPai = new Array();
 
+        //玩家头像
         var node = this.player.node;
 
         // cc.director.getScene().addChild(node);
@@ -32,6 +42,26 @@ cc.Class({
 
         //展示手牌
         this.drawPai();
+    },
+
+    /**
+     * 点击宣战
+     */
+    xuanZhan: function xuanZhan() {
+
+        var isEnableXuanZhan = com.checkEnableXuanZhan(this.player.shouPai);
+
+        if (isEnableXuanZhan == 1) {
+
+            player.actionLabel.string = "宣战";
+        } else if (isEnableXuanZhan == 2) {
+
+            player.actionLabel.string = "跟";
+        }
+
+        this.xuanZhuanBtn.enabled = false;
+
+        this.player.isXuanZhan = true;
     },
 
     // called every frame, uncomment this function to activate update callback
@@ -48,6 +78,8 @@ cc.Class({
 
         //出牌合法性
         if (com.checkChuPai(self.player.xuanPai, 0)) {
+
+            this.xuanZhuanBtn.enabled = false;
 
             //移除TOUCH监听
             for (var m = 0; m < self.player.shouPai.length; m++) {
@@ -128,6 +160,8 @@ cc.Class({
     },
 
     buChuPai: function buChuPai() {
+
+        this.xuanZhuanBtn.enabled = false;
 
         com.nextPlayer();
     },

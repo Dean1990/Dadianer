@@ -227,8 +227,12 @@ cc.Class({
             }
 
         }
-
+        //初始化胜利者数组
         com.winPlayer = new Array();
+        //初始化一伙数组
+        com.partyPlayers = new Array();
+        com.partyPlayers.push(new Array());//有鬼的
+        com.partyPlayers.push(new Array());//没鬼的
 
         com.players[0].isAI = false;
         com.players[1].isAI = true;
@@ -262,6 +266,8 @@ cc.Class({
 
         //如果是机器人，指定出牌
         if(com._currentPlayer!=0 && com.players[com._currentPlayer].isAI){
+
+            com.rounds = 1;
 
             com.players[com._currentPlayer].toggle();
 

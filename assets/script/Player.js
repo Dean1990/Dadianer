@@ -26,11 +26,18 @@ cc.Class({
             type:cc.Label,
         },
 
+        xuanZhan:{
+            default:null,
+            type:cc.Label,
+        },
+
         isAI:null,//是否是AI
 
         shouPai:null,//手牌
 
         xuanPai:null,//选中的牌
+
+        isXuanZhan:false,//是否宣战
 
         
     },
@@ -42,6 +49,11 @@ cc.Class({
 
     // called every frame, uncomment this function to activate update callback
     update: function (dt) {
+
+        if(this.isXuanZhan){
+            this.xuanZhan.string = "宣";
+        }
+        
 
         if(this.shouPai!=null){
             this.shouPaiNum.string = this.shouPai.length;

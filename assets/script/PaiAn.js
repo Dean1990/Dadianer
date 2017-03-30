@@ -9,17 +9,26 @@ cc.Class({
             default:null,
             type:cc.Sprite,
 
-        }
+        },
+
+        xuanZhuanBtn:{
+            default:null,
+            type:cc.Button,
+        },
 
     },
 
     // use this for initialization
     onLoad: function () {
 
+        //cc.log(this.xuanZhuanBtn);
+
+        this.xuanZhuanBtn.enabled= com.checkEnableXuanZhan(this.player.shouPai)!=0;
+
         this.player.xuanPai = new Array();
 
         
-
+        //玩家头像
         var node = this.player.node;
 
         // cc.director.getScene().addChild(node);
@@ -30,6 +39,29 @@ cc.Class({
 
         //展示手牌
         this.drawPai();
+
+    },
+
+    /**
+     * 点击宣战
+     */
+    xuanZhan:function(){
+
+        var isEnableXuanZhan = com.checkEnableXuanZhan(this.player.shouPai);
+
+        if(isEnableXuanZhan==1){
+
+            player.actionLabel.string = "宣战";
+
+        }else if(isEnableXuanZhan==2){
+
+            player.actionLabel.string = "跟";
+
+        }
+
+        this.xuanZhuanBtn.enabled=false;
+
+        this.player.isXuanZhan = true;
 
     },
 
@@ -47,6 +79,8 @@ cc.Class({
 
         //出牌合法性
         if(com.checkChuPai(self.player.xuanPai,0)){
+
+            this.xuanZhuanBtn.enabled =false;
 
             //移除TOUCH监听
             for(var m = 0;m<self.player.shouPai.length;m++){
@@ -137,6 +171,8 @@ cc.Class({
 
     
     buChuPai:function(){
+
+        this.xuanZhuanBtn.enabled=false;
 
         com.nextPlayer();
 
