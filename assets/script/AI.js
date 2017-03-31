@@ -10,7 +10,7 @@ module.exports = {
 
                 com._lastPai = null;
 
-            }else if(com.isPlayerParty(com._currentPlayer,event.windPNum)){
+            }else if(com.isPlayerParty(com._currentPlayer,getWindNum)){
                 //队友  不出
                 com.nextPlayer(null,"给风",getWindNum);
 
@@ -46,11 +46,11 @@ module.exports = {
 
         if(com._lastPai==null||com._lastPai.length==0){
 
-            firstChuPai();
+            this.firstChuPai(player);
 
         }else {
 
-            var pais = getEnableChuPai();
+            var pais = this.getEnableChuPai(player);
 
             var message = null;
 
@@ -81,7 +81,7 @@ module.exports = {
     /**
      * 第一个出牌
      */
-    firstChuPai:function(){
+    firstChuPai:function(player){
 
         var weightArr = this.analyze(player.shouPai);
 
@@ -99,7 +99,7 @@ module.exports = {
     /**
      * 计算出可以出的牌
      */
-    getEnableChuPai:function(){
+    getEnableChuPai:function(player){
 
             var weightArr = this.analyze(player.shouPai);
 
@@ -309,24 +309,6 @@ module.exports = {
 
     },
 
-    // called every frame, uncomment this function to activate update callback
-    // update: function (dt) {
-
-    // },
-
-    // onGetWind:function(event){
-
-    //     if(com.isPlayerParty(event.pNum,event.windPNum)){
-    //         //队友
-    //         com.agreeGetWind(true);
-
-    //     }else{
-    //         //管不起只能给
-    //         com.agreeGetWind(getEnableChuPai(this.analyze(com.players[event.pNum]))==null);
-
-    //     }
-
-    // },
 
     
 

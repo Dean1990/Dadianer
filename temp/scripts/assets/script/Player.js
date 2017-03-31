@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, '8c5d8QamBFBuaHZjtQBUcp+', 'Player');
-// script/Player.js
+// script\Player.js
 
 'use strict';
 

@@ -1,70 +1,59 @@
-2017-03-31T04:46:51.246Z - normal: Load ~/.CocosCreator/settings.json
-2017-03-31T04:46:51.251Z - normal: checking language setting...
-2017-03-31T04:46:51.252Z - normal: Language: zh
-2017-03-31T04:46:51.709Z - success: protocol editor-framework registered
-2017-03-31T04:46:51.710Z - success: protocol app registered
-2017-03-31T04:46:51.710Z - success: protocol theme registered
-2017-03-31T04:46:51.710Z - success: protocol profile registered
-2017-03-31T04:46:51.710Z - success: protocol packages registered
-2017-03-31T04:46:51.713Z - success: protocol unpack registerred
-2017-03-31T04:46:51.713Z - success: protocol disable-commonjs registerred
-2017-03-31T04:46:51.906Z - normal: connected!
-2017-03-31T04:46:51.908Z - normal: Check project /Users/dean/Dev/code/CocosCreator/DaDianer
-2017-03-31T04:46:51.911Z - normal: Initializing Cocos2d
-2017-03-31T04:46:52.138Z - normal: Initializing Asset Database
-2017-03-31T04:46:52.158Z - success: protocol uuid registerred
-2017-03-31T04:46:52.158Z - success: protocol db registerred
-2017-03-31T04:46:52.158Z - success: protocol thumbnail registerred
-2017-03-31T04:46:52.159Z - normal: Loading editor/builtin packages
-2017-03-31T04:46:52.292Z - success: assets loaded
-2017-03-31T04:46:52.295Z - success: builder loaded
-2017-03-31T04:46:52.304Z - success: hierarchy loaded
-2017-03-31T04:46:52.309Z - success: inspector loaded
-2017-03-31T04:46:52.311Z - success: keystore loaded
-2017-03-31T04:46:52.316Z - success: node-library loaded
-2017-03-31T04:46:52.318Z - success: preferences loaded
-2017-03-31T04:46:52.334Z - success: project-importer loaded
-2017-03-31T04:46:52.337Z - success: project-settings loaded
-2017-03-31T04:46:52.340Z - success: ui-kit loaded
-2017-03-31T04:46:52.345Z - success: ui-grid loaded
-2017-03-31T04:46:52.350Z - success: scene loaded
-2017-03-31T04:46:52.352Z - success: sprite-editor loaded
-2017-03-31T04:46:52.404Z - success: store loaded
-2017-03-31T04:46:52.410Z - success: timeline loaded
-2017-03-31T04:46:52.410Z - normal: Loading builtin packages
-2017-03-31T04:46:52.415Z - success: anysdk loaded
-2017-03-31T04:46:52.418Z - success: asset-db-debugger loaded
-2017-03-31T04:46:52.420Z - success: code-editor loaded
-2017-03-31T04:46:52.421Z - success: color-picker loaded
-2017-03-31T04:46:52.426Z - success: console loaded
-2017-03-31T04:46:52.430Z - success: package-manager loaded
-2017-03-31T04:46:52.435Z - success: tester loaded
-2017-03-31T04:46:52.438Z - success: ui-kit-preview-extra loaded
-2017-03-31T04:46:52.442Z - success: ui-kit-preview loaded
-2017-03-31T04:46:52.446Z - success: ui-tree loaded
-2017-03-31T04:46:52.488Z - normal: Initializing project /Users/dean/Dev/code/CocosCreator/DaDianer
-2017-03-31T04:46:52.491Z - normal: Loading packages
-2017-03-31T04:46:52.495Z - normal: Watching packages
-2017-03-31T04:46:52.508Z - normal: Run Application
-2017-03-31T04:46:54.870Z - success: preview server running at http://localhost:7456
-2017-03-31T04:46:54.870Z - normal: Compiling scripts...
-2017-03-31T04:46:56.607Z - normal: Compiled project javascript file successfully
-2017-03-31T04:47:01.002Z - normal: 1.4.2
-2017-03-31T04:57:52.889Z - normal: Compiled project javascript file successfully
-2017-03-31T05:13:07.845Z - normal: Compiled project javascript file successfully
-2017-03-31T05:30:35.166Z - normal: Compiled project javascript file successfully
-2017-03-31T05:34:26.406Z - normal: Compiled project javascript file successfully
-2017-03-31T05:36:14.672Z - normal: Compiled project javascript file successfully
-2017-03-31T05:41:17.035Z - normal: Compiled project javascript file successfully
-2017-03-31T05:56:04.568Z - normal: Compiled project javascript file successfully
-2017-03-31T06:18:12.161Z - normal: Compiled project javascript file successfully
-2017-03-31T06:26:48.588Z - normal: Compiled project javascript file successfully
-2017-03-31T07:08:22.478Z - normal: Compiled project javascript file successfully
-2017-03-31T07:10:52.665Z - normal: Compiled project javascript file successfully
-2017-03-31T07:40:04.535Z - normal: Compiled project javascript file successfully
-2017-03-31T07:42:32.940Z - normal: Compiled project javascript file successfully
-2017-03-31T08:09:38.597Z - normal: Compiled project javascript file successfully
-2017-03-31T09:36:26.146Z - normal: Compiled project javascript file successfully
-2017-03-31T09:39:48.727Z - normal: Compiled project javascript file successfully
-2017-03-31T09:58:24.320Z - normal: Compiled project javascript file successfully
-2017-03-31T10:18:14.121Z - info: shutdown preview server
+2017-03-31T13:56:19.597Z - normal: Load ~/.CocosCreator/settings.json
+2017-03-31T13:56:19.602Z - normal: checking language setting...
+2017-03-31T13:56:19.603Z - normal: Language: zh
+2017-03-31T13:56:21.827Z - success: protocol editor-framework registered
+2017-03-31T13:56:21.828Z - success: protocol app registered
+2017-03-31T13:56:21.828Z - success: protocol theme registered
+2017-03-31T13:56:21.828Z - success: protocol profile registered
+2017-03-31T13:56:21.828Z - success: protocol packages registered
+2017-03-31T13:56:21.828Z - success: protocol unpack registerred
+2017-03-31T13:56:21.828Z - success: protocol disable-commonjs registerred
+2017-03-31T13:56:21.938Z - normal: connected!
+2017-03-31T13:56:21.942Z - normal: Check project K:\Code\CocosCreatorProjects\Dadianer
+2017-03-31T13:56:21.946Z - normal: Initializing Cocos2d
+2017-03-31T13:56:22.259Z - normal: Initializing Asset Database
+2017-03-31T13:56:22.308Z - success: protocol uuid registerred
+2017-03-31T13:56:22.308Z - success: protocol db registerred
+2017-03-31T13:56:22.309Z - success: protocol thumbnail registerred
+2017-03-31T13:56:22.309Z - normal: Loading editor/builtin packages
+2017-03-31T13:56:22.564Z - success: assets loaded
+2017-03-31T13:56:22.568Z - success: builder loaded
+2017-03-31T13:56:22.573Z - success: hierarchy loaded
+2017-03-31T13:56:22.576Z - success: inspector loaded
+2017-03-31T13:56:22.579Z - success: keystore loaded
+2017-03-31T13:56:22.582Z - success: node-library loaded
+2017-03-31T13:56:22.586Z - success: preferences loaded
+2017-03-31T13:56:22.633Z - success: project-importer loaded
+2017-03-31T13:56:22.638Z - success: project-settings loaded
+2017-03-31T13:56:22.641Z - success: ui-kit loaded
+2017-03-31T13:56:22.647Z - success: ui-grid loaded
+2017-03-31T13:56:22.651Z - success: scene loaded
+2017-03-31T13:56:22.657Z - success: sprite-editor loaded
+2017-03-31T13:56:22.829Z - success: store loaded
+2017-03-31T13:56:22.841Z - success: timeline loaded
+2017-03-31T13:56:22.841Z - normal: Loading builtin packages
+2017-03-31T13:56:22.854Z - success: anysdk loaded
+2017-03-31T13:56:22.857Z - success: asset-db-debugger loaded
+2017-03-31T13:56:22.860Z - success: code-editor loaded
+2017-03-31T13:56:22.871Z - success: color-picker loaded
+2017-03-31T13:56:22.874Z - success: console loaded
+2017-03-31T13:56:22.877Z - success: package-manager loaded
+2017-03-31T13:56:22.880Z - success: tester loaded
+2017-03-31T13:56:22.881Z - success: ui-kit-preview-extra loaded
+2017-03-31T13:56:22.883Z - success: ui-kit-preview loaded
+2017-03-31T13:56:22.888Z - success: ui-tree loaded
+2017-03-31T13:56:22.971Z - normal: Initializing project K:\Code\CocosCreatorProjects\Dadianer
+2017-03-31T13:56:22.975Z - normal: Loading packages
+2017-03-31T13:56:22.979Z - normal: Watching packages
+2017-03-31T13:56:23.008Z - normal: Run Application
+2017-03-31T13:56:27.658Z - success: preview server running at http://localhost:7456
+2017-03-31T13:56:27.659Z - normal: Compiling scripts...
+2017-03-31T13:56:30.583Z - normal: Compiled project javascript file successfully
+2017-03-31T13:56:36.039Z - normal: 1.4.2
+2017-03-31T14:36:47.968Z - normal: Compiled project javascript file successfully
+2017-03-31T14:37:53.520Z - normal: Compiled project javascript file successfully
+2017-03-31T14:38:34.566Z - normal: Compiled project javascript file successfully
+2017-03-31T14:42:38.421Z - normal: Compiled project javascript file successfully
+2017-03-31T14:43:33.699Z - normal: Compiled project javascript file successfully
+2017-03-31T14:45:12.257Z - normal: Compiled project javascript file successfully
+2017-03-31T15:35:12.893Z - info: shutdown preview server

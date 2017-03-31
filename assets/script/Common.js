@@ -78,7 +78,7 @@ module.exports = {
 
                 // this._buChuNum = this._buChuNum + 1;
                 //不出
-                if(mssage==null){
+                if(message==null){
 
                     message = "不出";
 
@@ -604,38 +604,5 @@ module.exports = {
 
     },
 
-    /**
-     * 要风
-     */
-    getWind:function(){
-
-        for(var i = 0;i<this.playerNum;i++){
-
-            if(i!=this._currentPlayer && this.winPlayer.indexOf(i)==-1){
-
-                this.players.note.emit("GET_WIND",{pNum:i,windPNum:this._currentPlayer});
-
-            }
-
-        }
-
-    },
-
-    /**
-     * 给风投票
-     */
-    agreeGetWind:function(isAgree){
-
-        this.voteGetWindNum = voteGetWindNum+1;
-
-        if((this.playerNum - this.winPlayer.length-1) == this.voteGetWindNum){
-
-
-
-        }
-
-    },
-
-    
 
 };

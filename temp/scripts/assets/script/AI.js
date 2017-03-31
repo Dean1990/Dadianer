@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, '3865cNvozdCB615DN8X95x0', 'AI');
-// script/AI.js
+// script\AI.js
 
 "use strict";
 
@@ -15,7 +15,7 @@ module.exports = {
             if (getWindNum == com._currentPlayer) {
 
                 com._lastPai = null;
-            } else if (com.isPlayerParty(com._currentPlayer, event.windPNum)) {
+            } else if (com.isPlayerParty(com._currentPlayer, getWindNum)) {
                 //队友  不出
                 com.nextPlayer(null, "给风", getWindNum);
 
@@ -46,10 +46,10 @@ module.exports = {
 
         if (com._lastPai == null || com._lastPai.length == 0) {
 
-            firstChuPai();
+            this.firstChuPai(player);
         } else {
 
-            var pais = getEnableChuPai();
+            var pais = this.getEnableChuPai(player);
 
             var message = null;
 
@@ -75,7 +75,7 @@ module.exports = {
     /**
      * 第一个出牌
      */
-    firstChuPai: function firstChuPai() {
+    firstChuPai: function firstChuPai(player) {
 
         var weightArr = this.analyze(player.shouPai);
 
@@ -91,7 +91,7 @@ module.exports = {
     /**
      * 计算出可以出的牌
      */
-    getEnableChuPai: function getEnableChuPai() {
+    getEnableChuPai: function getEnableChuPai(player) {
 
         var weightArr = this.analyze(player.shouPai);
 

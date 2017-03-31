@@ -206,9 +206,6 @@ cc.Class({
 
             node.getComponent('Player').currentTag.setVisible(false);
 
-            //绑定请求给风
-            node.on("GET_WIND", ai.onGetWind);
-
             com.players.push(node.getComponent('Player'));
         }
 
@@ -272,7 +269,7 @@ cc.Class({
 
             com.rounds = 1;
 
-            com.players[com._currentPlayer].toggle();
+            com.players[com._currentPlayer].toggle(-1);
         }
 
         // for(var n = 0;n<pp.length;n++){

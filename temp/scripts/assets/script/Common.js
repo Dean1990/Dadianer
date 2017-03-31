@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, '2ce3dajz81FDajDPh6cF69x', 'Common');
-// script/Common.js
+// script\Common.js
 
 "use strict";
 
@@ -79,7 +79,7 @@ module.exports = {
 
             // this._buChuNum = this._buChuNum + 1;
             //不出
-            if (mssage == null) {
+            if (message == null) {
 
                 message = "不出";
             }
@@ -526,30 +526,6 @@ module.exports = {
     isPlayerParty: function isPlayerParty(pNum, pNum2) {
 
         return pNum != pNum2 && this.partyPlayers.indexOf(pNum) == -1 ^ this.partyPlayers.indexOf(pNum2) == -1;
-    },
-
-    /**
-     * 要风
-     */
-    getWind: function getWind() {
-
-        for (var i = 0; i < this.playerNum; i++) {
-
-            if (i != this._currentPlayer && this.winPlayer.indexOf(i) == -1) {
-
-                this.players.note.emit("GET_WIND", { pNum: i, windPNum: this._currentPlayer });
-            }
-        }
-    },
-
-    /**
-     * 给风投票
-     */
-    agreeGetWind: function agreeGetWind(isAgree) {
-
-        this.voteGetWindNum = voteGetWindNum + 1;
-
-        if (this.playerNum - this.winPlayer.length - 1 == this.voteGetWindNum) {}
     }
 
 };
