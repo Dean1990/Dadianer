@@ -1,17 +1,19 @@
+'use strict';
+
 var com = require('Common');
 
 cc.Class({
-    'extends': cc.Component,
+    extends: cc.Component,
 
     properties: {
 
         player: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
 
         paiAn: {
-            'default': null,
+            default: null,
             type: cc.Sprite
         },
 
@@ -27,52 +29,52 @@ cc.Class({
         // ...
 
         a1: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         a2: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         a3: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         a5: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         a10: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         a11: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         a12: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         a13: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
 
         b1: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         b2: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         b3: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         b5: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         // b10:{
@@ -80,65 +82,65 @@ cc.Class({
         //     type:cc.Prefab,
         // },
         b11: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         b12: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         b13: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
 
         c1: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         c2: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         c3: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         c5: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         c10: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         c11: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         c12: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         c13: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
 
         d1: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         d2: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         d3: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         d5: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         // d10:{
@@ -146,24 +148,24 @@ cc.Class({
         //     type:cc.Prefab,
         // },
         d11: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         d12: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         d13: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
 
         E0: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         },
         E1: {
-            'default': null,
+            default: null,
             type: cc.Prefab
         }
 
@@ -204,8 +206,14 @@ cc.Class({
 
             node.getComponent('Player').currentTag.setVisible(false);
 
+            //绑定请求给风
+            node.on("GET_WIND", ai.onGetWind);
+
             com.players.push(node.getComponent('Player'));
         }
+
+        //初始化同一伙数组
+        com.partyPlayers = new Array();
 
         for (var i = 0; i < com.paiNum; i++) {
 
@@ -219,13 +227,15 @@ cc.Class({
 
                 com.setFirstPlayer(j);
             }
+
+            if (sprite._name.substring(0, 1) == "E") {
+                //记录大小鬼同一伙
+                com.partyPlayers.push(j);
+            }
         }
+
         //初始化胜利者数组
         com.winPlayer = new Array();
-        //初始化一伙数组
-        com.partyPlayers = new Array();
-        com.partyPlayers.push(new Array()); //有鬼的
-        com.partyPlayers.push(new Array()); //没鬼的
 
         com.players[0].isAI = false;
         com.players[1].isAI = true;

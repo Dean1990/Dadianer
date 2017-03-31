@@ -2,21 +2,23 @@
 cc._RFpush(module, 'b3ac1KyqV9HV74OMXSKmVzK', 'PaiAn');
 // script/PaiAn.js
 
+"use strict";
+
 var com = require('Common');
 cc.Class({
-    "extends": cc.Component,
+    extends: cc.Component,
 
     properties: {
 
         player: {
 
-            "default": null,
+            default: null,
             type: cc.Sprite
 
         },
 
         xuanZhuanBtn: {
-            "default": null,
+            default: null,
             type: cc.Button
         }
 
@@ -27,7 +29,15 @@ cc.Class({
 
         //cc.log(this.xuanZhuanBtn);
 
-        this.xuanZhuanBtn.enabled = com.checkEnableXuanZhan(this.player.shouPai) != 0;
+        if (com.checkEnableXuanZhan(0) != 0) {
+
+            this.xuanZhuanBtn.enabled = true;
+        } else {
+
+            //this.xuanZhuanBtn.node.removeFromParent();
+
+            this.xuanZhuanBtn.node.destroy();
+        }
 
         this.player.xuanPai = new Array();
 
@@ -49,15 +59,18 @@ cc.Class({
      */
     xuanZhan: function xuanZhan() {
 
-        var isEnableXuanZhan = com.checkEnableXuanZhan(this.player.shouPai);
+        var isEnableXuanZhan = com.checkEnableXuanZhan();
 
         if (isEnableXuanZhan == 1) {
 
-            player.actionLabel.string = "宣战";
+            this.player.actionLabel.string = "宣战";
         } else if (isEnableXuanZhan == 2) {
 
-            player.actionLabel.string = "跟";
+            this.player.actionLabel.string = "跟";
         }
+
+        //宣战 修改全局变量
+        com.isXuanZhan = true;
 
         this.xuanZhuanBtn.enabled = false;
 
@@ -79,7 +92,10 @@ cc.Class({
         //出牌合法性
         if (com.checkChuPai(self.player.xuanPai, 0)) {
 
-            this.xuanZhuanBtn.enabled = false;
+            if (this.xuanZhuanBtn != null && this.xuanZhuanBtn.isValid) {
+
+                this.xuanZhuanBtn.enabled = false;
+            }
 
             //移除TOUCH监听
             for (var m = 0; m < self.player.shouPai.length; m++) {
@@ -161,7 +177,9 @@ cc.Class({
 
     buChuPai: function buChuPai() {
 
-        this.xuanZhuanBtn.enabled = false;
+        if (this.xuanZhuanBtn != null && this.xuanZhuanBtn.isValid) {
+            this.xuanZhuanBtn.enabled = false;
+        }
 
         com.nextPlayer();
     },
@@ -186,9 +204,16 @@ cc.Class({
             // cc.log(pai);
             // cc.log("self.node:");
             // cc.log(self.node);
-            self.node.addChild(pai);
+
+            if (pai.parent != self.node) {
+
+                self.node.addChild(pai);
+            }
+
+            var p = cc.p(-(pai.width + (num - 1) * 30) / 2 + pai.width / 2 + i * 30, 0);
+
             // pai.setScale(0.5);
-            pai.setPosition(cc.p(-(pai.width + (num - 1) * 30) / 2 + pai.width / 2 + i * 30, 0));
+            pai.setPosition(p);
             pai.on(cc.Node.EventType.TOUCH_START, self.touchPai, this);
         }
     },

@@ -208,9 +208,15 @@ cc.Class({
 
             node.getComponent('Player').currentTag.setVisible(false);
 
+            //绑定请求给风
+            node.on("GET_WIND",ai.onGetWind);
+
             com.players.push(node.getComponent('Player'));
 
         }
+
+        //初始化同一伙数组
+        com.partyPlayers = new Array();
 
         for(var i = 0;i<com.paiNum;i++){
 
@@ -226,13 +232,18 @@ cc.Class({
 
             }
 
+            if(sprite._name.substring(0,1)=="E"){
+                //记录大小鬼同一伙
+                com.partyPlayers.push(j);
+
+            }
+
         }
+
+
         //初始化胜利者数组
         com.winPlayer = new Array();
-        //初始化一伙数组
-        com.partyPlayers = new Array();
-        com.partyPlayers.push(new Array());//有鬼的
-        com.partyPlayers.push(new Array());//没鬼的
+        
 
         com.players[0].isAI = false;
         com.players[1].isAI = true;

@@ -60,13 +60,13 @@ cc.Class({
         }
     },
 
-    toggle: function(){
+    toggle: function(getWindNum){
 
         if(this.isAI){
 
             this.scheduleOnce(function(){
 
-                ai.chuPai(this);
+                ai.chuPai(this,getWindNum);
 
             },1);
 

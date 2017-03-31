@@ -1,16 +1,35 @@
+"use strict";
+
 var com = require('Common');
 module.exports = {
 
-    chuPai: function chuPai(player) {
+    chuPai: function chuPai(player, getWindNum) {
+
+        //有人要风
+        if (getWindNum != -1) {
+
+            if (getWindNum == com._currentPlayer) {
+
+                com._lastPai = null;
+            } else if (com.isPlayerParty(com._currentPlayer, event.windPNum)) {
+                //队友  不出
+                com.nextPlayer(null, "给风", getWindNum);
+
+                return;
+            }
+        }
 
         com.sortPai(player.shouPai);
 
-        var isEnableXuanZhan = com.checkEnableXuanZhan(player.shouPai);
+        var isEnableXuanZhan = com.checkEnableXuanZhan();
 
         if (isEnableXuanZhan != 0) {
             //可以宣战
             //设置宣战
             player.isXuanZhan = true;
+
+            //宣战 修改全局变量
+            com.isXuanZhan = true;
 
             if (isEnableXuanZhan == 1) {
 
@@ -21,55 +40,83 @@ module.exports = {
             }
         }
 
-        var weightArr = this.analyze(player.shouPai);
-
-        this.sortWeightArr(weightArr);
-
         if (com._lastPai == null || com._lastPai.length == 0) {
 
-            //出一个最小权值的组合
-            if (weightArr.length > 0) {
-
-                var pais = player.shouPai.splice(weightArr[0][1], weightArr[0][2]);
-
-                com.nextPlayer(pais);
-            }
+            firstChuPai();
         } else {
 
-            var lastWeight = com.convertValueMore(com._lastPai);
+            var pais = getEnableChuPai();
 
-            var isBuChuPai = true;
+            var message = null;
 
-            for (var i = 0; i < weightArr.length; i++) {
+            var pNum = -1;
 
-                var weight = weightArr[i][0];
+            if (pais != null && pais.length > 0) {
+                //有人要风
+                if (getWindNum != -1) {
 
-                if (weight > lastWeight && (com._lastPai.length == 1 && (weight <= 180 || weight > 1600) || com._lastPai.length > 1)) {
-
-                    //  var canvas = cc.director.getScene().getChildByName('Canvas');
-
-                    //  cc.log(canvas);
-                    //出牌
-                    var pais = player.shouPai.splice(weightArr[i][1], weightArr[i][2]);
-
-                    //清空牌桌
-                    //com.clearPaiZhuo();
-
-                    //this.chuPaiAction(pais);
-
-                    com.nextPlayer(pais);
-
-                    isBuChuPai = false;
-
-                    break;
+                    message = "不给";
                 }
+            } else {
+
+                message = "给风";
+
+                pNum = getWindNum;
             }
 
-            if (isBuChuPai) {
+            com.nextPlayer(pais, message, pNum);
+        }
+    },
 
-                com.nextPlayer();
+    /**
+     * 第一个出牌
+     */
+    firstChuPai: function firstChuPai() {
+
+        var weightArr = this.analyze(player.shouPai);
+
+        //出一个最小权值的组合
+        if (weightArr.length > 0) {
+
+            var pais = player.shouPai.splice(weightArr[0][1], weightArr[0][2]);
+
+            com.nextPlayer(pais);
+        }
+    },
+
+    /**
+     * 计算出可以出的牌
+     */
+    getEnableChuPai: function getEnableChuPai() {
+
+        var weightArr = this.analyze(player.shouPai);
+
+        var lastWeight = com.convertValueMore(com._lastPai);
+
+        //要出的牌
+        var pais = null;
+
+        for (var i = 0; i < weightArr.length; i++) {
+
+            var weight = weightArr[i][0];
+
+            if (weight > lastWeight && (com._lastPai.length == 1 && (weight <= 180 || weight > 1600) || com._lastPai.length > 1)) {
+
+                //上一张牌是否是队友出的
+                if (com.isPlayerParty(com._currentPlayer, com.lastPlayerNum) && (com._lastPai.length == 1 && weight > 140 || com._lastPai.length > 1 && weight > 1400)) {
+                    //不怼队友
+                    //大于A或者大于对A 不出
+                } else {
+
+                    //出牌
+                    pais = player.shouPai.splice(weightArr[i][1], weightArr[i][2]);
+                }
+
+                break;
             }
         }
+
+        return pais;
     },
 
     /**
@@ -141,6 +188,7 @@ module.exports = {
             // for(var j = 0;j<pais.length;j++){
             //     cc.log(pais[j]._name);
             // }
+
 
             for (var i = 0; i < pais.length; i++) {
 
@@ -225,11 +273,9 @@ module.exports = {
             }
         }
 
+        this.sortWeightArr(weightArr);
+
         return weightArr;
     }
 
 };
-// called every frame, uncomment this function to activate update callback
-// update: function (dt) {
-
-// },

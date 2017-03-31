@@ -1,16 +1,36 @@
 var com = require('Common');
 module.exports = {
 
-    chuPai: function (player){
+    chuPai: function (player,getWindNum){
+
+        //有人要风
+        if(getWindNum!=-1){
+
+            if(getWindNum==com._currentPlayer){
+
+                com._lastPai = null;
+
+            }else if(com.isPlayerParty(com._currentPlayer,event.windPNum)){
+                //队友  不出
+                com.nextPlayer(null,"给风",getWindNum);
+
+                return;
+                
+            }
+
+        }
 
         com.sortPai(player.shouPai)
 
-        var isEnableXuanZhan = com.checkEnableXuanZhan(player.shouPai);
+        var isEnableXuanZhan = com.checkEnableXuanZhan();
 
         if(isEnableXuanZhan!=0){
             //可以宣战
             //设置宣战
             player.isXuanZhan = true;
+
+            //宣战 修改全局变量
+            com.isXuanZhan = true;
 
             if(isEnableXuanZhan==1){
 
@@ -22,29 +42,71 @@ module.exports = {
 
             }
             
-
         }
-
-        var weightArr = this.analyze(player.shouPai);
-
-        this.sortWeightArr(weightArr);
 
         if(com._lastPai==null||com._lastPai.length==0){
 
-            //出一个最小权值的组合
-            if(weightArr.length>0){
-
-                var pais = player.shouPai.splice(weightArr[0][1],weightArr[0][2]);
-
-                com.nextPlayer(pais);
-
-            }
+            firstChuPai();
 
         }else {
 
+            var pais = getEnableChuPai();
+
+            var message = null;
+
+            var pNum = -1;
+
+            if(pais!=null && pais.length>0){
+                //有人要风
+                if(getWindNum!=-1){
+
+                    message = "不给";
+                }
+                
+            }else{
+            
+                message = "给风";
+
+                pNum = getWindNum;
+
+            }
+
+            com.nextPlayer(pais,message,pNum);
+
+            
+        }
+
+    },
+
+    /**
+     * 第一个出牌
+     */
+    firstChuPai:function(){
+
+        var weightArr = this.analyze(player.shouPai);
+
+        //出一个最小权值的组合
+        if(weightArr.length>0){
+
+            var pais = player.shouPai.splice(weightArr[0][1],weightArr[0][2]);
+
+            com.nextPlayer(pais);
+
+        }
+
+    },
+
+    /**
+     * 计算出可以出的牌
+     */
+    getEnableChuPai:function(){
+
+            var weightArr = this.analyze(player.shouPai);
+
             var lastWeight = com.convertValueMore(com._lastPai);
 
-            var isBuChuPai = true;
+            //要出的牌
+            var pais = null;
 
             for(var i = 0;i<weightArr.length;i++){
 
@@ -52,20 +114,16 @@ module.exports = {
 
                 if(weight>lastWeight && (((com._lastPai.length==1 && (weight<=180 || weight>1600))||com._lastPai.length>1))){
 
-                    //  var canvas = cc.director.getScene().getChildByName('Canvas');
+                    //上一张牌是否是队友出的
+                    if(com.isPlayerParty(com._currentPlayer,com.lastPlayerNum) && ((com._lastPai.length==1 && weight>140) || (com._lastPai.length>1 && weight>1400))){
+                        //不怼队友
+                        //大于A或者大于对A 不出
+                    }else {
 
-                    //  cc.log(canvas);
-                    //出牌
-                    var pais = player.shouPai.splice(weightArr[i][1],weightArr[i][2]);
+                        //出牌
+                        pais = player.shouPai.splice(weightArr[i][1],weightArr[i][2]);
 
-                    //清空牌桌
-                    //com.clearPaiZhuo();
-
-                    //this.chuPaiAction(pais);
-
-                    com.nextPlayer(pais);
-
-                    isBuChuPai = false;
+                    }
 
                     break;
 
@@ -73,14 +131,7 @@ module.exports = {
 
             }
 
-            if(isBuChuPai){
-
-                com.nextPlayer();
-
-            }
-
-            
-        }
+            return pais;
 
     },
 
@@ -252,6 +303,8 @@ module.exports = {
 
         }
 
+        this.sortWeightArr(weightArr);
+
         return weightArr;
 
     },
@@ -260,4 +313,21 @@ module.exports = {
     // update: function (dt) {
 
     // },
+
+    // onGetWind:function(event){
+
+    //     if(com.isPlayerParty(event.pNum,event.windPNum)){
+    //         //队友
+    //         com.agreeGetWind(true);
+
+    //     }else{
+    //         //管不起只能给
+    //         com.agreeGetWind(getEnableChuPai(this.analyze(com.players[event.pNum]))==null);
+
+    //     }
+
+    // },
+
+    
+
 };

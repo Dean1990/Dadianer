@@ -3,10 +3,41 @@
   "sources": [
     "unknown"
   ],
-  "names": [],
-  "mappings": "AAAA,IAAI,GAAG,GAAG,OAAO,CAAC,QAAQ,CAAC,CAAC;AAC5B,IAAI,EAAE,GAAG,OAAO,CAAC,IAAI,CAAC,CAAC;;AAEvB,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;;AAER,kBAAU,EAAC;AACP,uBAAQ,IAAI;AACZ,gBAAI,EAAC,EAAE,CAAC,KAAK;SAChB;;AAED,iBAAS,EAAC;AACN,uBAAQ,IAAI;AACZ,gBAAI,EAAC,EAAE,CAAC,MAAM;SACjB;;AAED,kBAAU,EAAC;AACP,uBAAQ,IAAI;AACZ,gBAAI,EAAC,EAAE,CAAC,MAAM;SACjB;;AAED,mBAAW,EAAC;AACR,uBAAQ,IAAI;AACZ,gBAAI,EAAC,EAAE,CAAC,KAAK;SAChB;;AAED,gBAAQ,EAAC;AACL,uBAAQ,IAAI;AACZ,gBAAI,EAAC,EAAE,CAAC,KAAK;SAChB;;AAED,YAAI,EAAC,IAAI;;AAET,eAAO,EAAC,IAAI;;AAEZ,eAAO,EAAC,IAAI;;AAEZ,kBAAU,EAAC,KAAK,EAGnB;;;;;AAGD,UAAM,EAAE,kBAAY,EAEnB;;;AAGD,UAAM,EAAE,gBAAU,EAAE,EAAE;;AAElB,YAAG,IAAI,CAAC,UAAU,EAAC;AACf,gBAAI,CAAC,QAAQ,CAAC,MAAM,GAAG,GAAG,CAAC;SAC9B;;AAGD,YAAG,IAAI,CAAC,OAAO,IAAE,IAAI,EAAC;AAClB,gBAAI,CAAC,UAAU,CAAC,MAAM,GAAG,IAAI,CAAC,OAAO,CAAC,MAAM,CAAC;SAChD;KACJ;;AAED,UAAM,EAAE,kBAAU;;AAEd,YAAG,IAAI,CAAC,IAAI,EAAC;;AAET,gBAAI,CAAC,YAAY,CAAC,YAAU;;AAExB,kBAAE,CAAC,MAAM,CAAC,IAAI,CAAC,CAAC;aAEnB,EAAC,CAAC,CAAC,CAAC;SAER,MAAK;;;;SAKL;KAEJ;;CAEJ,CAAC,CAAC",
+  "names": [
+    "com",
+    "require",
+    "ai",
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "shouPaiNum",
+    "default",
+    "type",
+    "Label",
+    "playerImg",
+    "Sprite",
+    "currentTag",
+    "actionLabel",
+    "xuanZhan",
+    "isAI",
+    "shouPai",
+    "xuanPai",
+    "isXuanZhan",
+    "onLoad",
+    "update",
+    "dt",
+    "string",
+    "length",
+    "toggle",
+    "getWindNum",
+    "scheduleOnce",
+    "chuPai"
+  ],
+  "mappings": ";;AAAA,IAAIA,MAAMC,QAAQ,QAAR,CAAV;AACA,IAAIC,KAAKD,QAAQ,IAAR,CAAT;;AAEAE,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;;AAERC,oBAAW;AACPC,qBAAQ,IADD;AAEPC,kBAAKP,GAAGQ;AAFD,SAFH;;AAORC,mBAAU;AACNH,qBAAQ,IADF;AAENC,kBAAKP,GAAGU;AAFF,SAPF;;AAYRC,oBAAW;AACPL,qBAAQ,IADD;AAEPC,kBAAKP,GAAGU;AAFD,SAZH;;AAiBRE,qBAAY;AACRN,qBAAQ,IADA;AAERC,kBAAKP,GAAGQ;AAFA,SAjBJ;;AAsBRK,kBAAS;AACLP,qBAAQ,IADH;AAELC,kBAAKP,GAAGQ;AAFH,SAtBD;;AA2BRM,cAAK,IA3BG,EA2BE;;AAEVC,iBAAQ,IA7BA,EA6BK;;AAEbC,iBAAQ,IA/BA,EA+BK;;AAEbC,oBAAW,KAjCH,EAHP;;AAyCL;AACAC,YAAQ,kBAAY,CAEnB,CA5CI;;AA8CL;AACAC,YAAQ,gBAAUC,EAAV,EAAc;;AAElB,YAAG,KAAKH,UAAR,EAAmB;AACf,iBAAKJ,QAAL,CAAcQ,MAAd,GAAuB,GAAvB;AACH;;AAGD,YAAG,KAAKN,OAAL,IAAc,IAAjB,EAAsB;AAClB,iBAAKV,UAAL,CAAgBgB,MAAhB,GAAyB,KAAKN,OAAL,CAAaO,MAAtC;AACH;AACJ,KAzDI;;AA2DLC,YAAQ,gBAASC,UAAT,EAAoB;;AAExB,YAAG,KAAKV,IAAR,EAAa;;AAET,iBAAKW,YAAL,CAAkB,YAAU;;AAExB1B,mBAAG2B,MAAH,CAAU,IAAV,EAAeF,UAAf;AAEH,aAJD,EAIE,CAJF;AAMH,SARD,MAQM;;AAEF;;;AAGH;AAEJ;;AA5EI,CAAT",
   "file": "unknown",
   "sourcesContent": [
-    "var com = require('Common');\nvar ai = require('AI');\n\ncc.Class({\n    extends: cc.Component,\n\n    properties: {\n\n        shouPaiNum:{\n            default:null,\n            type:cc.Label,\n        },\n\n        playerImg:{\n            default:null,\n            type:cc.Sprite,\n        },\n\n        currentTag:{\n            default:null,\n            type:cc.Sprite,\n        },\n\n        actionLabel:{\n            default:null,\n            type:cc.Label,\n        },\n\n        xuanZhan:{\n            default:null,\n            type:cc.Label,\n        },\n\n        isAI:null,//是否是AI\n\n        shouPai:null,//手牌\n\n        xuanPai:null,//选中的牌\n\n        isXuanZhan:false,//是否宣战\n\n        \n    },\n\n    // use this for initialization\n    onLoad: function () {\n\n    },\n\n    // called every frame, uncomment this function to activate update callback\n    update: function (dt) {\n\n        if(this.isXuanZhan){\n            this.xuanZhan.string = \"宣\";\n        }\n        \n\n        if(this.shouPai!=null){\n            this.shouPaiNum.string = this.shouPai.length;\n        }\n    },\n\n    toggle: function(){\n\n        if(this.isAI){\n\n            this.scheduleOnce(function(){\n\n                ai.chuPai(this);\n\n            },1);\n\n        }else {\n\n            //不是AI\n\n\n        }\n\n    },\n\n});\n"
+    "var com = require('Common');\nvar ai = require('AI');\n\ncc.Class({\n    extends: cc.Component,\n\n    properties: {\n\n        shouPaiNum:{\n            default:null,\n            type:cc.Label,\n        },\n\n        playerImg:{\n            default:null,\n            type:cc.Sprite,\n        },\n\n        currentTag:{\n            default:null,\n            type:cc.Sprite,\n        },\n\n        actionLabel:{\n            default:null,\n            type:cc.Label,\n        },\n\n        xuanZhan:{\n            default:null,\n            type:cc.Label,\n        },\n\n        isAI:null,//是否是AI\n\n        shouPai:null,//手牌\n\n        xuanPai:null,//选中的牌\n\n        isXuanZhan:false,//是否宣战\n\n        \n    },\n\n    // use this for initialization\n    onLoad: function () {\n\n    },\n\n    // called every frame, uncomment this function to activate update callback\n    update: function (dt) {\n\n        if(this.isXuanZhan){\n            this.xuanZhan.string = \"宣\";\n        }\n        \n\n        if(this.shouPai!=null){\n            this.shouPaiNum.string = this.shouPai.length;\n        }\n    },\n\n    toggle: function(getWindNum){\n\n        if(this.isAI){\n\n            this.scheduleOnce(function(){\n\n                ai.chuPai(this,getWindNum);\n\n            },1);\n\n        }else {\n\n            //不是AI\n\n\n        }\n\n    },\n\n});\n"
   ]
 }

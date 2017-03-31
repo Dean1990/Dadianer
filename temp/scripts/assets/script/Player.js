@@ -2,36 +2,38 @@
 cc._RFpush(module, '8c5d8QamBFBuaHZjtQBUcp+', 'Player');
 // script/Player.js
 
+'use strict';
+
 var com = require('Common');
 var ai = require('AI');
 
 cc.Class({
-    'extends': cc.Component,
+    extends: cc.Component,
 
     properties: {
 
         shouPaiNum: {
-            'default': null,
+            default: null,
             type: cc.Label
         },
 
         playerImg: {
-            'default': null,
+            default: null,
             type: cc.Sprite
         },
 
         currentTag: {
-            'default': null,
+            default: null,
             type: cc.Sprite
         },
 
         actionLabel: {
-            'default': null,
+            default: null,
             type: cc.Label
         },
 
         xuanZhan: {
-            'default': null,
+            default: null,
             type: cc.Label
         },
 
@@ -42,8 +44,6 @@ cc.Class({
         xuanPai: null, //选中的牌
 
         isXuanZhan: false },
-
-    //是否宣战
 
     // use this for initialization
     onLoad: function onLoad() {},
@@ -60,17 +60,18 @@ cc.Class({
         }
     },
 
-    toggle: function toggle() {
+    toggle: function toggle(getWindNum) {
 
         if (this.isAI) {
 
             this.scheduleOnce(function () {
 
-                ai.chuPai(this);
+                ai.chuPai(this, getWindNum);
             }, 1);
         } else {
 
             //不是AI
+
 
         }
     }

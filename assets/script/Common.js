@@ -14,13 +14,19 @@ module.exports = {
 
     _currentPlayer:0,//当前出牌的玩家
 
-    _buChuNum:0,//记录不出牌次数
+    //_buChuNum:0,//记录不出牌次数
+
+    lastPlayerNum:0,//最后出牌的玩家
 
     winPlayer:null,//记录胜出者序号
 
-    partyPlayers:null,//记录同一伙的玩家的二维数组
+    partyPlayers:null,//记录同一伙可宣战的玩家数组
+
+    isXuanZhan:false,//是否宣战
 
     num:0,//记数
+
+    //voteGetWindNum:0,//参于投票人数
 
     setFirstPlayer:function(firstPlayer){
 
@@ -50,7 +56,7 @@ module.exports = {
 
             if(this.winPlayer.indexOf(this._currentPlayer)!=-1){
 
-                this.checkPlayerNoWinner();
+                this.checkNextPlayerNoWinner();
 
             }
 
@@ -62,18 +68,28 @@ module.exports = {
     /**
      * 下一个玩家
      */
-    nextPlayer:function(lastPai){
+    nextPlayer:function(lastPai,message,getWindNum){
+
+            //设置默认值
+            getWindNum = getWindNum||-1;
 
             //当前调用该函数的玩家部分
             if(lastPai==null||lastPai.length==0){
 
-                this._buChuNum = this._buChuNum + 1;
+                // this._buChuNum = this._buChuNum + 1;
                 //不出
-                this.players[this._currentPlayer].getComponent("Player").actionLabel.string = "不出";
+                if(mssage==null){
+
+                    message = "不出";
+
+                }
+
+                this.players[this._currentPlayer].actionLabel.string = message;
 
             }else {
 
-                this._buChuNum = 0;
+                // this._buChuNum = 0;
+                this.lastPlayerNum = this._currentPlayer;
                 //清理牌桌
                 this.clearPaiZhuo();
                 //赋值
@@ -93,21 +109,41 @@ module.exports = {
 
                 this.winPlayer.push(this._currentPlayer);
 
-                this.players[this._currentPlayer].getComponent("Player").actionLabel.string = "NO. "+this.winPlayer.length;
+                this.players[this._currentPlayer].shouPaiNum.string = "";
+
+                this.players[this._currentPlayer].actionLabel.string = "NO. "+this.winPlayer.length;
+
+                var party = this.partyPlayers.indexOf(this._currentPlayer)!=-1;
+
+                var isGameOver = party;
+                
+                //游戏结束 人数条件
+                var winNumCondition = party?this.partyPlayers.length:this.playerNum-this.partyPlayers.length;
+
+                if(this.winPlayer.length==winNumCondition){
+
+                    for(var i = 0;i<winNumCondition;i++){
+
+                        isGameOver = isGameOver^(this.partyPlayers.indexOf(this.winPlayer[i])!=-1);
+
+                    }
+
+                    if(isGameOver){
+
+                        //清理牌桌
+                        this.clearPaiZhuo();
+
+                        cc.director.getScene().getChildByName('GameLabel').string = "游戏结束"
+
+                        return;
+
+                    }
+
+                }
 
             }
 
-            //3个玩家胜出，游戏结束
-            if(this.winPlayer.length==(this.playerNum-1)){
-
-                //清理牌桌
-                this.clearPaiZhuo();
-
-                cc.director.getScene().getChildByName('GameLabel').string = "游戏结束"
-
-                return;
-
-            }
+            
 
             //********** 当前调用该函数的玩家部分结束 ************
 
@@ -125,7 +161,9 @@ module.exports = {
 
 
             //三个不出，说明又轮到上次出牌的玩家 当有胜出者后，判断的数字要减少
-            if(this._buChuNum==(3-this.winPlayer.length)){
+            // if(this._buChuNum==(3-this.winPlayer.length)){
+            
+            if(this.lastPlayerNum==this._currentPlayer){
 
                 //清理牌桌
                 this.clearPaiZhuo();
@@ -134,8 +172,20 @@ module.exports = {
 
             }
 
+            
+
+            if(isPlayerWin){
+
+                //记录下一个要牌者，及要风者
+                getWindNum = this._currentPlayer;
+
+                //更新下一个出牌者+1
+                this.checkNextPlayerNoWinner();
+
+            }
+
             //通知玩家可以出牌了
-            this.players[this._currentPlayer].toggle();
+            this.players[this._currentPlayer].toggle(getWindNum);
 
         
 
@@ -515,35 +565,74 @@ module.exports = {
      * 宣战 1
      * 跟随 2
      */
-    checkEnableXuanZhan:function(pais){
+    checkEnableXuanZhan:function(pNum){
+
+        if(pNum==null){
+
+            pNum = this._currentPlayer;
+
+        }
 
         // cc.log("rounds:"+this.rounds);
+        // cc.log(this.partyPlayers);
+        // cc.log(pNum);
+        // cc.log(this.partyPlayers.indexOf(pNum)!=-1);
 
-        //宣战
-        if(this.rounds==1){
+        if(this.rounds==1 && this.partyPlayers.indexOf(pNum)!=-1){
 
-            for(var i = 0;i<pais.length;i++){
-
-                var f = pais[i]._name.substring(0,1);
-
-                if(f=="E"){
-
-                    this.partyPlayers[0].push(this._currentPlayer);
-
-                    break;
-
-                }
+            if(this.isXuanZhan){
+                //跟
+                return 2;
+            }else {
+                //宣战
+                return 1;
 
             }
-
-            return this.partyPlayers[0].length;
 
         }else{
 
             return 0;
         }
+    },
 
-        
+    /**
+     * 是否是同伙
+     */
+    isPlayerParty:function(pNum,pNum2){
+
+        return (pNum != pNum2) && ((this.partyPlayers.indexOf(pNum)==-1)^(this.partyPlayers.indexOf(pNum2)==-1));
+
+    },
+
+    /**
+     * 要风
+     */
+    getWind:function(){
+
+        for(var i = 0;i<this.playerNum;i++){
+
+            if(i!=this._currentPlayer && this.winPlayer.indexOf(i)==-1){
+
+                this.players.note.emit("GET_WIND",{pNum:i,windPNum:this._currentPlayer});
+
+            }
+
+        }
+
+    },
+
+    /**
+     * 给风投票
+     */
+    agreeGetWind:function(isAgree){
+
+        this.voteGetWindNum = voteGetWindNum+1;
+
+        if((this.playerNum - this.winPlayer.length-1) == this.voteGetWindNum){
+
+
+
+        }
 
     },
 
