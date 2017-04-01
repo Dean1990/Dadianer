@@ -1,0 +1,24 @@
+{
+  "appKey": "",
+  "appSecret": "",
+  "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSdk": [
+    "anysdk"
+  ],
+  "inlineSpriteFrames": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "com.deanlib.dadianer",
+  "privateKey": "",
+  "renderMode": "0",
+  "startScene": "b0cb47b4-9cd0-47cc-ada3-3c1383744923",
+  "title": "DaDianer",
+  "webOrientation": "auto"
+}

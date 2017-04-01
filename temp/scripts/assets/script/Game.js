@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, '52296tYeOJGtoyHtGk1jFup', 'Game');
-// script\Game.js
+// script/Game.js
 
 'use strict';
 
@@ -19,6 +19,11 @@ cc.Class({
         paiAn: {
             default: null,
             type: cc.Sprite
+        },
+
+        gameLabel: {
+            default: null,
+            type: cc.Label
         },
 
         // foo: {
@@ -250,19 +255,19 @@ cc.Class({
 
         cc.director.getScene().addChild(node1);
 
-        node1.setPosition(cc.p(size.width - node1.width / 3 * 2, size.height / 2));
+        node1.setPosition(cc.p(size.width - node1.width / 3 * 2, size.height / 3 * 2));
 
         var node2 = com.players[2].node;
 
         cc.director.getScene().addChild(node2);
 
-        node2.setPosition(cc.p(size.width / 2, size.height - node1.height / 3 * 2));
+        node2.setPosition(cc.p(size.width / 2, size.height - node2.height / 3 * 2));
 
         var node3 = com.players[3].node;
 
         cc.director.getScene().addChild(node3);
 
-        node3.setPosition(cc.p(node3.width / 3 * 2, size.height / 2));
+        node3.setPosition(cc.p(node3.width / 3 * 2, size.height / 3 * 2));
 
         //cc.log(com.players[0]);
 
@@ -273,7 +278,7 @@ cc.Class({
 
             com.rounds = 1;
 
-            com.players[com._currentPlayer].toggle(-1);
+            com.players[com._currentPlayer].toggle();
         }
 
         // for(var n = 0;n<pp.length;n++){

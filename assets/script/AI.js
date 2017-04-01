@@ -1,18 +1,14 @@
 var com = require('Common');
 module.exports = {
 
-    chuPai: function (player,getWindNum){
+    chuPai: function (player){
 
         //有人要风
-        if(getWindNum!=-1){
+        if(com.getWindPlayerNum!=-1){
 
-            if(getWindNum==com._currentPlayer){
-
-                com._lastPai = null;
-
-            }else if(com.isPlayerParty(com._currentPlayer,getWindNum)){
+            if(com.isPlayerParty(com._currentPlayer,com.getWindPlayerNum)){
                 //队友  不出
-                com.nextPlayer(null,"给风",getWindNum);
+                com.nextPlayer();
 
                 return;
                 
@@ -44,7 +40,7 @@ module.exports = {
             
         }
 
-        if(com._lastPai==null||com._lastPai.length==0){
+        if((com.getWindPlayerNum==com._currentPlayer) || com._lastPai==null||com._lastPai.length==0){
 
             this.firstChuPai(player);
 
@@ -52,26 +48,7 @@ module.exports = {
 
             var pais = this.getEnableChuPai(player);
 
-            var message = null;
-
-            var pNum = -1;
-
-            if(pais!=null && pais.length>0){
-                //有人要风
-                if(getWindNum!=-1){
-
-                    message = "不给";
-                }
-                
-            }else{
-            
-                message = "给风";
-
-                pNum = getWindNum;
-
-            }
-
-            com.nextPlayer(pais,message,pNum);
+            com.nextPlayer(pais);
 
             
         }
@@ -195,6 +172,48 @@ module.exports = {
     },
 
     /**
+     * 剔除不合理的权值
+     */
+    trim:function(weightArr){
+
+        var trimWeightArr = new Array();
+
+        if(weightArr!=null && weightArr.length>0){
+
+            var indexArr = new Array();
+
+            for(var i = weightArr.length-1;i>=0;i--){
+
+                if(indexArr.indexOf(weightArr[i][1])==-1){
+
+                    //大于等于最小的炸 不拆开用 //对鬼也没考虑拆开
+                    if(weightArr[i][0]>1600){
+
+                        for(var j = weightArr[i][1];j<(weightArr[i][1] + weightArr[i][2]);j++){
+
+                            indexArr.push(j);
+
+                        }
+
+                    }
+
+                    trimWeightArr.push(weightArr[i]);
+                    
+                }
+
+                
+
+            }
+
+        }
+
+        this.sortWeightArr(trimWeightArr);
+
+        return trimWeightArr;
+
+    },
+
+    /**
      * 计算可以出牌的所有权值
      */
     analyze:function(pais){
@@ -305,7 +324,7 @@ module.exports = {
 
         this.sortWeightArr(weightArr);
 
-        return weightArr;
+        return this.trim(weightArr);
 
     },
 

@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, '8c5d8QamBFBuaHZjtQBUcp+', 'Player');
-// script\Player.js
+// script/Player.js
 
 'use strict';
 
@@ -56,22 +56,28 @@ cc.Class({
         }
 
         if (this.shouPai != null) {
-            this.shouPaiNum.string = this.shouPai.length;
+
+            if (this.shouPai.length == 0) {
+
+                this.shouPaiNum.string = "";
+            } else {
+
+                this.shouPaiNum.string = this.shouPai.length;
+            }
         }
     },
 
-    toggle: function toggle(getWindNum) {
+    toggle: function toggle() {
 
         if (this.isAI) {
 
             this.scheduleOnce(function () {
 
-                ai.chuPai(this, getWindNum);
+                ai.chuPai(this);
             }, 1);
         } else {
 
             //不是AI
-
 
         }
     }

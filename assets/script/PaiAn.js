@@ -41,6 +41,8 @@ cc.Class({
         //玩家头像
         var node = this.player.node;
 
+        node.setCascadeOpacityEnabled(false);
+
         // cc.director.getScene().addChild(node);
 
         this.node.addChild(node);
@@ -74,6 +76,8 @@ cc.Class({
 
         this.xuanZhuanBtn.enabled=false;
 
+        this.xuanZhuanBtn.normalColor = cc.Color.GREY;
+
         this.player.isXuanZhan = true;
 
     },
@@ -96,6 +100,8 @@ cc.Class({
             if(this.xuanZhuanBtn!=null&&this.xuanZhuanBtn.isValid){
 
                 this.xuanZhuanBtn.enabled =false;
+
+                this.xuanZhuanBtn.normalColor = cc.Color.GREY;
 
             }
             
@@ -192,9 +198,13 @@ cc.Class({
 
         if(this.xuanZhuanBtn!=null&&this.xuanZhuanBtn.isValid){
             this.xuanZhuanBtn.enabled=false;
+
+            this.xuanZhuanBtn.normalColor = cc.Color.GREY;
         }
 
         com.nextPlayer();
+
+        
 
     },
 
@@ -224,6 +234,8 @@ cc.Class({
                 self.node.addChild(pai);
 
             }
+
+            pai.setCascadeOpacityEnabled(false);
 
             var p = cc.p(-(pai.width+(num-1)*30)/2+pai.width/2+i*30,0);
             
