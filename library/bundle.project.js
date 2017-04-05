@@ -1,7 +1,7 @@
 require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"AI":[function(require,module,exports){
 "use strict";
 cc._RFpush(module, '3865cNvozdCB615DN8X95x0', 'AI');
-// script/AI.js
+// script\AI.js
 
 "use strict";
 
@@ -303,7 +303,7 @@ cc._RFpop();
 },{"Common":"Common"}],"Common":[function(require,module,exports){
 "use strict";
 cc._RFpush(module, '2ce3dajz81FDajDPh6cF69x', 'Common');
-// script/Common.js
+// script\Common.js
 
 "use strict";
 
@@ -899,7 +899,7 @@ cc._RFpop();
 },{}],"Game":[function(require,module,exports){
 "use strict";
 cc._RFpush(module, '52296tYeOJGtoyHtGk1jFup', 'Game');
-// script/Game.js
+// script\Game.js
 
 'use strict';
 
@@ -1192,7 +1192,7 @@ cc._RFpop();
 },{"Common":"Common"}],"PaiAn":[function(require,module,exports){
 "use strict";
 cc._RFpush(module, 'b3ac1KyqV9HV74OMXSKmVzK', 'PaiAn');
-// script/PaiAn.js
+// script\PaiAn.js
 
 "use strict";
 
@@ -1458,7 +1458,7 @@ cc._RFpop();
 },{"Common":"Common"}],"Player":[function(require,module,exports){
 "use strict";
 cc._RFpush(module, '8c5d8QamBFBuaHZjtQBUcp+', 'Player');
-// script/Player.js
+// script\Player.js
 
 'use strict';
 

@@ -1,222 +1,67 @@
-2017-04-01T01:01:49.839Z - normal: Load ~/.CocosCreator/settings.json
-2017-04-01T01:01:49.843Z - normal: checking language setting...
-2017-04-01T01:01:49.843Z - normal: Language: zh
-2017-04-01T01:01:50.274Z - success: protocol editor-framework registered
-2017-04-01T01:01:50.275Z - success: protocol app registered
-2017-04-01T01:01:50.275Z - success: protocol theme registered
-2017-04-01T01:01:50.275Z - success: protocol profile registered
-2017-04-01T01:01:50.275Z - success: protocol packages registered
-2017-04-01T01:01:50.278Z - success: protocol unpack registerred
-2017-04-01T01:01:50.278Z - success: protocol disable-commonjs registerred
-2017-04-01T01:01:50.437Z - normal: connected!
-2017-04-01T01:01:50.440Z - normal: Check project /Users/dean/Dev/code/CocosCreator/DaDianer
-2017-04-01T01:01:50.442Z - normal: Initializing Cocos2d
-2017-04-01T01:01:50.657Z - normal: Initializing Asset Database
-2017-04-01T01:01:50.677Z - success: protocol uuid registerred
-2017-04-01T01:01:50.677Z - success: protocol db registerred
-2017-04-01T01:01:50.678Z - success: protocol thumbnail registerred
-2017-04-01T01:01:50.678Z - normal: Loading editor/builtin packages
-2017-04-01T01:01:50.813Z - success: assets loaded
-2017-04-01T01:01:50.817Z - success: builder loaded
-2017-04-01T01:01:50.822Z - success: hierarchy loaded
-2017-04-01T01:01:50.826Z - success: inspector loaded
-2017-04-01T01:01:50.828Z - success: keystore loaded
-2017-04-01T01:01:50.833Z - success: node-library loaded
-2017-04-01T01:01:50.835Z - success: preferences loaded
-2017-04-01T01:01:50.852Z - success: project-importer loaded
-2017-04-01T01:01:50.855Z - success: project-settings loaded
-2017-04-01T01:01:50.859Z - success: ui-kit loaded
-2017-04-01T01:01:50.864Z - success: ui-grid loaded
-2017-04-01T01:01:50.870Z - success: scene loaded
-2017-04-01T01:01:50.872Z - success: sprite-editor loaded
-2017-04-01T01:01:50.925Z - success: store loaded
-2017-04-01T01:01:50.931Z - success: timeline loaded
-2017-04-01T01:01:50.932Z - normal: Loading builtin packages
-2017-04-01T01:01:50.937Z - success: anysdk loaded
-2017-04-01T01:01:50.940Z - success: asset-db-debugger loaded
-2017-04-01T01:01:50.942Z - success: code-editor loaded
-2017-04-01T01:01:50.943Z - success: color-picker loaded
-2017-04-01T01:01:50.949Z - success: console loaded
-2017-04-01T01:01:50.953Z - success: package-manager loaded
-2017-04-01T01:01:50.958Z - success: tester loaded
-2017-04-01T01:01:50.962Z - success: ui-kit-preview-extra loaded
-2017-04-01T01:01:50.965Z - success: ui-kit-preview loaded
-2017-04-01T01:01:50.969Z - success: ui-tree loaded
-2017-04-01T01:01:51.013Z - normal: Initializing project /Users/dean/Dev/code/CocosCreator/DaDianer
-2017-04-01T01:01:51.015Z - normal: Loading packages
-2017-04-01T01:01:51.019Z - normal: Watching packages
-2017-04-01T01:01:51.030Z - normal: Run Application
-2017-04-01T01:01:53.478Z - success: preview server running at http://localhost:7456
-2017-04-01T01:01:53.479Z - normal: Compiling scripts...
-2017-04-01T01:01:55.016Z - normal: Compiled project javascript file successfully
-2017-04-01T01:01:58.846Z - normal: 1.4.2
-2017-04-01T01:36:29.766Z - normal: Compiled project javascript file successfully
-2017-04-01T02:19:32.723Z - normal: Compiled project javascript file successfully
-2017-04-01T02:48:03.761Z - normal: Compiled project javascript file successfully
-2017-04-01T02:50:00.539Z - normal: Compiled project javascript file successfully
-2017-04-01T03:05:19.134Z - normal: Compiled project javascript file successfully
-2017-04-01T03:15:10.484Z - normal: Compiled project javascript file successfully
-2017-04-01T03:17:36.322Z - failed: [db-task][sync-changes] Failed to import asset /Users/dean/Dev/code/CocosCreator/DaDianer/assets/script/Common.js, message: Compile error: SyntaxError: unknown: Unexpected token (551:12)
-  549 |                 this.players[this._currentPlayer].node.
-  550 | 
-> 551 |             }
-      |             ^
-  552 | 
-  553 |         }
-  554 | 
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4333:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1705:8)
-    at Parser.pp$3.parseIdentifier (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4211:10)
-    at Parser.pp$3.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3437:30)
-    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3424:15)
-    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3394:19)
-    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3324:19)
-    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3301:19)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3264:19)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3226:19)
-2017-04-01T03:18:44.162Z - failed: [db-task][sync-changes] Failed to import asset /Users/dean/Dev/code/CocosCreator/DaDianer/assets/script/Common.js, message: Compile error: SyntaxError: unknown: Unexpected token (551:12)
-  549 |                 this.players[this._currentPlayer].node.getChildByName('LabelBottom').
-  550 | 
-> 551 |             }
-      |             ^
-  552 | 
-  553 |         }
-  554 | 
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4333:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1705:8)
-    at Parser.pp$3.parseIdentifier (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4211:10)
-    at Parser.pp$3.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3437:30)
-    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3424:15)
-    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3394:19)
-    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3324:19)
-    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3301:19)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3264:19)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3226:19)
-2017-04-01T03:18:58.996Z - failed: [db-task][sync-changes] Failed to import asset /Users/dean/Dev/code/CocosCreator/DaDianer/assets/script/Common.js, message: Compile error: SyntaxError: unknown: Unexpected token (551:12)
-  549 |                 this.players[this._currentPlayer].node.getChildByName('LabelBottom').
-  550 | 
-> 551 |             }
-      |             ^
-  552 | 
-  553 |         }
-  554 | 
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4333:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1705:8)
-    at Parser.pp$3.parseIdentifier (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4211:10)
-    at Parser.pp$3.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3437:30)
-    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3424:15)
-    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3394:19)
-    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3324:19)
-    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3301:19)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3264:19)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3226:19)
-2017-04-01T03:24:22.426Z - normal: Compiled project javascript file successfully
-2017-04-01T03:26:01.932Z - normal: Compiled project javascript file successfully
-2017-04-01T03:27:09.190Z - normal: Compiled project javascript file successfully
-2017-04-01T03:33:56.666Z - normal: Compiled project javascript file successfully
-2017-04-01T03:39:04.509Z - normal: Compiled project javascript file successfully
-2017-04-01T03:40:04.276Z - normal: Compiled project javascript file successfully
-2017-04-01T03:41:46.209Z - normal: Compiled project javascript file successfully
-2017-04-01T03:42:27.272Z - normal: Compiled project javascript file successfully
-2017-04-01T03:46:56.053Z - normal: Compiled project javascript file successfully
-2017-04-01T03:49:57.232Z - normal: Compiled project javascript file successfully
-2017-04-01T03:50:58.540Z - normal: Compiled project javascript file successfully
-2017-04-01T03:54:08.526Z - normal: Compiled project javascript file successfully
-2017-04-01T03:58:41.638Z - normal: Compiled project javascript file successfully
-2017-04-01T03:59:29.872Z - normal: Compiled project javascript file successfully
-2017-04-01T04:04:22.428Z - normal: Compiled project javascript file successfully
-2017-04-01T04:43:10.308Z - normal: Compiled project javascript file successfully
-2017-04-01T04:44:39.993Z - normal: Compiled project javascript file successfully
-2017-04-01T04:45:07.083Z - normal: Compiled project javascript file successfully
-2017-04-01T04:45:32.181Z - normal: Compiled project javascript file successfully
-2017-04-01T04:47:39.388Z - normal: Compiled project javascript file successfully
-2017-04-01T04:49:13.469Z - normal: Compiled project javascript file successfully
-2017-04-01T04:53:10.169Z - normal: Compiled project javascript file successfully
-2017-04-01T04:57:40.420Z - normal: Compiled project javascript file successfully
-2017-04-01T05:10:32.352Z - normal: Compiled project javascript file successfully
-2017-04-01T05:16:44.353Z - normal: Compiled project javascript file successfully
-2017-04-01T06:39:29.725Z - normal: Compiled project javascript file successfully
-2017-04-01T06:42:51.226Z - normal: Compiled project javascript file successfully
-2017-04-01T06:43:43.370Z - normal: Compiled project javascript file successfully
-2017-04-01T06:52:38.382Z - normal: Compiled project javascript file successfully
-2017-04-01T06:53:19.966Z - normal: Compiled project javascript file successfully
-2017-04-01T07:00:03.174Z - normal: Compiled project javascript file successfully
-2017-04-01T07:21:15.657Z - normal: Compiled project javascript file successfully
-2017-04-01T07:22:58.527Z - normal: Compiled project javascript file successfully
-2017-04-01T07:29:44.597Z - failed: [db-task][sync-changes] Failed to import asset /Users/dean/Dev/code/CocosCreator/DaDianer/assets/script/Player.js, message: Compile error: SyntaxError: unknown: Unexpected token (91:8)
-  89 | 
-  90 | 
-> 91 |         }
-     |         ^
-  92 | 
-  93 |     },
-  94 | 
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4333:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1705:8)
-    at Parser.pp$3.parseIdentifier (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4211:10)
-    at Parser.pp$3.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3437:30)
-    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3424:15)
-    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3394:19)
-    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3324:19)
-    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3301:19)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3264:19)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3226:19)
-2017-04-01T07:32:04.443Z - error: TypeError: Cannot read property '_uuid' of null
-    at Object.PrefabUtils.linkPrefab (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/prefab-utils.js:1:5162)
-    at cc_Node._onHierarchyChanged (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/CCNode.js:1067:36)
-    at cc_Node.set (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/utils/base-node.js:164:26)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:9026
-    at cc_Prefab.cc.Class.createNode (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/assets/CCPrefab.js:56:9)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils.js:1:1068
-    at CCLoader.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/CCAssetLibrary.js:101:17)
-    at /Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/load-pipeline/CCLoader.js:232:38
-    at /Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/utils.js:65:21
-    at _combinedTickCallback (internal/process/next_tick.js:67:7)
-    at process._tickCallback (internal/process/next_tick.js:98:9)
-2017-04-01T07:35:43.587Z - error: TypeError: Cannot read property '_uuid' of null
-    at Object.PrefabUtils.linkPrefab (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/prefab-utils.js:1:5162)
-    at cc_Node._onHierarchyChanged (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/CCNode.js:1067:36)
-    at cc_Node.set (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/utils/base-node.js:164:26)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:9026
-    at cc_Prefab.cc.Class.createNode (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/assets/CCPrefab.js:56:9)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils.js:1:1068
-    at CCLoader.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/CCAssetLibrary.js:101:17)
-    at /Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/load-pipeline/CCLoader.js:232:38
-    at /Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/utils.js:65:21
-    at _combinedTickCallback (internal/process/next_tick.js:67:7)
-    at process._tickCallback (internal/process/next_tick.js:98:9)
-2017-04-01T08:17:31.483Z - normal: Compiled project javascript file successfully
-2017-04-01T08:18:38.686Z - normal: Compiled project javascript file successfully
-2017-04-01T08:26:18.201Z - normal: Compiled project javascript file successfully
-2017-04-01T08:34:46.400Z - normal: Compiled project javascript file successfully
-2017-04-01T08:57:22.080Z - normal: Compiled project javascript file successfully
-2017-04-01T08:59:00.228Z - normal: Compiled project javascript file successfully
-2017-04-01T08:59:46.743Z - normal: Compiled project javascript file successfully
-2017-04-01T09:02:58.661Z - normal: Compiled project javascript file successfully
-2017-04-01T09:07:37.762Z - normal: Compiled project javascript file successfully
-2017-04-01T09:20:45.742Z - normal: Compiled project javascript file successfully
-2017-04-01T09:31:24.900Z - normal: Compiled project javascript file successfully
-2017-04-01T09:33:19.387Z - normal: Compiled project javascript file successfully
-2017-04-01T09:34:06.474Z - normal: Compiled project javascript file successfully
-2017-04-01T09:38:54.500Z - normal: Compiled project javascript file successfully
-2017-04-01T09:42:48.612Z - normal: Compiled project javascript file successfully
-2017-04-01T09:43:12.849Z - normal: Compiled project javascript file successfully
-2017-04-01T09:45:46.043Z - normal: Compiled project javascript file successfully
-2017-04-01T09:47:09.877Z - normal: Compiled project javascript file successfully
-2017-04-01T09:52:35.681Z - normal: Start building with options : {
+2017-04-02T15:47:01.781Z - normal: Load ~/.CocosCreator/settings.json
+2017-04-02T15:47:01.781Z - normal: checking language setting...
+2017-04-02T15:47:01.781Z - normal: Language: zh
+2017-04-02T15:47:03.543Z - success: protocol editor-framework registered
+2017-04-02T15:47:03.543Z - success: protocol app registered
+2017-04-02T15:47:03.543Z - success: protocol theme registered
+2017-04-02T15:47:03.543Z - success: protocol profile registered
+2017-04-02T15:47:03.543Z - success: protocol packages registered
+2017-04-02T15:47:03.543Z - success: protocol unpack registerred
+2017-04-02T15:47:03.543Z - success: protocol disable-commonjs registerred
+2017-04-02T15:47:03.637Z - normal: connected!
+2017-04-02T15:47:03.653Z - normal: Check project K:\Code\CocosCreatorProjects\Dadianer
+2017-04-02T15:47:03.653Z - normal: Initializing Cocos2d
+2017-04-02T15:47:04.791Z - normal: Initializing Asset Database
+2017-04-02T15:47:04.838Z - success: protocol uuid registerred
+2017-04-02T15:47:04.838Z - success: protocol db registerred
+2017-04-02T15:47:04.854Z - success: protocol thumbnail registerred
+2017-04-02T15:47:04.854Z - normal: Loading editor/builtin packages
+2017-04-02T15:47:05.072Z - success: assets loaded
+2017-04-02T15:47:05.088Z - success: builder loaded
+2017-04-02T15:47:05.088Z - success: hierarchy loaded
+2017-04-02T15:47:05.088Z - success: inspector loaded
+2017-04-02T15:47:05.088Z - success: keystore loaded
+2017-04-02T15:47:05.088Z - success: node-library loaded
+2017-04-02T15:47:05.088Z - success: preferences loaded
+2017-04-02T15:47:05.119Z - success: project-importer loaded
+2017-04-02T15:47:05.119Z - success: project-settings loaded
+2017-04-02T15:47:05.119Z - success: ui-kit loaded
+2017-04-02T15:47:05.119Z - success: ui-grid loaded
+2017-04-02T15:47:05.135Z - success: scene loaded
+2017-04-02T15:47:05.135Z - success: sprite-editor loaded
+2017-04-02T15:47:05.292Z - success: store loaded
+2017-04-02T15:47:05.323Z - success: timeline loaded
+2017-04-02T15:47:05.323Z - normal: Loading builtin packages
+2017-04-02T15:47:05.338Z - success: anysdk loaded
+2017-04-02T15:47:05.338Z - success: asset-db-debugger loaded
+2017-04-02T15:47:05.338Z - success: code-editor loaded
+2017-04-02T15:47:05.354Z - success: color-picker loaded
+2017-04-02T15:47:05.354Z - success: console loaded
+2017-04-02T15:47:05.370Z - success: package-manager loaded
+2017-04-02T15:47:05.370Z - success: tester loaded
+2017-04-02T15:47:05.370Z - success: ui-kit-preview-extra loaded
+2017-04-02T15:47:05.370Z - success: ui-kit-preview loaded
+2017-04-02T15:47:05.385Z - success: ui-tree loaded
+2017-04-02T15:47:05.463Z - normal: Initializing project K:\Code\CocosCreatorProjects\Dadianer
+2017-04-02T15:47:05.463Z - normal: Loading packages
+2017-04-02T15:47:05.479Z - normal: Watching packages
+2017-04-02T15:47:05.494Z - normal: Run Application
+2017-04-02T15:47:07.001Z - success: preview server running at http://localhost:7456
+2017-04-02T15:47:11.937Z - normal: 1.4.2
+2017-04-02T15:47:26.943Z - normal: Start building with options : {
   "androidStudio": true,
-  "apiLevel": "android-17",
+  "apiLevel": "android-14",
   "appABIs": [
-    "armeabi",
-    "armeabi-v7a",
+    "x86",
     "arm64-v8a",
-    "x86"
+    "armeabi-v7a",
+    "armeabi"
   ],
   "appKey": "",
   "appSecret": "",
-  "buildPath": "/Users/dean/Desktop",
+  "buildPath": "C:\\Users\\Administrator\\Desktop",
   "debug": false,
-  "dest": "/Users/dean/Desktop/jsb-default",
+  "dest": "C:\\Users\\Administrator\\Desktop\\jsb-default",
   "excludedModules": [],
   "includeAnySDK": false,
   "inlineSpriteFrames": true,
@@ -246,32 +91,113 @@
   "title": "DaDianer",
   "useDebugKeystore": true,
   "vsVersion": "auto",
-  "webOrientation": "auto",
-  "project": "/Users/dean/Dev/code/CocosCreator/DaDianer",
+  "webOrientation": "landscape",
+  "project": "K:\\Code\\CocosCreatorProjects\\Dadianer",
   "projectName": "DaDianer",
-  "runtimePath": "/Applications/CocosCreator.app/Contents/Resources/engine",
+  "runtimePath": "C:\\CocosCreator\\resources\\engine",
   "debugBuildWorker": false
 }
-2017-04-01T09:52:35.685Z - normal: Building /Users/dean/Dev/code/CocosCreator/DaDianer
-2017-04-01T09:52:35.685Z - normal: Destination /Users/dean/Desktop/jsb-default
-2017-04-01T09:52:35.927Z - error: Build Failed: Error: [NDK Root] is empty, please set [NDK Root] in Preferences.
-    at o (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:1139)
-    at initCocosEnv (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:1860)
-    at initSettings (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2654)
-    at Object.build (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:15050)
-    at Gulp.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/gulp-build.js:1:12763)
-    at module.exports (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/lib/runTask.js:34:7)
-    at Gulp.Orchestrator._runTask (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/index.js:273:3)
-    at Gulp.Orchestrator._runStep (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/index.js:214:10)
-    at Gulp.Orchestrator.start (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/index.js:134:8)
-    at Object.exports.startWithArgs (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/gulp-build.js:1:13109)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/builder.js:1:3462
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/builder.js:1:1042
-    at Gulp.doneCallback (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/gulp-build.js:1:13131)
-    at Gulp.Orchestrator.stop (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/index.js:150:9)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/index.js:277:22
-    at finish (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/lib/runTask.js:21:8)
-    at cb (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/lib/runTask.js:29:3)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:15120
-    at initSettings (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2687)
-2017-04-01T09:53:27.707Z - info: shutdown preview server
+2017-04-02T15:47:26.947Z - normal: Building K:\Code\CocosCreatorProjects\Dadianer
+2017-04-02T15:47:26.947Z - normal: Destination C:\Users\Administrator\Desktop\jsb-default
+2017-04-02T15:47:31.507Z - normal: Delete C:\Users\Administrator\Desktop\jsb-default\res/**/*
+2017-04-02T15:47:31.509Z - normal: Delete C:\Users\Administrator\Desktop\jsb-default\src/*/
+2017-04-02T15:47:31.586Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2017-04-02T15:47:32.117Z - normal: Start to compile native project. Please wait...
+2017-04-02T15:47:32.117Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2017-04-02T15:47:34.151Z - normal: Compiled project javascript file successfully
+2017-04-02T15:47:34.152Z - normal: Start building assets
+2017-04-02T15:47:34.152Z - normal: Start spawn build-worker
+2017-04-02T15:47:35.044Z - normal: Finish spawn build-worker
+2017-04-02T15:47:35.044Z - normal: Start init build-worker
+2017-04-02T15:47:36.273Z - normal: 1.4.2
+2017-04-02T15:47:36.327Z - normal: Finish init build-worker
+2017-04-02T15:47:36.327Z - normal: Start build-assets in worker
+2017-04-02T15:47:37.438Z - normal: Finish build-assets in worker
+2017-04-02T15:47:37.444Z - normal: Finish building assets
+2017-04-02T15:47:37.507Z - normal: Start building raw assets
+2017-04-02T15:47:37.508Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d3.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d3.jpg
+2017-04-02T15:47:37.509Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b5.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b5.jpg
+2017-04-02T15:47:37.509Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c12.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c12.jpg
+2017-04-02T15:47:37.509Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d2.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d2.jpg
+2017-04-02T15:47:37.509Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c1.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c1.jpg
+2017-04-02T15:47:37.509Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c10.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c10.jpg
+2017-04-02T15:47:37.510Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a11.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a11.jpg
+2017-04-02T15:47:37.510Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c2.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c2.jpg
+2017-04-02T15:47:37.510Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b3.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b3.jpg
+2017-04-02T15:47:37.510Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\E0.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\E0.jpg
+2017-04-02T15:47:37.510Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a12.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a12.jpg
+2017-04-02T15:47:37.511Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d1.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d1.jpg
+2017-04-02T15:47:37.511Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c13.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c13.jpg
+2017-04-02T15:47:37.511Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a1.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a1.jpg
+2017-04-02T15:47:37.511Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a3.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a3.jpg
+2017-04-02T15:47:37.511Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c5.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c5.jpg
+2017-04-02T15:47:37.511Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b1.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b1.jpg
+2017-04-02T15:47:37.512Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\run.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\run.png
+2017-04-02T15:47:37.512Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c11.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c11.jpg
+2017-04-02T15:47:37.512Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d12.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d12.jpg
+2017-04-02T15:47:37.512Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b2.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b2.jpg
+2017-04-02T15:47:37.513Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c3.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c3.jpg
+2017-04-02T15:47:37.513Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d5.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d5.jpg
+2017-04-02T15:47:37.513Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a5.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a5.jpg
+2017-04-02T15:47:37.514Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a2.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a2.jpg
+2017-04-02T15:47:37.514Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a13.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a13.jpg
+2017-04-02T15:47:37.514Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b11.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b11.jpg
+2017-04-02T15:47:37.514Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d13.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d13.jpg
+2017-04-02T15:47:37.514Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\e1.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\e1.jpg
+2017-04-02T15:47:37.515Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d11.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d11.jpg
+2017-04-02T15:47:37.515Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b12.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b12.jpg
+2017-04-02T15:47:37.515Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a10.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a10.jpg
+2017-04-02T15:47:37.515Z - normal: [build-raw-assets] Start copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b13.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b13.jpg
+2017-04-02T15:47:37.515Z - normal: [build-raw-assets] Start copying C:\CocosCreator\resources\static\default-assets\image\default_sprite.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-internal\image\default_sprite.png
+2017-04-02T15:47:37.516Z - normal: [build-raw-assets] Start copying C:\CocosCreator\resources\static\default-assets\image\default_btn_disabled.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-internal\image\default_btn_disabled.png
+2017-04-02T15:47:37.516Z - normal: [build-raw-assets] Start copying C:\CocosCreator\resources\static\default-assets\image\default_btn_pressed.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-internal\image\default_btn_pressed.png
+2017-04-02T15:47:37.516Z - normal: [build-raw-assets] Start copying C:\CocosCreator\resources\static\default-assets\image\default_panel.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-internal\image\default_panel.png
+2017-04-02T15:47:37.516Z - normal: [build-raw-assets] Start copying C:\CocosCreator\resources\static\default-assets\image\default_btn_normal.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-internal\image\default_btn_normal.png
+2017-04-02T15:47:37.664Z - normal: [build-raw-assets] Finish copying C:\CocosCreator\resources\static\default-assets\image\default_sprite.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-internal\image\default_sprite.png
+2017-04-02T15:47:37.667Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d3.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d3.jpg
+2017-04-02T15:47:37.680Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d2.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d2.jpg
+2017-04-02T15:47:37.680Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b5.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b5.jpg
+2017-04-02T15:47:37.684Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c1.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c1.jpg
+2017-04-02T15:47:37.685Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c10.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c10.jpg
+2017-04-02T15:47:37.689Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a11.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a11.jpg
+2017-04-02T15:47:37.691Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b3.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b3.jpg
+2017-04-02T15:47:37.694Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c2.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c2.jpg
+2017-04-02T15:47:37.696Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\E0.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\E0.jpg
+2017-04-02T15:47:37.699Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a12.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a12.jpg
+2017-04-02T15:47:37.704Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d1.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d1.jpg
+2017-04-02T15:47:37.706Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c13.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c13.jpg
+2017-04-02T15:47:37.709Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a1.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a1.jpg
+2017-04-02T15:47:37.712Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a3.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a3.jpg
+2017-04-02T15:47:37.714Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c5.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c5.jpg
+2017-04-02T15:47:37.715Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\run.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\run.png
+2017-04-02T15:47:37.718Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b1.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b1.jpg
+2017-04-02T15:47:37.720Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c11.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c11.jpg
+2017-04-02T15:47:37.722Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b2.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b2.jpg
+2017-04-02T15:47:37.724Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d5.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d5.jpg
+2017-04-02T15:47:37.726Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a5.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a5.jpg
+2017-04-02T15:47:37.728Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a13.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a13.jpg
+2017-04-02T15:47:37.730Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a2.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a2.jpg
+2017-04-02T15:47:37.734Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d13.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d13.jpg
+2017-04-02T15:47:37.735Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\e1.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\e1.jpg
+2017-04-02T15:47:37.738Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b11.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b11.jpg
+2017-04-02T15:47:37.741Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b12.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b12.jpg
+2017-04-02T15:47:37.743Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d11.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d11.jpg
+2017-04-02T15:47:37.745Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\b13.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\b13.jpg
+2017-04-02T15:47:37.745Z - normal: [build-raw-assets] Finish copying C:\CocosCreator\resources\static\default-assets\image\default_btn_disabled.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-internal\image\default_btn_disabled.png
+2017-04-02T15:47:37.746Z - normal: [build-raw-assets] Finish copying C:\CocosCreator\resources\static\default-assets\image\default_btn_pressed.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-internal\image\default_btn_pressed.png
+2017-04-02T15:47:37.747Z - normal: [build-raw-assets] Finish copying C:\CocosCreator\resources\static\default-assets\image\default_panel.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-internal\image\default_panel.png
+2017-04-02T15:47:37.747Z - normal: [build-raw-assets] Finish copying C:\CocosCreator\resources\static\default-assets\image\default_btn_normal.png to C:\Users\Administrator\Desktop\jsb-default\res\raw-internal\image\default_btn_normal.png
+2017-04-02T15:47:37.749Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\a10.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\a10.jpg
+2017-04-02T15:47:37.752Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\d12.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\d12.jpg
+2017-04-02T15:47:37.754Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c12.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c12.jpg
+2017-04-02T15:47:37.756Z - normal: [build-raw-assets] Finish copying K:\Code\CocosCreatorProjects\Dadianer\assets\image\c3.jpg to C:\Users\Administrator\Desktop\jsb-default\res\raw-assets\image\c3.jpg
+2017-04-02T15:47:37.757Z - normal: Finish building raw assets
+2017-04-02T15:47:42.235Z - normal: Built to "C:\Users\Administrator\Desktop\jsb-default" successfully
+2017-04-02T16:20:49.162Z - failed: Error: Compile failed. The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+    at ChildProcess.<anonymous> (C:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:18861)
+    at ChildProcess.<anonymous> (C:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:7424)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:191:7)
+    at maybeClose (internal/child_process.js:877:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+2017-04-02T16:35:54.007Z - info: shutdown preview server
