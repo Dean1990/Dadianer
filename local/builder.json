@@ -1,13 +1,13 @@
 {
   "androidStudio": true,
-  "apiLevel": "android-14",
+  "apiLevel": "android-10",
   "appABIs": [
-    "x86",
-    "arm64-v8a",
+    "armeabi",
     "armeabi-v7a",
-    "armeabi"
+    "arm64-v8a",
+    "x86"
   ],
-  "buildPath": "C:\\Users\\Administrator\\Desktop",
+  "buildPath": "/Users/dean/Desktop",
   "debug": false,
   "keystoreAlias": "",
   "keystoreAliasPassword": "",

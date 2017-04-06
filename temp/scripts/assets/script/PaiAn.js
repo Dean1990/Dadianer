@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, 'b3ac1KyqV9HV74OMXSKmVzK', 'PaiAn');
-// script\PaiAn.js
+// script/PaiAn.js
 
 "use strict";
 

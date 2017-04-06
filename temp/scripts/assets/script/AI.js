@@ -1,6 +1,6 @@
 "use strict";
 cc._RFpush(module, '3865cNvozdCB615DN8X95x0', 'AI');
-// script\AI.js
+// script/AI.js
 
 "use strict";
 
