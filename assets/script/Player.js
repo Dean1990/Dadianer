@@ -55,19 +55,19 @@ cc.Class({
         }
         
 
-        if(this.shouPai!=null){
+        // if(this.shouPai!=null){
 
-            if(this.shouPai.length==0){
+        //     if(this.shouPai.length==0){
 
-                this.shouPaiNum.string = "";
+        //         this.shouPaiNum.string = "";
 
-            }else {
+        //     }else {
 
-                this.shouPaiNum.string = this.shouPai.length;
+        //         this.shouPaiNum.string = this.shouPai.length;
 
-            }
+        //     }
             
-        }
+        // }
     },
 
     toggle: function(){

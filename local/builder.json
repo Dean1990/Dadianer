@@ -13,10 +13,10 @@
   "keystoreAliasPassword": "",
   "keystorePassword": "",
   "keystorePath": "",
-  "platform": "android",
+  "platform": "ios",
   "previewHeight": "720",
   "previewWidth": "1280",
-  "sourceMaps": false,
+  "sourceMaps": true,
   "template": "default",
   "useDebugKeystore": true,
   "vsVersion": "auto"

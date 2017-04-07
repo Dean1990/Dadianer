@@ -282,5 +282,16 @@ cc.Class({
         //     self.player0.getComponent('Player').ShouPai = pp[0];
 
         // }
+    },
+
+    exit: function exit() {
+
+        cc.game.end();
+    },
+
+    restart: function restart() {
+
+        cc.game.restart();
     }
+
 });

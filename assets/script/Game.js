@@ -293,4 +293,17 @@ cc.Class({
         // }
 
     },
+
+    exit:function(){
+
+        cc.game.end();
+
+    },
+
+    restart:function(){
+
+        cc.game.restart();
+
+    },
+
 });
