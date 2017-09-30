@@ -55,16 +55,19 @@ cc.Class({
             this.xuanZhan.string = "宣";
         }
 
-        if (this.shouPai != null) {
+        // if(this.shouPai!=null){
 
-            if (this.shouPai.length == 0) {
+        //     if(this.shouPai.length==0){
 
-                this.shouPaiNum.string = "";
-            } else {
+        //         this.shouPaiNum.string = "";
 
-                this.shouPaiNum.string = this.shouPai.length;
-            }
-        }
+        //     }else {
+
+        //         this.shouPaiNum.string = this.shouPai.length;
+
+        //     }
+
+        // }
     },
 
     toggle: function toggle() {
