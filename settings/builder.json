@@ -3,9 +3,6 @@
   "appSecret": "",
   "excludeScenes": [],
   "includeAnySDK": false,
-  "includeSdk": [
-    "anysdk"
-  ],
   "inlineSpriteFrames": true,
   "mergeStartScene": false,
   "oauthLoginServer": "",
@@ -20,5 +17,10 @@
   "renderMode": "0",
   "startScene": "a1f63068-95a2-4d7d-b227-7d12bd7f984b",
   "title": "xuanzhan",
-  "webOrientation": "landscape"
+  "webOrientation": "landscape",
+  "includeSDKBox": false,
+  "jailbreakPlatform": false,
+  "inlineSpriteFrames_native": true,
+  "optimizeHotUpdate": false,
+  "md5Cache": false
 }

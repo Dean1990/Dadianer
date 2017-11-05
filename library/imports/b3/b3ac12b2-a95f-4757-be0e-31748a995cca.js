@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, 'b3ac1KyqV9HV74OMXSKmVzK', 'PaiAn');
+// script/PaiAn.js
+
+"use strict";
 
 var com = require('Common');
 cc.Class({
@@ -257,3 +261,5 @@ cc.Class({
         }
     }
 });
+
+cc._RF.pop();

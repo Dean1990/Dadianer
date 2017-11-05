@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, '2ce3dajz81FDajDPh6cF69x', 'Common');
+// script/Common.js
+
+"use strict";
 
 module.exports = {
 
@@ -587,3 +591,5 @@ module.exports = {
     }
 
 };
+
+cc._RF.pop();

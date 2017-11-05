@@ -1,3 +1,7 @@
+"use strict";
+cc._RF.push(module, '52296tYeOJGtoyHtGk1jFup', 'Game');
+// script/Game.js
+
 'use strict';
 
 var com = require('Common');
@@ -303,3 +307,5 @@ cc.Class({
     }
 
 });
+
+cc._RF.pop();

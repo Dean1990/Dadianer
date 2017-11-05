@@ -1,3 +1,7 @@
+"use strict";
+cc._RF.push(module, '8c5d8QamBFBuaHZjtQBUcp+', 'Player');
+// script/Player.js
+
 'use strict';
 
 var com = require('Common');
@@ -39,7 +43,10 @@ cc.Class({
 
         xuanPai: null, //选中的牌
 
-        isXuanZhan: false },
+        isXuanZhan: false //是否宣战
+
+
+    },
 
     // use this for initialization
     onLoad: function onLoad() {},
@@ -82,3 +89,5 @@ cc.Class({
     }
 
 });
+
+cc._RF.pop();

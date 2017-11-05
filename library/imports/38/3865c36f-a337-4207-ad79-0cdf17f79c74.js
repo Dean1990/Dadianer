@@ -1,4 +1,8 @@
 "use strict";
+cc._RF.push(module, '3865cNvozdCB615DN8X95x0', 'AI');
+// script/AI.js
+
+"use strict";
 
 var com = require('Common');
 module.exports = {
@@ -293,3 +297,5 @@ module.exports = {
     }
 
 };
+
+cc._RF.pop();
