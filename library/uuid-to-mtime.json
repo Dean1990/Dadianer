@@ -220,7 +220,7 @@
     "relativePath": "prefab/webview.prefab"
   },
   "817f3009-1a54-4a5a-a6e9-813bd86d362c": {
-    "asset": 1506763110000,
+    "asset": 1509876218900,
     "meta": 1508375889877,
     "relativePath": "image"
   },
@@ -500,8 +500,8 @@
     "relativePath": "image/E1.jpg"
   },
   "b0cb47b4-9cd0-47cc-ada3-3c1383744923": {
-    "asset": 1509872508729,
-    "meta": 1509872508782,
+    "asset": 1510655625039,
+    "meta": 1510655625052,
     "relativePath": "main.fire"
   },
   "48c53c8a-051e-406b-a362-50921e526cfa": {
@@ -685,7 +685,7 @@
     "relativePath": "Prefab/E1.prefab"
   },
   "8956b91a-e4ad-471a-b691-1b3fd0289970": {
-    "asset": 1506755206000,
+    "asset": 1510644433008,
     "meta": 1508375889880,
     "relativePath": "script"
   },
@@ -709,11 +709,6 @@
     "meta": 1508395658589,
     "relativePath": "script/AI.js"
   },
-  "2ce3d6a3-cfcd-450d-a8c3-3e1e9c17af71": {
-    "asset": 1491040008000,
-    "meta": 1508395658675,
-    "relativePath": "script/Common.js"
-  },
   "8c5d841a-9811-41b9-a1d9-8ed40151ca7e": {
     "asset": 1491542096000,
     "meta": 1508395658832,
@@ -723,11 +718,6 @@
     "asset": 1509872201822,
     "meta": 1509872201890,
     "relativePath": "launch.fire"
-  },
-  "52296b58-78e2-46b6-8c87-b469358c5ba9": {
-    "asset": 1506754663000,
-    "meta": 1508395658704,
-    "relativePath": "script/Game.js"
   },
   "5ffe2a91-d15c-4d58-937f-98323e6a00dc": {
     "asset": 1509872532045,
@@ -763,5 +753,40 @@
     "asset": 1509876194736,
     "meta": 1509876218917,
     "relativePath": "image/default_head.png"
+  },
+  "d62f154b-56ec-4fd6-aa4e-4fb37568bf0d": {
+    "asset": 1510646626635,
+    "meta": 1510646384923,
+    "relativePath": "resources/language"
+  },
+  "478be486-eb4c-4989-81e5-0eef805b004e": {
+    "asset": 1510647810779,
+    "meta": 1510646626635,
+    "relativePath": "resources/language/string_cn.json"
+  },
+  "b74aafbf-3f99-49e1-9318-c2d6cee5dc11": {
+    "asset": 1510651092878,
+    "meta": 1510651070800,
+    "relativePath": "resources"
+  },
+  "166cff7e-dd80-4991-82eb-342f42a8cc9a": {
+    "asset": 1510652727349,
+    "meta": 1510652628745,
+    "relativePath": "resources/language/string_eng.json"
+  },
+  "2ce3d6a3-cfcd-450d-a8c3-3e1e9c17af71": {
+    "asset": 1510655080326,
+    "meta": 1510655101638,
+    "relativePath": "script/Common.js"
+  },
+  "52296b58-78e2-46b6-8c87-b469358c5ba9": {
+    "asset": 1510655597000,
+    "meta": 1510655611885,
+    "relativePath": "script/Game.js"
+  },
+  "875aaf14-cf66-4414-9582-300c8bbce244": {
+    "asset": 1510655180000,
+    "meta": 1510655611886,
+    "relativePath": "script/Language.js"
   }
 }

@@ -1,4 +1,5 @@
 var com = require('Common');
+var lang = require('Language');
 
 cc.Class({
     extends: cc.Component,
@@ -16,6 +17,11 @@ cc.Class({
         },
 
         gameLabel:{
+            default:null,
+            type:cc.Label,
+        },
+
+        restartBtnLabel:{
             default:null,
             type:cc.Label,
         },
@@ -189,6 +195,10 @@ cc.Class({
     // },
 
     init:function () {
+
+        lang.init();
+
+        this.restartBtnLabel.string = com.lang.restart;
 
         this.startGame();
 

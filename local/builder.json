@@ -6,8 +6,9 @@
     "armeabi-v7a",
     "arm64-v8a"
   ],
-  "buildPath": "/Users/dean/Desktop",
+  "buildPath": "/Users/dean/Project/xuanzhan",
   "debug": false,
+  "includeEruda": false,
   "keystoreAlias": "",
   "keystoreAliasPassword": "",
   "keystorePassword": "",
@@ -18,6 +19,5 @@
   "sourceMaps": true,
   "template": "default",
   "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "includeEruda": false
+  "vsVersion": "auto"
 }

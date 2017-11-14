@@ -5,6 +5,7 @@ cc._RF.push(module, '52296tYeOJGtoyHtGk1jFup', 'Game');
 'use strict';
 
 var com = require('Common');
+var lang = require('Language');
 
 cc.Class({
     extends: cc.Component,
@@ -22,6 +23,11 @@ cc.Class({
         },
 
         gameLabel: {
+            default: null,
+            type: cc.Label
+        },
+
+        restartBtnLabel: {
             default: null,
             type: cc.Label
         },
@@ -192,6 +198,10 @@ cc.Class({
     // },
 
     init: function init() {
+
+        lang.init();
+
+        this.restartBtnLabel.string = com.lang.restart;
 
         this.startGame();
     },

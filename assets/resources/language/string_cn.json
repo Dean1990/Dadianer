@@ -1,0 +1,15 @@
+{
+    "startGame" : "开始游戏",
+    "restart" : "重新开始",
+    "exit" : "退出",
+    "rules":"玩法介绍",
+    "close":"关闭",
+    "play":"出牌",
+    "pass":"过",
+    "declareWar":"宣战",
+    "declare":"宣",
+    "follow":"跟",
+    "passTag":"不出",
+    "allow":"给风",
+    "gameOver":"游戏结束"
+}

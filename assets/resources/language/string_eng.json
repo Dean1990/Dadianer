@@ -1,0 +1,15 @@
+{
+    "startGame" : "Start Game",
+    "restart" : "Restart",
+    "exit" : "Exit",
+    "rules":"Rules",
+    "close":"Close",
+    "play":"Play",
+    "pass":"Pass",
+    "declareWar":"Declare War",
+    "declare":"Declare",
+    "follow":"Follow",
+    "passTag":"Pass",
+    "allow":"Allow",
+    "gameOver":"Game Over"
+}

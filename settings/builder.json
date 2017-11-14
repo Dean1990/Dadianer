@@ -3,9 +3,14 @@
   "appSecret": "",
   "excludeScenes": [],
   "includeAnySDK": false,
+  "includeSDKBox": false,
   "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
   "mergeStartScene": false,
   "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
   "orientation": {
     "landscapeLeft": true,
     "landscapeRight": true,
@@ -17,10 +22,5 @@
   "renderMode": "0",
   "startScene": "a1f63068-95a2-4d7d-b227-7d12bd7f984b",
   "title": "xuanzhan",
-  "webOrientation": "landscape",
-  "includeSDKBox": false,
-  "jailbreakPlatform": false,
-  "inlineSpriteFrames_native": true,
-  "optimizeHotUpdate": false,
-  "md5Cache": false
+  "webOrientation": "landscape"
 }

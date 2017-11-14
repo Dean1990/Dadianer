@@ -2104,6 +2104,9 @@
     "gameLabel": {
       "__id__": 6
     },
+    "restartBtnLabel": {
+      "__id__": 53
+    },
     "a1": {
       "__uuid__": "aa927d89-b4bc-48c1-9b23-4712998d057f"
     },

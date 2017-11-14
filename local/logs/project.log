@@ -1,418 +1,302 @@
-2017-11-05T08:17:18.857Z - normal: Load ~/.CocosCreator/settings.json
-2017-11-05T08:17:18.860Z - normal: checking language setting...
-2017-11-05T08:17:18.861Z - normal: Language: zh
-2017-11-05T08:17:19.764Z - success: protocol editor-framework registered
-2017-11-05T08:17:19.764Z - success: protocol app registered
-2017-11-05T08:17:19.764Z - success: protocol theme registered
-2017-11-05T08:17:19.764Z - success: protocol profile registered
-2017-11-05T08:17:19.764Z - success: protocol packages registered
-2017-11-05T08:17:19.767Z - success: protocol unpack registerred
-2017-11-05T08:17:19.767Z - success: protocol disable-commonjs registerred
-2017-11-05T08:17:20.026Z - normal: connected!
-2017-11-05T08:17:20.029Z - normal: Check project /Users/dean/Dev/code/CocosCreator/DaDianer
-2017-11-05T08:17:20.031Z - normal: Initializing Cocos2d
-2017-11-05T08:17:20.277Z - normal: Initializing Asset Database
-2017-11-05T08:17:20.317Z - success: protocol uuid registerred
-2017-11-05T08:17:20.317Z - success: protocol db registerred
-2017-11-05T08:17:20.318Z - success: protocol thumbnail registerred
-2017-11-05T08:17:20.318Z - normal: Loading editor/builtin packages
-2017-11-05T08:17:20.348Z - success: anysdk loaded
-2017-11-05T08:17:20.500Z - success: assets loaded
-2017-11-05T08:17:20.504Z - success: builder loaded
-2017-11-05T08:17:20.509Z - success: hierarchy loaded
-2017-11-05T08:17:20.515Z - success: inspector loaded
-2017-11-05T08:17:20.517Z - success: keystore loaded
-2017-11-05T08:17:20.522Z - success: node-library loaded
-2017-11-05T08:17:20.525Z - success: package-asset loaded
-2017-11-05T08:17:20.527Z - success: preferences loaded
-2017-11-05T08:17:20.530Z - success: project-exporter loaded
-2017-11-05T08:17:20.548Z - success: project-importer loaded
-2017-11-05T08:17:20.552Z - success: project-settings loaded
-2017-11-05T08:17:20.556Z - success: ui-kit loaded
-2017-11-05T08:17:20.561Z - success: ui-grid loaded
-2017-11-05T08:17:20.570Z - success: scene loaded
-2017-11-05T08:17:20.571Z - success: sprite-editor loaded
-2017-11-05T08:17:20.577Z - success: store loaded
-2017-11-05T08:17:20.584Z - success: timeline loaded
-2017-11-05T08:17:20.584Z - normal: Loading builtin packages
-2017-11-05T08:17:20.589Z - success: asset-db-debugger loaded
-2017-11-05T08:17:20.590Z - success: color-picker loaded
-2017-11-05T08:17:20.598Z - success: console loaded
-2017-11-05T08:17:20.602Z - success: package-manager loaded
-2017-11-05T08:17:20.608Z - success: sdkbox loaded
-2017-11-05T08:17:20.612Z - success: tester loaded
-2017-11-05T08:17:20.617Z - success: ui-kit-preview-extra loaded
-2017-11-05T08:17:20.620Z - success: ui-kit-preview loaded
-2017-11-05T08:17:20.624Z - success: ui-tree loaded
-2017-11-05T08:17:21.741Z - normal: Initializing project /Users/dean/Dev/code/CocosCreator/DaDianer
-2017-11-05T08:17:21.747Z - normal: Loading packages
-2017-11-05T08:17:21.751Z - normal: Watching packages
-2017-11-05T08:17:21.765Z - normal: Run Application
-2017-11-05T08:17:22.340Z - success: preview server running at http://localhost:7456
-2017-11-05T08:17:27.885Z - normal: 1.6.2
-2017-11-05T08:18:06.887Z - normal: Simulator: WORKAREA WIDTH 1440.00, HEIGHT 855.00
-2017-11-05T08:18:06.888Z - normal: Simulator: FRAME SCALE = 1.00
-2017-11-05T08:18:06.905Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:18:06.907Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:18:06.908Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:18:07.087Z - normal: Simulator: 
-2017-11-05T08:18:07.087Z - normal: Simulator: {
-2017-11-05T08:18:07.088Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
-2017-11-05T08:18:07.088Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2017-11-05T08:18:07.088Z - normal: Simulator: 	cocos2d.x.version: 1.6.2
-2017-11-05T08:18:07.089Z - normal: Simulator: 	gl.vendor: Intel Inc.
-2017-11-05T08:18:07.089Z - normal: Simulator: 	gl.supports_PVRTC: false
-2017-11-05T08:18:07.090Z - normal: Simulator: 	gl.renderer: Intel Iris OpenGL Engine
-2017-11-05T08:18:07.090Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2017-11-05T08:18:07.091Z - normal: Simulator: 	gl.max_texture_size: 16384
-2017-11-05T08:18:07.092Z - normal: Simulator: 	gl.supports_ETC1: false
-2017-11-05T08:18:07.092Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2017-11-05T08:18:07.093Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2017-11-05T08:18:07.094Z - normal: Simulator: 	gl.max_texture_units: 16
-2017-11-05T08:18:07.094Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2017-11-05T08:18:07.094Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2017-11-05T08:18:07.095Z - normal: Simulator: 	gl.supports_NPOT: true
-2017-11-05T08:18:07.095Z - normal: Simulator: 	gl.version: 2.1 INTEL-10.28.29
-2017-11-05T08:18:07.095Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2017-11-05T08:18:07.095Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2017-11-05T08:18:07.096Z - normal: Simulator: }
-2017-11-05T08:18:07.096Z - normal: Simulator: 
-2017-11-05T08:18:07.096Z - normal: Simulator: 
-2017-11-05T08:18:07.097Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
-2017-11-05T08:18:07.098Z - normal: Simulator: Project Config:
-2017-11-05T08:18:07.099Z - normal: Simulator:     project dir: /Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/
-2017-11-05T08:18:07.099Z - normal: Simulator:     writable path: $(PROJDIR)/
-2017-11-05T08:18:07.100Z - normal: Simulator:     script file: $(PROJDIR)/main.js
-2017-11-05T08:18:07.100Z - normal: Simulator:     frame size: 960 x 640
-2017-11-05T08:18:07.100Z - normal: Simulator:     frame scale: 1.00
-2017-11-05T08:18:07.106Z - normal: Simulator:     show console: NO
-2017-11-05T08:18:07.106Z - normal: Simulator:     write debug log: NO ()
-2017-11-05T08:18:07.107Z - normal: Simulator:     listen: 
-2017-11-05T08:18:07.107Z - normal: Simulator:     debugger: none
-2017-11-05T08:18:07.107Z - normal: Simulator:     add searching path:
-2017-11-05T08:18:07.108Z - normal: Simulator: 
-2017-11-05T08:18:07.109Z - normal: Simulator: 
-2017-11-05T08:18:07.109Z - normal: Simulator: 
-2017-11-05T08:18:07.110Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:18:07.110Z - normal: Simulator: LOAD Js FILE: main.js
-2017-11-05T08:18:07.111Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:18:07.373Z - normal: Simulator: Cocos2d-x-lite v1.6.0
-2017-11-05T08:18:07.703Z - normal: Simulator: iShow!
-2017-11-05T08:18:08.211Z - normal: Simulator: InitScene: 1.5440000000000964ms
-2017-11-05T08:18:08.211Z - normal: Simulator: AutoRelease: 0.59699999999998ms
-2017-11-05T08:18:08.212Z - normal: Simulator: Destroy: 0.09600000000000364ms
-2017-11-05T08:18:08.212Z - normal: Simulator: AttachPersist: 0.0060000000000854925ms
-2017-11-05T08:18:08.232Z - normal: Simulator: Activate: 19.16300000000001ms
-2017-11-05T08:18:14.637Z - normal: Simulator: LoadScene b0cb47b4-9cd0-47cc-ada3-3c1383744923: 144.13900000000012ms
-2017-11-05T08:18:14.640Z - normal: Simulator: InitScene: 2.225000000000364ms
-2017-11-05T08:18:14.640Z - normal: Simulator: AutoRelease: 0.431999999999789ms
-2017-11-05T08:18:14.653Z - normal: Simulator: Destroy: 11.118000000000393ms
-2017-11-05T08:18:14.654Z - normal: Simulator: AttachPersist: 0.009000000000014552ms
-2017-11-05T08:18:14.747Z - normal: Simulator: Activate: 95.44300000000021ms
-2017-11-05T08:18:25.602Z - normal: Simulator: HttpClient singleton is nullptr
-2017-11-05T08:18:25.639Z - normal: Simulator: basic_object_finalize 0x11be26a0 ...
-2017-11-05T08:18:25.640Z - normal: Simulator: jsbindings: finalizing JS object 0x11be26d0 (WebSocket)
-2017-11-05T08:18:25.640Z - normal: Simulator: jsbindings: finalizing JS object 0x11be2700 (SocketIO)
-2017-11-05T08:18:25.641Z - normal: Simulator: JavaScriptObjCBridge_finalize 0x11be2790 ...
-2017-11-05T08:18:25.641Z - normal: Simulator: JavaScriptObjCBridge_finalize 0x11be2a00 ...
-2017-11-05T08:19:26.252Z - normal: Simulator: WORKAREA WIDTH 1440.00, HEIGHT 855.00
-2017-11-05T08:19:26.253Z - normal: Simulator: FRAME SCALE = 1.00
-2017-11-05T08:19:26.275Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:19:26.275Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:19:26.275Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:19:26.426Z - normal: Simulator: 
-2017-11-05T08:19:26.428Z - normal: Simulator: {
-2017-11-05T08:19:26.428Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
-2017-11-05T08:19:26.428Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2017-11-05T08:19:26.429Z - normal: Simulator: 	cocos2d.x.version: 1.6.2
-2017-11-05T08:19:26.429Z - normal: Simulator: 	gl.vendor: Intel Inc.
-2017-11-05T08:19:26.429Z - normal: Simulator: 	gl.supports_PVRTC: false
-2017-11-05T08:19:26.429Z - normal: Simulator: 	gl.renderer: Intel Iris OpenGL Engine
-2017-11-05T08:19:26.430Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2017-11-05T08:19:26.431Z - normal: Simulator: 	gl.max_texture_size: 16384
-2017-11-05T08:19:26.433Z - normal: Simulator: 	gl.supports_ETC1: false
-2017-11-05T08:19:26.434Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2017-11-05T08:19:26.434Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2017-11-05T08:19:26.434Z - normal: Simulator: 	gl.max_texture_units: 16
-2017-11-05T08:19:26.435Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2017-11-05T08:19:26.435Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2017-11-05T08:19:26.435Z - normal: Simulator: 	gl.supports_NPOT: true
-2017-11-05T08:19:26.435Z - normal: Simulator: 	gl.version: 2.1 INTEL-10.28.29
-2017-11-05T08:19:26.436Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2017-11-05T08:19:26.436Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2017-11-05T08:19:26.436Z - normal: Simulator: }
-2017-11-05T08:19:26.437Z - normal: Simulator: 
-2017-11-05T08:19:26.437Z - normal: Simulator: 
-2017-11-05T08:19:26.437Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
-2017-11-05T08:19:26.447Z - normal: Simulator: Project Config:
-2017-11-05T08:19:26.448Z - normal: Simulator:     project dir: /Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/
-2017-11-05T08:19:26.448Z - normal: Simulator:     writable path: $(PROJDIR)/
-2017-11-05T08:19:26.449Z - normal: Simulator:     script file: $(PROJDIR)/main.js
-2017-11-05T08:19:26.450Z - normal: Simulator:     frame size: 960 x 640
-2017-11-05T08:19:26.450Z - normal: Simulator:     frame scale: 1.00
-2017-11-05T08:19:26.452Z - normal: Simulator:     show console: NO
-2017-11-05T08:19:26.452Z - normal: Simulator:     write debug log: NO ()
-2017-11-05T08:19:26.453Z - normal: Simulator:     listen: 
-2017-11-05T08:19:26.453Z - normal: Simulator:     debugger: none
-2017-11-05T08:19:26.453Z - normal: Simulator:     add searching path:
-2017-11-05T08:19:26.453Z - normal: Simulator: 
-2017-11-05T08:19:26.454Z - normal: Simulator: 
-2017-11-05T08:19:26.454Z - normal: Simulator: 
-2017-11-05T08:19:26.455Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:19:26.455Z - normal: Simulator: LOAD Js FILE: main.js
-2017-11-05T08:19:26.456Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:19:26.697Z - normal: Simulator: Cocos2d-x-lite v1.6.0
-2017-11-05T08:19:27.055Z - normal: Simulator: iShow!
-2017-11-05T08:19:27.373Z - normal: Simulator: InitScene: 2.73599999999999ms
-2017-11-05T08:19:27.392Z - normal: Simulator: AutoRelease: 14.655999999999949ms
-2017-11-05T08:19:27.393Z - normal: Simulator: Destroy: 0.3290000000000646ms
-2017-11-05T08:19:27.393Z - normal: Simulator: AttachPersist: 0.005999999999971806ms
-2017-11-05T08:19:27.480Z - normal: Simulator: Activate: 91.64599999999996ms
-2017-11-05T08:19:35.430Z - normal: Simulator: HttpClient singleton is nullptr
-2017-11-05T08:19:35.469Z - normal: Simulator: basic_object_finalize 0x16ce26a0 ...
-2017-11-05T08:19:35.470Z - normal: Simulator: jsbindings: finalizing JS object 0x16ce26d0 (WebSocket)
-2017-11-05T08:19:35.471Z - normal: Simulator: jsbindings: finalizing JS object 0x16ce2700 (SocketIO)
-2017-11-05T08:19:35.472Z - normal: Simulator: JavaScriptObjCBridge_finalize 0x16ce2790 ...
-2017-11-05T08:19:35.472Z - normal: Simulator: JavaScriptObjCBridge_finalize 0x16ce2a00 ...
-2017-11-05T08:20:00.689Z - normal: Simulator: WORKAREA WIDTH 1440.00, HEIGHT 855.00
-2017-11-05T08:20:00.690Z - normal: Simulator: FRAME SCALE = 1.00
-2017-11-05T08:20:00.698Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:20:00.712Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:20:00.713Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:20:00.850Z - normal: Simulator: 
-2017-11-05T08:20:00.851Z - normal: Simulator: {
-2017-11-05T08:20:00.851Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
-2017-11-05T08:20:00.852Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2017-11-05T08:20:00.852Z - normal: Simulator: 	cocos2d.x.version: 1.6.2
-2017-11-05T08:20:00.852Z - normal: Simulator: 	gl.vendor: Intel Inc.
-2017-11-05T08:20:00.853Z - normal: Simulator: 	gl.supports_PVRTC: false
-2017-11-05T08:20:00.853Z - normal: Simulator: 	gl.renderer: Intel Iris OpenGL Engine
-2017-11-05T08:20:00.853Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2017-11-05T08:20:00.853Z - normal: Simulator: 	gl.max_texture_size: 16384
-2017-11-05T08:20:00.854Z - normal: Simulator: 	gl.supports_ETC1: false
-2017-11-05T08:20:00.854Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2017-11-05T08:20:00.854Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2017-11-05T08:20:00.854Z - normal: Simulator: 	gl.max_texture_units: 16
-2017-11-05T08:20:00.855Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2017-11-05T08:20:00.855Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2017-11-05T08:20:00.858Z - normal: Simulator: 	gl.supports_NPOT: true
-2017-11-05T08:20:00.859Z - normal: Simulator: 	gl.version: 2.1 INTEL-10.28.29
-2017-11-05T08:20:00.859Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2017-11-05T08:20:00.859Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2017-11-05T08:20:00.859Z - normal: Simulator: }
-2017-11-05T08:20:00.860Z - normal: Simulator: 
-2017-11-05T08:20:00.860Z - normal: Simulator: 
-2017-11-05T08:20:00.860Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
-2017-11-05T08:20:00.880Z - normal: Simulator: Project Config:
-2017-11-05T08:20:00.881Z - normal: Simulator:     project dir: /Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/
-2017-11-05T08:20:00.881Z - normal: Simulator:     writable path: $(PROJDIR)/
-2017-11-05T08:20:00.883Z - normal: Simulator:     script file: $(PROJDIR)/main.js
-2017-11-05T08:20:00.883Z - normal: Simulator:     frame size: 960 x 640
-2017-11-05T08:20:00.884Z - normal: Simulator:     frame scale: 1.00
-2017-11-05T08:20:00.884Z - normal: Simulator:     show console: NO
-2017-11-05T08:20:00.885Z - normal: Simulator:     write debug log: NO ()
-2017-11-05T08:20:00.885Z - normal: Simulator:     listen: 
-2017-11-05T08:20:00.886Z - normal: Simulator:     debugger: none
-2017-11-05T08:20:00.887Z - normal: Simulator:     add searching path:
-2017-11-05T08:20:00.888Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:20:00.890Z - normal: Simulator: LOAD Js FILE: main.js
-2017-11-05T08:20:00.890Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:20:01.018Z - normal: Simulator: Cocos2d-x-lite v1.6.0
-2017-11-05T08:20:01.363Z - normal: Simulator: iShow!
-2017-11-05T08:20:01.666Z - normal: Simulator: InitScene: 1.955000000000041ms
-2017-11-05T08:20:01.667Z - normal: Simulator: AutoRelease: 0.5049999999999955ms
-2017-11-05T08:20:01.667Z - normal: Simulator: Destroy: 0.65400000000011ms
-2017-11-05T08:20:01.667Z - normal: Simulator: AttachPersist: 0.007999999999924512ms
-2017-11-05T08:20:01.676Z - normal: Simulator: Activate: 8.756000000000085ms
-2017-11-05T08:20:04.099Z - normal: Simulator: HttpClient singleton is nullptr
-2017-11-05T08:20:04.130Z - normal: Simulator: basic_object_finalize 0x111e26a0 ...
-2017-11-05T08:20:04.131Z - normal: Simulator: jsbindings: finalizing JS object 0x111e26d0 (WebSocket)
-2017-11-05T08:20:04.131Z - normal: Simulator: jsbindings: finalizing JS object 0x111e2700 (SocketIO)
-2017-11-05T08:20:04.131Z - normal: Simulator: JavaScriptObjCBridge_finalize 0x111e2790 ...
-2017-11-05T08:20:04.131Z - normal: Simulator: JavaScriptObjCBridge_finalize 0x111e2a00 ...
-2017-11-05T08:20:33.694Z - normal: Simulator: WORKAREA WIDTH 1440.00, HEIGHT 855.00
-2017-11-05T08:20:33.695Z - normal: Simulator: FRAME SCALE = 1.00
-2017-11-05T08:20:33.713Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:20:33.714Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:20:33.714Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:20:33.807Z - normal: Simulator: 
-2017-11-05T08:20:33.808Z - normal: Simulator: {
-2017-11-05T08:20:33.808Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
-2017-11-05T08:20:33.808Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2017-11-05T08:20:33.809Z - normal: Simulator: 	cocos2d.x.version: 1.6.2
-2017-11-05T08:20:33.809Z - normal: Simulator: 	gl.vendor: Intel Inc.
-2017-11-05T08:20:33.809Z - normal: Simulator: 	gl.supports_PVRTC: false
-2017-11-05T08:20:33.810Z - normal: Simulator: 	gl.renderer: Intel Iris OpenGL Engine
-2017-11-05T08:20:33.810Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2017-11-05T08:20:33.810Z - normal: Simulator: 	gl.max_texture_size: 16384
-2017-11-05T08:20:33.810Z - normal: Simulator: 	gl.supports_ETC1: false
-2017-11-05T08:20:33.872Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2017-11-05T08:20:33.873Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2017-11-05T08:20:33.874Z - normal: Simulator: 	gl.max_texture_units: 16
-2017-11-05T08:20:33.874Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2017-11-05T08:20:33.874Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2017-11-05T08:20:33.875Z - normal: Simulator: 	gl.supports_NPOT: true
-2017-11-05T08:20:33.875Z - normal: Simulator: 	gl.version: 2.1 INTEL-10.28.29
-2017-11-05T08:20:33.875Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2017-11-05T08:20:33.875Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2017-11-05T08:20:33.876Z - normal: Simulator: }
-2017-11-05T08:20:33.876Z - normal: Simulator: 
-2017-11-05T08:20:33.876Z - normal: Simulator: 
-2017-11-05T08:20:33.877Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
-2017-11-05T08:20:33.887Z - normal: Simulator: Project Config:
-2017-11-05T08:20:33.888Z - normal: Simulator:     project dir: /Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/
-2017-11-05T08:20:33.889Z - normal: Simulator:     writable path: $(PROJDIR)/
-2017-11-05T08:20:33.889Z - normal: Simulator:     script file: $(PROJDIR)/main.js
-2017-11-05T08:20:33.889Z - normal: Simulator:     frame size: 960 x 640
-2017-11-05T08:20:33.890Z - normal: Simulator:     frame scale: 1.00
-2017-11-05T08:20:33.890Z - normal: Simulator:     show console: NO
-2017-11-05T08:20:33.890Z - normal: Simulator:     write debug log: NO ()
-2017-11-05T08:20:33.891Z - normal: Simulator:     listen: 
-2017-11-05T08:20:33.891Z - normal: Simulator:     debugger: none
-2017-11-05T08:20:33.891Z - normal: Simulator:     add searching path:
-2017-11-05T08:20:33.891Z - normal: Simulator: 
-2017-11-05T08:20:33.891Z - normal: Simulator: 
-2017-11-05T08:20:33.892Z - normal: Simulator: 
-2017-11-05T08:20:33.892Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:20:33.892Z - normal: Simulator: LOAD Js FILE: main.js
-2017-11-05T08:20:33.892Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:20:34.024Z - normal: Simulator: Cocos2d-x-lite v1.6.0
-2017-11-05T08:20:34.397Z - normal: Simulator: iShow!
-2017-11-05T08:20:34.682Z - normal: Simulator: InitScene: 2.631999999999948ms
-2017-11-05T08:20:34.689Z - normal: Simulator: AutoRelease: 0.6720000000000255ms
-2017-11-05T08:20:34.690Z - normal: Simulator: Destroy: 0.24099999999998545ms
-2017-11-05T08:20:34.690Z - normal: Simulator: AttachPersist: 0.009000000000014552ms
-2017-11-05T08:20:34.737Z - normal: Simulator: Activate: 54.398000000000025ms
-2017-11-05T08:20:36.251Z - normal: Simulator: LoadScene b0cb47b4-9cd0-47cc-ada3-3c1383744923: 146.52199999999993ms
-2017-11-05T08:20:36.253Z - normal: Simulator: InitScene: 2.0850000000000364ms
-2017-11-05T08:20:36.254Z - normal: Simulator: AutoRelease: 0.33599999999978536ms
-2017-11-05T08:20:36.273Z - normal: Simulator: Destroy: 14.938000000000102ms
-2017-11-05T08:20:36.273Z - normal: Simulator: AttachPersist: 0.005000000000109139ms
-2017-11-05T08:20:36.368Z - normal: Simulator: Activate: 98.7539999999999ms
-2017-11-05T08:20:40.189Z - normal: Simulator: HttpClient singleton is nullptr
-2017-11-05T08:20:40.227Z - normal: Simulator: basic_object_finalize 0x14ce26a0 ...
-2017-11-05T08:20:40.228Z - normal: Simulator: jsbindings: finalizing JS object 0x14ce26d0 (WebSocket)
-2017-11-05T08:20:40.228Z - normal: Simulator: jsbindings: finalizing JS object 0x14ce2700 (SocketIO)
-2017-11-05T08:20:40.228Z - normal: Simulator: JavaScriptObjCBridge_finalize 0x14ce2790 ...
-2017-11-05T08:20:40.229Z - normal: Simulator: JavaScriptObjCBridge_finalize 0x14ce2a00 ...
-2017-11-05T08:21:11.395Z - normal: Simulator: WORKAREA WIDTH 1440.00, HEIGHT 855.00
-2017-11-05T08:21:11.395Z - normal: Simulator: FRAME SCALE = 1.00
-2017-11-05T08:21:11.409Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:21:11.410Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:21:11.410Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:21:11.503Z - normal: Simulator: 
-2017-11-05T08:21:11.503Z - normal: Simulator: {
-2017-11-05T08:21:11.503Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
-2017-11-05T08:21:11.503Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2017-11-05T08:21:11.547Z - normal: Simulator: 	cocos2d.x.version: 1.6.2
-2017-11-05T08:21:11.547Z - normal: Simulator: 	gl.vendor: Intel Inc.
-2017-11-05T08:21:11.548Z - normal: Simulator: 	gl.supports_PVRTC: false
-2017-11-05T08:21:11.548Z - normal: Simulator: 	gl.renderer: Intel Iris OpenGL Engine
-2017-11-05T08:21:11.549Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2017-11-05T08:21:11.549Z - normal: Simulator: 	gl.max_texture_size: 16384
-2017-11-05T08:21:11.549Z - normal: Simulator: 	gl.supports_ETC1: false
-2017-11-05T08:21:11.549Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2017-11-05T08:21:11.550Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2017-11-05T08:21:11.550Z - normal: Simulator: 	gl.max_texture_units: 16
-2017-11-05T08:21:11.550Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2017-11-05T08:21:11.551Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2017-11-05T08:21:11.551Z - normal: Simulator: 	gl.supports_NPOT: true
-2017-11-05T08:21:11.551Z - normal: Simulator: 	gl.version: 2.1 INTEL-10.28.29
-2017-11-05T08:21:11.552Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2017-11-05T08:21:11.552Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2017-11-05T08:21:11.553Z - normal: Simulator: }
-2017-11-05T08:21:11.553Z - normal: Simulator: 
-2017-11-05T08:21:11.553Z - normal: Simulator: 
-2017-11-05T08:21:11.553Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
-2017-11-05T08:21:11.579Z - normal: Simulator: Project Config:
-2017-11-05T08:21:11.579Z - normal: Simulator:     project dir: /Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/
-2017-11-05T08:21:11.579Z - normal: Simulator:     writable path: $(PROJDIR)/
-2017-11-05T08:21:11.580Z - normal: Simulator:     script file: $(PROJDIR)/main.js
-2017-11-05T08:21:11.580Z - normal: Simulator:     frame size: 960 x 640
-2017-11-05T08:21:11.580Z - normal: Simulator:     frame scale: 1.00
-2017-11-05T08:21:11.581Z - normal: Simulator:     show console: NO
-2017-11-05T08:21:11.581Z - normal: Simulator:     write debug log: NO ()
-2017-11-05T08:21:11.581Z - normal: Simulator:     listen: 
-2017-11-05T08:21:11.582Z - normal: Simulator:     debugger: none
-2017-11-05T08:21:11.582Z - normal: Simulator:     add searching path:
-2017-11-05T08:21:11.583Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:21:11.583Z - normal: Simulator: LOAD Js FILE: main.js
-2017-11-05T08:21:11.583Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:21:11.709Z - normal: Simulator: Cocos2d-x-lite v1.6.0
-2017-11-05T08:21:12.069Z - normal: Simulator: iShow!
-2017-11-05T08:21:12.348Z - normal: Simulator: InitScene: 1.4600000000000364ms
-2017-11-05T08:21:12.348Z - normal: Simulator: AutoRelease: 0.3810000000000855ms
-2017-11-05T08:21:12.349Z - normal: Simulator: Destroy: 0.06000000000005912ms
-2017-11-05T08:21:12.349Z - normal: Simulator: AttachPersist: 0.006999999999948159ms
-2017-11-05T08:21:12.358Z - normal: Simulator: Activate: 7.482999999999947ms
-2017-11-05T08:21:14.283Z - normal: Simulator: LoadScene a1f63068-95a2-4d7d-b227-7d12bd7f984b: 40.32500000000027ms
-2017-11-05T08:21:14.283Z - normal: Simulator: InitScene: 1.1289999999999054ms
-2017-11-05T08:21:14.284Z - normal: Simulator: AutoRelease: 0.05400000000008731ms
-2017-11-05T08:21:14.295Z - normal: Simulator: Destroy: 6.9090000000001055ms
-2017-11-05T08:21:14.295Z - normal: Simulator: AttachPersist: 0.004999999999654392ms
-2017-11-05T08:21:14.298Z - normal: Simulator: Activate: 7.028999999999996ms
-2017-11-05T08:21:16.659Z - normal: Simulator: HttpClient singleton is nullptr
-2017-11-05T08:21:16.697Z - normal: Simulator: basic_object_finalize 0x164e26a0 ...
-2017-11-05T08:21:16.698Z - normal: Simulator: jsbindings: finalizing JS object 0x164e26d0 (WebSocket)
-2017-11-05T08:21:16.698Z - normal: Simulator: jsbindings: finalizing JS object 0x164e2700 (SocketIO)
-2017-11-05T08:21:16.698Z - normal: Simulator: JavaScriptObjCBridge_finalize 0x164e2790 ...
-2017-11-05T08:21:16.698Z - normal: Simulator: JavaScriptObjCBridge_finalize 0x164e2a00 ...
-2017-11-05T08:26:17.240Z - normal: Simulator: WORKAREA WIDTH 1440.00, HEIGHT 855.00
-2017-11-05T08:26:17.243Z - normal: Simulator: FRAME SCALE = 1.00
-2017-11-05T08:26:17.249Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:26:17.269Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:26:17.270Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-05T08:26:17.403Z - normal: Simulator: 
-2017-11-05T08:26:17.403Z - normal: Simulator: {
-2017-11-05T08:26:17.403Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
-2017-11-05T08:26:17.403Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2017-11-05T08:26:17.404Z - normal: Simulator: 	cocos2d.x.version: 1.6.2
-2017-11-05T08:26:17.404Z - normal: Simulator: 	gl.vendor: Intel Inc.
-2017-11-05T08:26:17.404Z - normal: Simulator: 	gl.supports_PVRTC: false
-2017-11-05T08:26:17.404Z - normal: Simulator: 	gl.renderer: Intel Iris OpenGL Engine
-2017-11-05T08:26:17.405Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2017-11-05T08:26:17.405Z - normal: Simulator: 	gl.max_texture_size: 16384
-2017-11-05T08:26:17.406Z - normal: Simulator: 	gl.supports_ETC1: false
-2017-11-05T08:26:17.409Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2017-11-05T08:26:17.409Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2017-11-05T08:26:17.410Z - normal: Simulator: 	gl.max_texture_units: 16
-2017-11-05T08:26:17.410Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2017-11-05T08:26:17.410Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2017-11-05T08:26:17.411Z - normal: Simulator: 	gl.supports_NPOT: true
-2017-11-05T08:26:17.411Z - normal: Simulator: 	gl.version: 2.1 INTEL-10.28.29
-2017-11-05T08:26:17.411Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2017-11-05T08:26:17.411Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2017-11-05T08:26:17.412Z - normal: Simulator: }
-2017-11-05T08:26:17.412Z - normal: Simulator: 
-2017-11-05T08:26:17.412Z - normal: Simulator: 
-2017-11-05T08:26:17.412Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
-2017-11-05T08:26:17.431Z - normal: Simulator: Project Config:
-2017-11-05T08:26:17.432Z - normal: Simulator:     project dir: /Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/
-2017-11-05T08:26:17.432Z - normal: Simulator:     writable path: $(PROJDIR)/
-2017-11-05T08:26:17.432Z - normal: Simulator:     script file: $(PROJDIR)/main.js
-2017-11-05T08:26:17.433Z - normal: Simulator:     frame size: 960 x 640
-2017-11-05T08:26:17.433Z - normal: Simulator:     frame scale: 1.00
-2017-11-05T08:26:17.434Z - normal: Simulator:     show console: NO
-2017-11-05T08:26:17.434Z - normal: Simulator:     write debug log: NO ()
-2017-11-05T08:26:17.435Z - normal: Simulator:     listen: 
-2017-11-05T08:26:17.435Z - normal: Simulator:     debugger: none
-2017-11-05T08:26:17.435Z - normal: Simulator:     add searching path:
-2017-11-05T08:26:17.460Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:26:17.460Z - normal: Simulator: LOAD Js FILE: main.js
-2017-11-05T08:26:17.461Z - normal: Simulator: ------------------------------------------------
-2017-11-05T08:26:17.801Z - normal: Simulator: Cocos2d-x-lite v1.6.0
-2017-11-05T08:26:18.183Z - normal: Simulator: iShow!
-2017-11-05T08:26:18.439Z - normal: Simulator: InitScene: 4.833000000000084ms
-2017-11-05T08:26:18.440Z - normal: Simulator: AutoRelease: 0.39199999999993906ms
-2017-11-05T08:26:18.440Z - normal: Simulator: Destroy: 0.06399999999996453ms
-2017-11-05T08:26:18.441Z - normal: Simulator: AttachPersist: 0.10199999999997544ms
-2017-11-05T08:26:18.459Z - normal: Simulator: Activate: 18.190000000000055ms
-2017-11-05T08:26:20.836Z - normal: Simulator: HttpClient singleton is nullptr
-2017-11-05T08:26:20.871Z - normal: Simulator: basic_object_finalize 0xd2e26a0 ...
-2017-11-05T08:26:20.872Z - normal: Simulator: jsbindings: finalizing JS object 0xd2e26d0 (WebSocket)
-2017-11-05T08:26:20.872Z - normal: Simulator: jsbindings: finalizing JS object 0xd2e2700 (SocketIO)
-2017-11-05T08:26:20.872Z - normal: Simulator: JavaScriptObjCBridge_finalize 0xd2e2790 ...
-2017-11-05T08:26:20.872Z - normal: Simulator: JavaScriptObjCBridge_finalize 0xd2e2a00 ...
-2017-11-05T08:50:01.374Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:41613
-2017-11-05T10:04:16.645Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:155952
-2017-11-05T10:10:03.399Z - info: shutdown preview server
+2017-11-14T09:19:01.716Z - normal: Load ~/.CocosCreator/settings.json
+2017-11-14T09:19:01.727Z - normal: checking language setting...
+2017-11-14T09:19:01.728Z - normal: Language: zh
+2017-11-14T09:19:03.236Z - success: protocol editor-framework registered
+2017-11-14T09:19:03.237Z - success: protocol app registered
+2017-11-14T09:19:03.237Z - success: protocol theme registered
+2017-11-14T09:19:03.238Z - success: protocol profile registered
+2017-11-14T09:19:03.238Z - success: protocol packages registered
+2017-11-14T09:19:03.241Z - success: protocol unpack registerred
+2017-11-14T09:19:03.242Z - success: protocol disable-commonjs registerred
+2017-11-14T09:19:03.458Z - normal: connected!
+2017-11-14T09:19:03.461Z - normal: Check project /Users/dean/Dev/code/CocosCreator/DaDianer
+2017-11-14T09:19:03.465Z - normal: Initializing Cocos2d
+2017-11-14T09:19:03.829Z - normal: Initializing Asset Database
+2017-11-14T09:19:03.919Z - success: protocol uuid registerred
+2017-11-14T09:19:03.919Z - success: protocol db registerred
+2017-11-14T09:19:03.919Z - success: protocol thumbnail registerred
+2017-11-14T09:19:03.920Z - normal: Loading editor/builtin packages
+2017-11-14T09:19:03.956Z - success: anysdk loaded
+2017-11-14T09:19:04.267Z - success: assets loaded
+2017-11-14T09:19:04.277Z - success: builder loaded
+2017-11-14T09:19:04.287Z - success: hierarchy loaded
+2017-11-14T09:19:04.295Z - success: inspector loaded
+2017-11-14T09:19:04.297Z - success: keystore loaded
+2017-11-14T09:19:04.305Z - success: node-library loaded
+2017-11-14T09:19:04.308Z - success: package-asset loaded
+2017-11-14T09:19:04.312Z - success: preferences loaded
+2017-11-14T09:19:04.317Z - success: project-exporter loaded
+2017-11-14T09:19:04.347Z - success: project-importer loaded
+2017-11-14T09:19:04.352Z - success: project-settings loaded
+2017-11-14T09:19:04.360Z - success: ui-kit loaded
+2017-11-14T09:19:04.378Z - success: ui-grid loaded
+2017-11-14T09:19:04.388Z - success: scene loaded
+2017-11-14T09:19:04.398Z - success: sprite-editor loaded
+2017-11-14T09:19:04.415Z - success: store loaded
+2017-11-14T09:19:04.426Z - success: timeline loaded
+2017-11-14T09:19:04.426Z - normal: Loading builtin packages
+2017-11-14T09:19:04.433Z - success: asset-db-debugger loaded
+2017-11-14T09:19:04.435Z - success: color-picker loaded
+2017-11-14T09:19:04.450Z - success: console loaded
+2017-11-14T09:19:04.458Z - success: package-manager loaded
+2017-11-14T09:19:04.471Z - success: sdkbox loaded
+2017-11-14T09:19:04.482Z - success: tester loaded
+2017-11-14T09:19:04.494Z - success: ui-kit-preview-extra loaded
+2017-11-14T09:19:04.502Z - success: ui-kit-preview loaded
+2017-11-14T09:19:04.521Z - success: ui-tree loaded
+2017-11-14T09:19:06.409Z - normal: Initializing project /Users/dean/Dev/code/CocosCreator/DaDianer
+2017-11-14T09:19:06.414Z - normal: Loading packages
+2017-11-14T09:19:06.422Z - normal: Watching packages
+2017-11-14T09:19:06.447Z - normal: Run Application
+2017-11-14T09:19:07.493Z - success: preview server running at http://localhost:7456
+2017-11-14T09:19:17.271Z - normal: 1.6.2
+2017-11-14T09:19:33.607Z - normal: Simulator: WORKAREA WIDTH 1280.00, HEIGHT 690.00
+2017-11-14T09:19:33.607Z - normal: Simulator: FRAME SCALE = 1.00
+2017-11-14T09:19:33.618Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
+2017-11-14T09:19:33.620Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
+2017-11-14T09:19:33.621Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
+2017-11-14T09:19:33.804Z - normal: Simulator: 
+2017-11-14T09:19:33.804Z - normal: Simulator: {
+2017-11-14T09:19:33.805Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
+2017-11-14T09:19:33.805Z - normal: Simulator: 	gl.supports_vertex_array_object: true
+2017-11-14T09:19:33.805Z - normal: Simulator: 	cocos2d.x.version: 1.6.2
+2017-11-14T09:19:33.806Z - normal: Simulator: 	gl.vendor: Intel Inc.
+2017-11-14T09:19:33.806Z - normal: Simulator: 	gl.supports_PVRTC: false
+2017-11-14T09:19:33.806Z - normal: Simulator: 	gl.renderer: Intel Iris OpenGL Engine
+2017-11-14T09:19:33.806Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
+2017-11-14T09:19:33.807Z - normal: Simulator: 	gl.max_texture_size: 16384
+2017-11-14T09:19:33.808Z - normal: Simulator: 	gl.supports_ETC1: false
+2017-11-14T09:19:33.808Z - normal: Simulator: 	gl.supports_BGRA8888: false
+2017-11-14T09:19:33.809Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
+2017-11-14T09:19:33.810Z - normal: Simulator: 	gl.max_texture_units: 16
+2017-11-14T09:19:33.810Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
+2017-11-14T09:19:33.811Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
+2017-11-14T09:19:33.811Z - normal: Simulator: 	gl.supports_NPOT: true
+2017-11-14T09:19:33.812Z - normal: Simulator: 	gl.version: 2.1 INTEL-10.28.29
+2017-11-14T09:19:33.813Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
+2017-11-14T09:19:33.814Z - normal: Simulator: 	gl.supports_OES_depth24: false
+2017-11-14T09:19:33.814Z - normal: Simulator: }
+2017-11-14T09:19:33.815Z - normal: Simulator: 
+2017-11-14T09:19:33.815Z - normal: Simulator: 
+2017-11-14T09:19:33.816Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
+2017-11-14T09:19:33.838Z - normal: Simulator: Project Config:
+2017-11-14T09:19:33.839Z - normal: Simulator:     project dir: /Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/
+2017-11-14T09:19:33.839Z - normal: Simulator:     writable path: $(PROJDIR)/
+2017-11-14T09:19:33.839Z - normal: Simulator:     script file: $(PROJDIR)/main.js
+2017-11-14T09:19:33.840Z - normal: Simulator:     frame size: 960 x 640
+2017-11-14T09:19:33.840Z - normal: Simulator:     frame scale: 1.00
+2017-11-14T09:19:33.840Z - normal: Simulator:     show console: NO
+2017-11-14T09:19:33.841Z - normal: Simulator:     write debug log: NO ()
+2017-11-14T09:19:33.841Z - normal: Simulator:     listen: 
+2017-11-14T09:19:33.844Z - normal: Simulator:     debugger: none
+2017-11-14T09:19:33.845Z - normal: Simulator:     add searching path:
+2017-11-14T09:19:33.884Z - normal: Simulator: ------------------------------------------------
+2017-11-14T09:19:33.885Z - normal: Simulator: LOAD Js FILE: main.js
+2017-11-14T09:19:33.886Z - normal: Simulator: ------------------------------------------------
+2017-11-14T09:19:34.109Z - normal: Simulator: Cocos2d-x-lite v1.6.0
+2017-11-14T09:19:34.477Z - normal: Simulator: iShow!
+2017-11-14T09:19:34.812Z - normal: Simulator: InitScene: 2.4060000000000628ms
+2017-11-14T09:19:34.813Z - normal: Simulator: AutoRelease: 0.3630000000000564ms
+2017-11-14T09:19:34.813Z - normal: Simulator: Destroy: 0.045999999999935426ms
+2017-11-14T09:19:34.813Z - normal: Simulator: AttachPersist: 0.005999999999971806ms
+2017-11-14T09:19:34.849Z - normal: Simulator: loadRes: should not specify the extname in language/string_cn .json
+2017-11-14T09:19:34.850Z - normal: Simulator: JS Exception: this.restartBtnLabel is null, file: /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Game.js, lineno: 204
+2017-11-14T09:19:34.850Z - normal: Simulator: 
+2017-11-14T09:19:34.850Z - normal: Simulator: Stack: init@/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Game.js:204:9
+2017-11-14T09:19:34.851Z - normal: Simulator: onLoad@/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Game.js:192:9
+2017-11-14T09:19:34.851Z - normal: Simulator: anonymous@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js line 8020 > Function:1:63
+2017-11-14T09:19:34.851Z - normal: Simulator: [47]</OneOffInvoker<.invoke@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:7978:9
+2017-11-14T09:19:34.851Z - normal: Simulator: [113]</NodeActivator<.activateNode@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:18010:11
+2017-11-14T09:19:34.852Z - normal: Simulator: [24]</cc.Scene<._activate@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:6653:9
+2017-11-14T09:19:34.852Z - normal: Simulator: [200]</<.runSceneImmediate@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:32819:11
+2017-11-14T09:19:34.852Z - normal: Simulator: boot/onStart/</<@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/main.js:53:25
+2017-11-14T09:19:34.853Z - normal: Simulator: [135]</AssetLibrary.loadJson/<@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:20352:23
+2017-11-14T09:19:34.854Z - normal: Simulator: [98]</proto.load/queue</<@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:16399:15
+2017-11-14T09:19:34.855Z - normal: Simulator: [156]</module.exports.callInNextTick/<@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:23836:11
+2017-11-14T09:19:34.856Z - normal: Simulator: [84]</proto.once/cb@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:14150:9
+2017-11-14T09:19:34.856Z - normal: Simulator: [83]</EventListeners.prototype.invoke@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:14026:47
+2017-11-14T09:19:34.856Z - normal: Simulator: [84]</proto.emit@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:14171:62
+2017-11-14T09:19:34.856Z - normal: Simulator: [200]</cc.Director._beforeUpdateListener.callback@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:32947:9
+2017-11-14T09:19:34.857Z - normal: Simulator: 系统语言：zh result>>[object Object] err>>null
+2017-11-14T09:20:06.721Z - normal: Simulator: HttpClient singleton is nullptr
+2017-11-14T09:20:06.763Z - normal: Simulator: basic_object_finalize 0xdde26a0 ...
+2017-11-14T09:20:06.764Z - normal: Simulator: jsbindings: finalizing JS object 0xdde26d0 (WebSocket)
+2017-11-14T09:20:06.764Z - normal: Simulator: jsbindings: finalizing JS object 0xdde2700 (SocketIO)
+2017-11-14T09:20:06.765Z - normal: Simulator: JavaScriptObjCBridge_finalize 0xdde2790 ...
+2017-11-14T09:20:06.765Z - normal: Simulator: JavaScriptObjCBridge_finalize 0xdde2a00 ...
+2017-11-14T09:29:34.347Z - failed: load script [Language] failed : ReferenceError: object is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:29:34.355Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: object is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:31:47.205Z - failed: load script [Language] failed : ReferenceError: any is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:31:47.220Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: any is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:34:19.104Z - failed: load script [Language] failed : ReferenceError: object is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:34:19.110Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: object is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:38:48.524Z - failed: load script [Language] failed : ReferenceError: object is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:12)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:38:48.527Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: object is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:12)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:41:24.303Z - failed: load script [Language] failed : ReferenceError: NULL is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:41:24.311Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: NULL is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:41:47.922Z - failed: load script [Language] failed : ReferenceError: Any is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:41:47.930Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: Any is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:56:59.860Z - failed: load script [Language] failed : ReferenceError: Null is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:56:59.870Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: Null is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:58:15.474Z - failed: load script [Language] failed : ReferenceError: lang is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+2017-11-14T09:58:15.652Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: lang is not defined
+    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
+    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
+    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)

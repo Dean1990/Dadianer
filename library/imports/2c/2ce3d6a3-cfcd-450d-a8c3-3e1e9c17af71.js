@@ -6,6 +6,8 @@ cc._RF.push(module, '2ce3dajz81FDajDPh6cF69x', 'Common');
 
 module.exports = {
 
+    lang: Object,
+
     playerNum: 4, //玩家数
 
     paiNum: 32, //牌数

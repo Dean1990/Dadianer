@@ -1,5 +1,7 @@
 module.exports = {
 
+    lang:Object,
+
     playerNum : 4,//玩家数
 
     paiNum : 32,//牌数
@@ -165,7 +167,7 @@ module.exports = {
                     //清理牌桌
                     this.clearPaiZhuo();
 
-                    cc.director.getScene().getChildByName('Canvas').getComponent('Game').gameLabel.string = "游戏结束"
+                    cc.director.getScene().getChildByName('Canvas').getComponent('Game').gameLabel.string = "游戏结束";
 
                     return;
 
