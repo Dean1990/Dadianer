@@ -1,302 +1,52 @@
-2017-11-14T09:19:01.716Z - normal: Load ~/.CocosCreator/settings.json
-2017-11-14T09:19:01.727Z - normal: checking language setting...
-2017-11-14T09:19:01.728Z - normal: Language: zh
-2017-11-14T09:19:03.236Z - success: protocol editor-framework registered
-2017-11-14T09:19:03.237Z - success: protocol app registered
-2017-11-14T09:19:03.237Z - success: protocol theme registered
-2017-11-14T09:19:03.238Z - success: protocol profile registered
-2017-11-14T09:19:03.238Z - success: protocol packages registered
-2017-11-14T09:19:03.241Z - success: protocol unpack registerred
-2017-11-14T09:19:03.242Z - success: protocol disable-commonjs registerred
-2017-11-14T09:19:03.458Z - normal: connected!
-2017-11-14T09:19:03.461Z - normal: Check project /Users/dean/Dev/code/CocosCreator/DaDianer
-2017-11-14T09:19:03.465Z - normal: Initializing Cocos2d
-2017-11-14T09:19:03.829Z - normal: Initializing Asset Database
-2017-11-14T09:19:03.919Z - success: protocol uuid registerred
-2017-11-14T09:19:03.919Z - success: protocol db registerred
-2017-11-14T09:19:03.919Z - success: protocol thumbnail registerred
-2017-11-14T09:19:03.920Z - normal: Loading editor/builtin packages
-2017-11-14T09:19:03.956Z - success: anysdk loaded
-2017-11-14T09:19:04.267Z - success: assets loaded
-2017-11-14T09:19:04.277Z - success: builder loaded
-2017-11-14T09:19:04.287Z - success: hierarchy loaded
-2017-11-14T09:19:04.295Z - success: inspector loaded
-2017-11-14T09:19:04.297Z - success: keystore loaded
-2017-11-14T09:19:04.305Z - success: node-library loaded
-2017-11-14T09:19:04.308Z - success: package-asset loaded
-2017-11-14T09:19:04.312Z - success: preferences loaded
-2017-11-14T09:19:04.317Z - success: project-exporter loaded
-2017-11-14T09:19:04.347Z - success: project-importer loaded
-2017-11-14T09:19:04.352Z - success: project-settings loaded
-2017-11-14T09:19:04.360Z - success: ui-kit loaded
-2017-11-14T09:19:04.378Z - success: ui-grid loaded
-2017-11-14T09:19:04.388Z - success: scene loaded
-2017-11-14T09:19:04.398Z - success: sprite-editor loaded
-2017-11-14T09:19:04.415Z - success: store loaded
-2017-11-14T09:19:04.426Z - success: timeline loaded
-2017-11-14T09:19:04.426Z - normal: Loading builtin packages
-2017-11-14T09:19:04.433Z - success: asset-db-debugger loaded
-2017-11-14T09:19:04.435Z - success: color-picker loaded
-2017-11-14T09:19:04.450Z - success: console loaded
-2017-11-14T09:19:04.458Z - success: package-manager loaded
-2017-11-14T09:19:04.471Z - success: sdkbox loaded
-2017-11-14T09:19:04.482Z - success: tester loaded
-2017-11-14T09:19:04.494Z - success: ui-kit-preview-extra loaded
-2017-11-14T09:19:04.502Z - success: ui-kit-preview loaded
-2017-11-14T09:19:04.521Z - success: ui-tree loaded
-2017-11-14T09:19:06.409Z - normal: Initializing project /Users/dean/Dev/code/CocosCreator/DaDianer
-2017-11-14T09:19:06.414Z - normal: Loading packages
-2017-11-14T09:19:06.422Z - normal: Watching packages
-2017-11-14T09:19:06.447Z - normal: Run Application
-2017-11-14T09:19:07.493Z - success: preview server running at http://localhost:7456
-2017-11-14T09:19:17.271Z - normal: 1.6.2
-2017-11-14T09:19:33.607Z - normal: Simulator: WORKAREA WIDTH 1280.00, HEIGHT 690.00
-2017-11-14T09:19:33.607Z - normal: Simulator: FRAME SCALE = 1.00
-2017-11-14T09:19:33.618Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-14T09:19:33.620Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-14T09:19:33.621Z - normal: Simulator: GLFWError #65544 Happen, Cocoa: Failed to retrieve display name
-2017-11-14T09:19:33.804Z - normal: Simulator: 
-2017-11-14T09:19:33.804Z - normal: Simulator: {
-2017-11-14T09:19:33.805Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
-2017-11-14T09:19:33.805Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2017-11-14T09:19:33.805Z - normal: Simulator: 	cocos2d.x.version: 1.6.2
-2017-11-14T09:19:33.806Z - normal: Simulator: 	gl.vendor: Intel Inc.
-2017-11-14T09:19:33.806Z - normal: Simulator: 	gl.supports_PVRTC: false
-2017-11-14T09:19:33.806Z - normal: Simulator: 	gl.renderer: Intel Iris OpenGL Engine
-2017-11-14T09:19:33.806Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2017-11-14T09:19:33.807Z - normal: Simulator: 	gl.max_texture_size: 16384
-2017-11-14T09:19:33.808Z - normal: Simulator: 	gl.supports_ETC1: false
-2017-11-14T09:19:33.808Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2017-11-14T09:19:33.809Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2017-11-14T09:19:33.810Z - normal: Simulator: 	gl.max_texture_units: 16
-2017-11-14T09:19:33.810Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2017-11-14T09:19:33.811Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2017-11-14T09:19:33.811Z - normal: Simulator: 	gl.supports_NPOT: true
-2017-11-14T09:19:33.812Z - normal: Simulator: 	gl.version: 2.1 INTEL-10.28.29
-2017-11-14T09:19:33.813Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2017-11-14T09:19:33.814Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2017-11-14T09:19:33.814Z - normal: Simulator: }
-2017-11-14T09:19:33.815Z - normal: Simulator: 
-2017-11-14T09:19:33.815Z - normal: Simulator: 
-2017-11-14T09:19:33.816Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
-2017-11-14T09:19:33.838Z - normal: Simulator: Project Config:
-2017-11-14T09:19:33.839Z - normal: Simulator:     project dir: /Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/
-2017-11-14T09:19:33.839Z - normal: Simulator:     writable path: $(PROJDIR)/
-2017-11-14T09:19:33.839Z - normal: Simulator:     script file: $(PROJDIR)/main.js
-2017-11-14T09:19:33.840Z - normal: Simulator:     frame size: 960 x 640
-2017-11-14T09:19:33.840Z - normal: Simulator:     frame scale: 1.00
-2017-11-14T09:19:33.840Z - normal: Simulator:     show console: NO
-2017-11-14T09:19:33.841Z - normal: Simulator:     write debug log: NO ()
-2017-11-14T09:19:33.841Z - normal: Simulator:     listen: 
-2017-11-14T09:19:33.844Z - normal: Simulator:     debugger: none
-2017-11-14T09:19:33.845Z - normal: Simulator:     add searching path:
-2017-11-14T09:19:33.884Z - normal: Simulator: ------------------------------------------------
-2017-11-14T09:19:33.885Z - normal: Simulator: LOAD Js FILE: main.js
-2017-11-14T09:19:33.886Z - normal: Simulator: ------------------------------------------------
-2017-11-14T09:19:34.109Z - normal: Simulator: Cocos2d-x-lite v1.6.0
-2017-11-14T09:19:34.477Z - normal: Simulator: iShow!
-2017-11-14T09:19:34.812Z - normal: Simulator: InitScene: 2.4060000000000628ms
-2017-11-14T09:19:34.813Z - normal: Simulator: AutoRelease: 0.3630000000000564ms
-2017-11-14T09:19:34.813Z - normal: Simulator: Destroy: 0.045999999999935426ms
-2017-11-14T09:19:34.813Z - normal: Simulator: AttachPersist: 0.005999999999971806ms
-2017-11-14T09:19:34.849Z - normal: Simulator: loadRes: should not specify the extname in language/string_cn .json
-2017-11-14T09:19:34.850Z - normal: Simulator: JS Exception: this.restartBtnLabel is null, file: /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Game.js, lineno: 204
-2017-11-14T09:19:34.850Z - normal: Simulator: 
-2017-11-14T09:19:34.850Z - normal: Simulator: Stack: init@/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Game.js:204:9
-2017-11-14T09:19:34.851Z - normal: Simulator: onLoad@/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Game.js:192:9
-2017-11-14T09:19:34.851Z - normal: Simulator: anonymous@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js line 8020 > Function:1:63
-2017-11-14T09:19:34.851Z - normal: Simulator: [47]</OneOffInvoker<.invoke@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:7978:9
-2017-11-14T09:19:34.851Z - normal: Simulator: [113]</NodeActivator<.activateNode@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:18010:11
-2017-11-14T09:19:34.852Z - normal: Simulator: [24]</cc.Scene<._activate@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:6653:9
-2017-11-14T09:19:34.852Z - normal: Simulator: [200]</<.runSceneImmediate@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:32819:11
-2017-11-14T09:19:34.852Z - normal: Simulator: boot/onStart/</<@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/main.js:53:25
-2017-11-14T09:19:34.853Z - normal: Simulator: [135]</AssetLibrary.loadJson/<@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:20352:23
-2017-11-14T09:19:34.854Z - normal: Simulator: [98]</proto.load/queue</<@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:16399:15
-2017-11-14T09:19:34.855Z - normal: Simulator: [156]</module.exports.callInNextTick/<@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:23836:11
-2017-11-14T09:19:34.856Z - normal: Simulator: [84]</proto.once/cb@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:14150:9
-2017-11-14T09:19:34.856Z - normal: Simulator: [83]</EventListeners.prototype.invoke@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:14026:47
-2017-11-14T09:19:34.856Z - normal: Simulator: [84]</proto.emit@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:14171:62
-2017-11-14T09:19:34.856Z - normal: Simulator: [200]</cc.Director._beforeUpdateListener.callback@/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/src/jsb_polyfill.js:32947:9
-2017-11-14T09:19:34.857Z - normal: Simulator: 系统语言：zh result>>[object Object] err>>null
-2017-11-14T09:20:06.721Z - normal: Simulator: HttpClient singleton is nullptr
-2017-11-14T09:20:06.763Z - normal: Simulator: basic_object_finalize 0xdde26a0 ...
-2017-11-14T09:20:06.764Z - normal: Simulator: jsbindings: finalizing JS object 0xdde26d0 (WebSocket)
-2017-11-14T09:20:06.764Z - normal: Simulator: jsbindings: finalizing JS object 0xdde2700 (SocketIO)
-2017-11-14T09:20:06.765Z - normal: Simulator: JavaScriptObjCBridge_finalize 0xdde2790 ...
-2017-11-14T09:20:06.765Z - normal: Simulator: JavaScriptObjCBridge_finalize 0xdde2a00 ...
-2017-11-14T09:29:34.347Z - failed: load script [Language] failed : ReferenceError: object is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:29:34.355Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: object is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:31:47.205Z - failed: load script [Language] failed : ReferenceError: any is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:31:47.220Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: any is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:34:19.104Z - failed: load script [Language] failed : ReferenceError: object is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:34:19.110Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: object is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:38:48.524Z - failed: load script [Language] failed : ReferenceError: object is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:12)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:38:48.527Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: object is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:12)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:41:24.303Z - failed: load script [Language] failed : ReferenceError: NULL is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:41:24.311Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: NULL is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:41:47.922Z - failed: load script [Language] failed : ReferenceError: Any is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:41:47.930Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: Any is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:56:59.860Z - failed: load script [Language] failed : ReferenceError: Null is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:56:59.870Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: Null is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:58:15.474Z - failed: load script [Language] failed : ReferenceError: lang is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-11-14T09:58:15.652Z - failed: load script [/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js] failed : ReferenceError: lang is not defined
-    at __define (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:23:11)
-    at /Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:48:13
-    at Object.<anonymous> (/Users/dean/Dev/code/CocosCreator/DaDianer/temp/quick-scripts/assets/script/Language.js:55:11)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
+2017-11-14T16:08:18.238Z - normal: Load ~/.CocosCreator/settings.json
+2017-11-14T16:08:18.248Z - normal: checking language setting...
+2017-11-14T16:08:18.248Z - normal: Language: zh
+2017-11-14T16:08:20.396Z - success: protocol editor-framework registered
+2017-11-14T16:08:20.397Z - success: protocol app registered
+2017-11-14T16:08:20.397Z - success: protocol theme registered
+2017-11-14T16:08:20.397Z - success: protocol profile registered
+2017-11-14T16:08:20.397Z - success: protocol packages registered
+2017-11-14T16:08:20.398Z - success: protocol unpack registerred
+2017-11-14T16:08:20.398Z - success: protocol disable-commonjs registerred
+2017-11-14T16:08:22.842Z - normal: connected!
+2017-11-14T16:08:22.842Z - normal: Check project K:\Code\CocosCreatorProjects\Dadianer
+2017-11-14T16:08:22.858Z - normal: Initializing Cocos2d
+2017-11-14T16:08:23.159Z - normal: Initializing Asset Database
+2017-11-14T16:08:23.208Z - success: protocol uuid registerred
+2017-11-14T16:08:23.209Z - success: protocol db registerred
+2017-11-14T16:08:23.209Z - success: protocol thumbnail registerred
+2017-11-14T16:08:23.209Z - normal: Loading editor/builtin packages
+2017-11-14T16:08:23.228Z - success: anysdk loaded
+2017-11-14T16:08:23.391Z - success: assets loaded
+2017-11-14T16:08:23.391Z - success: builder loaded
+2017-11-14T16:08:23.391Z - success: hierarchy loaded
+2017-11-14T16:08:23.408Z - success: inspector loaded
+2017-11-14T16:08:23.410Z - success: keystore loaded
+2017-11-14T16:08:23.413Z - success: node-library loaded
+2017-11-14T16:08:23.413Z - success: package-asset loaded
+2017-11-14T16:08:23.413Z - success: preferences loaded
+2017-11-14T16:08:23.413Z - success: project-exporter loaded
+2017-11-14T16:08:23.428Z - success: project-importer loaded
+2017-11-14T16:08:23.428Z - success: project-settings loaded
+2017-11-14T16:08:23.444Z - success: ui-kit loaded
+2017-11-14T16:08:23.444Z - success: ui-grid loaded
+2017-11-14T16:08:23.444Z - success: scene loaded
+2017-11-14T16:08:23.444Z - success: sprite-editor loaded
+2017-11-14T16:08:23.460Z - success: store loaded
+2017-11-14T16:08:23.460Z - success: timeline loaded
+2017-11-14T16:08:23.460Z - normal: Loading builtin packages
+2017-11-14T16:08:23.475Z - success: asset-db-debugger loaded
+2017-11-14T16:08:23.475Z - success: color-picker loaded
+2017-11-14T16:08:23.475Z - success: console loaded
+2017-11-14T16:08:23.475Z - success: package-manager loaded
+2017-11-14T16:08:23.475Z - success: sdkbox loaded
+2017-11-14T16:08:23.491Z - success: tester loaded
+2017-11-14T16:08:23.491Z - success: ui-kit-preview-extra loaded
+2017-11-14T16:08:23.491Z - success: ui-kit-preview loaded
+2017-11-14T16:08:23.491Z - success: ui-tree loaded
+2017-11-14T16:08:24.711Z - normal: Initializing project K:\Code\CocosCreatorProjects\Dadianer
+2017-11-14T16:08:24.715Z - normal: Loading packages
+2017-11-14T16:08:24.715Z - normal: Watching packages
+2017-11-14T16:08:24.731Z - normal: Run Application
+2017-11-14T16:08:25.417Z - success: preview server running at http://localhost:7456
+2017-11-14T16:08:31.216Z - normal: 1.6.2

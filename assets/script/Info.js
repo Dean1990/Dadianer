@@ -1,7 +1,14 @@
+var com = require('Common');
+
 cc.Class({
     extends: cc.Component,
 
     properties: {
+
+        closeBtnLabel:{
+            default:null,
+            type:cc.Label,
+        },
         // foo: {
         //    default: null,      // The default value will be used only when the component attaching
         //                           to a node for the first time
@@ -16,6 +23,8 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+
+        this.closeBtnLabel.string = com.lang.close;
 
     },
 

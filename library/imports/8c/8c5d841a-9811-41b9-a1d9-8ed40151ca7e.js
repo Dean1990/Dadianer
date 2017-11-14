@@ -8,85 +8,85 @@ var com = require('Common');
 var ai = require('AI');
 
 cc.Class({
-    extends: cc.Component,
+        extends: cc.Component,
 
-    properties: {
+        properties: {
 
-        shouPaiNum: {
-            default: null,
-            type: cc.Label
+                shouPaiNum: {
+                        default: null,
+                        type: cc.Label
+                },
+
+                playerImg: {
+                        default: null,
+                        type: cc.Sprite
+                },
+
+                currentTag: {
+                        default: null,
+                        type: cc.Sprite
+                },
+
+                actionLabel: {
+                        default: null,
+                        type: cc.Label
+                },
+
+                xuanZhan: {
+                        default: null,
+                        type: cc.Label
+                },
+
+                isAI: null, //是否是AI
+
+                shouPai: null, //手牌
+
+                xuanPai: null, //选中的牌
+
+                isXuanZhan: false //是否宣战
+
+
         },
 
-        playerImg: {
-            default: null,
-            type: cc.Sprite
+        // use this for initialization
+        onLoad: function onLoad() {},
+
+        // called every frame, uncomment this function to activate update callback
+        update: function update(dt) {
+
+                if (this.isXuanZhan) {
+                        this.xuanZhan.string = com.lang.declare;
+                }
+
+                // if(this.shouPai!=null){
+
+                //     if(this.shouPai.length==0){
+
+                //         this.shouPaiNum.string = "";
+
+                //     }else {
+
+                //         this.shouPaiNum.string = this.shouPai.length;
+
+                //     }
+
+                // }
         },
 
-        currentTag: {
-            default: null,
-            type: cc.Sprite
-        },
+        toggle: function toggle() {
 
-        actionLabel: {
-            default: null,
-            type: cc.Label
-        },
+                if (this.isAI) {
 
-        xuanZhan: {
-            default: null,
-            type: cc.Label
-        },
+                        this.scheduleOnce(function () {
 
-        isAI: null, //是否是AI
+                                ai.chuPai(this);
+                        }, 1);
+                } else {
 
-        shouPai: null, //手牌
+                        //不是AI
 
-        xuanPai: null, //选中的牌
-
-        isXuanZhan: false //是否宣战
-
-
-    },
-
-    // use this for initialization
-    onLoad: function onLoad() {},
-
-    // called every frame, uncomment this function to activate update callback
-    update: function update(dt) {
-
-        if (this.isXuanZhan) {
-            this.xuanZhan.string = "宣";
+                }
         }
-
-        // if(this.shouPai!=null){
-
-        //     if(this.shouPai.length==0){
-
-        //         this.shouPaiNum.string = "";
-
-        //     }else {
-
-        //         this.shouPaiNum.string = this.shouPai.length;
-
-        //     }
-
-        // }
-    },
-
-    toggle: function toggle() {
-
-        if (this.isAI) {
-
-            this.scheduleOnce(function () {
-
-                ai.chuPai(this);
-            }, 1);
-        } else {
-
-            //不是AI
-
-        }
-    }
 
 });
 

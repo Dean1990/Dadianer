@@ -5,7 +5,6 @@ cc._RF.push(module, '52296tYeOJGtoyHtGk1jFup', 'Game');
 'use strict';
 
 var com = require('Common');
-var lang = require('Language');
 
 cc.Class({
     extends: cc.Component,
@@ -32,6 +31,35 @@ cc.Class({
             type: cc.Label
         },
 
+        exitBtnLabel: {
+            default: null,
+            type: cc.Label
+        },
+
+        playBtnLabel: {
+            default: null,
+            type: cc.Label
+        },
+
+        passBtnLabel: {
+            default: null,
+            type: cc.Label
+        },
+
+        declareWarBtnLabel: {
+            default: null,
+            type: cc.Label
+        },
+
+        allowBtnLabel: {
+            default: null,
+            type: cc.Label
+        },
+
+        againBtnLabel: {
+            default: null,
+            type: cc.Label
+        },
         // foo: {
         //    default: null,      // The default value will be used only when the component attaching
         //                           to a node for the first time
@@ -199,9 +227,13 @@ cc.Class({
 
     init: function init() {
 
-        lang.init();
-
         this.restartBtnLabel.string = com.lang.restart;
+        this.exitBtnLabel.string = com.lang.exit;
+        this.playBtnLabel.string = com.lang.play;
+        this.passBtnLabel.string = com.lang.pass;
+        this.declareWarBtnLabel.string = com.lang.declare;
+        this.allowBtnLabel.string = com.lang.allow;
+        this.againBtnLabel.string = com.lang.again;
 
         this.startGame();
     },

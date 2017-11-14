@@ -34,10 +34,10 @@ module.exports = {
 
             if (isEnableXuanZhan == 1) {
 
-                player.actionLabel.string = "宣战";
+                player.actionLabel.string = com.lang.declareWar;
             } else if (isEnableXuanZhan == 2) {
 
-                player.actionLabel.string = "跟";
+                player.actionLabel.string = com.lang.follow;
             }
         }
 

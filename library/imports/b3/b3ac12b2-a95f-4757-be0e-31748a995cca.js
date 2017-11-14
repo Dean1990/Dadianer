@@ -2,7 +2,7 @@
 cc._RF.push(module, 'b3ac1KyqV9HV74OMXSKmVzK', 'PaiAn');
 // script/PaiAn.js
 
-"use strict";
+'use strict';
 
 var com = require('Common');
 cc.Class({
@@ -65,10 +65,10 @@ cc.Class({
 
         if (isEnableXuanZhan == 1) {
 
-            this.player.actionLabel.string = "宣战";
+            this.player.actionLabel.string = com.lang.declareWar;
         } else if (isEnableXuanZhan == 2) {
 
-            this.player.actionLabel.string = "跟";
+            this.player.actionLabel.string = com.lang.follow;
         }
 
         //宣战 修改全局变量

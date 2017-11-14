@@ -63,11 +63,11 @@ cc.Class({
 
         if(isEnableXuanZhan==1){
 
-            this.player.actionLabel.string = "宣战";
+            this.player.actionLabel.string = com.lang.declareWar;
 
         }else if(isEnableXuanZhan==2){
 
-            this.player.actionLabel.string = "跟";
+            this.player.actionLabel.string = com.lang.follow;
 
         }
 

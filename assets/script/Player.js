@@ -51,7 +51,7 @@ cc.Class({
     update: function (dt) {
 
         if(this.isXuanZhan){
-            this.xuanZhan.string = "宣";
+            this.xuanZhan.string = com.lang.declare;
         }
         
 

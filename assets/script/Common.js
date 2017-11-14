@@ -88,13 +88,13 @@ module.exports = {
                 //不出
                 if(message==null){
 
-                    message = "不出";
+                    message = this.lang.passTag;
 
                 }
 
                 if(this.getWindPlayerNum!=-1){
                     //给风
-                    message = "给风";
+                    message = this.lang.allow;
 
                 }
 
@@ -167,7 +167,7 @@ module.exports = {
                     //清理牌桌
                     this.clearPaiZhuo();
 
-                    cc.director.getScene().getChildByName('Canvas').getComponent('Game').gameLabel.string = "游戏结束";
+                    cc.director.getScene().getChildByName('Canvas').getComponent('Game').gameLabel.string = this.lang.gameOver;
 
                     return;
 
