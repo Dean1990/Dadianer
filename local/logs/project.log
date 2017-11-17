@@ -1,52 +1,225 @@
-2017-11-14T16:08:18.238Z - normal: Load ~/.CocosCreator/settings.json
-2017-11-14T16:08:18.248Z - normal: checking language setting...
-2017-11-14T16:08:18.248Z - normal: Language: zh
-2017-11-14T16:08:20.396Z - success: protocol editor-framework registered
-2017-11-14T16:08:20.397Z - success: protocol app registered
-2017-11-14T16:08:20.397Z - success: protocol theme registered
-2017-11-14T16:08:20.397Z - success: protocol profile registered
-2017-11-14T16:08:20.397Z - success: protocol packages registered
-2017-11-14T16:08:20.398Z - success: protocol unpack registerred
-2017-11-14T16:08:20.398Z - success: protocol disable-commonjs registerred
-2017-11-14T16:08:22.842Z - normal: connected!
-2017-11-14T16:08:22.842Z - normal: Check project K:\Code\CocosCreatorProjects\Dadianer
-2017-11-14T16:08:22.858Z - normal: Initializing Cocos2d
-2017-11-14T16:08:23.159Z - normal: Initializing Asset Database
-2017-11-14T16:08:23.208Z - success: protocol uuid registerred
-2017-11-14T16:08:23.209Z - success: protocol db registerred
-2017-11-14T16:08:23.209Z - success: protocol thumbnail registerred
-2017-11-14T16:08:23.209Z - normal: Loading editor/builtin packages
-2017-11-14T16:08:23.228Z - success: anysdk loaded
-2017-11-14T16:08:23.391Z - success: assets loaded
-2017-11-14T16:08:23.391Z - success: builder loaded
-2017-11-14T16:08:23.391Z - success: hierarchy loaded
-2017-11-14T16:08:23.408Z - success: inspector loaded
-2017-11-14T16:08:23.410Z - success: keystore loaded
-2017-11-14T16:08:23.413Z - success: node-library loaded
-2017-11-14T16:08:23.413Z - success: package-asset loaded
-2017-11-14T16:08:23.413Z - success: preferences loaded
-2017-11-14T16:08:23.413Z - success: project-exporter loaded
-2017-11-14T16:08:23.428Z - success: project-importer loaded
-2017-11-14T16:08:23.428Z - success: project-settings loaded
-2017-11-14T16:08:23.444Z - success: ui-kit loaded
-2017-11-14T16:08:23.444Z - success: ui-grid loaded
-2017-11-14T16:08:23.444Z - success: scene loaded
-2017-11-14T16:08:23.444Z - success: sprite-editor loaded
-2017-11-14T16:08:23.460Z - success: store loaded
-2017-11-14T16:08:23.460Z - success: timeline loaded
-2017-11-14T16:08:23.460Z - normal: Loading builtin packages
-2017-11-14T16:08:23.475Z - success: asset-db-debugger loaded
-2017-11-14T16:08:23.475Z - success: color-picker loaded
-2017-11-14T16:08:23.475Z - success: console loaded
-2017-11-14T16:08:23.475Z - success: package-manager loaded
-2017-11-14T16:08:23.475Z - success: sdkbox loaded
-2017-11-14T16:08:23.491Z - success: tester loaded
-2017-11-14T16:08:23.491Z - success: ui-kit-preview-extra loaded
-2017-11-14T16:08:23.491Z - success: ui-kit-preview loaded
-2017-11-14T16:08:23.491Z - success: ui-tree loaded
-2017-11-14T16:08:24.711Z - normal: Initializing project K:\Code\CocosCreatorProjects\Dadianer
-2017-11-14T16:08:24.715Z - normal: Loading packages
-2017-11-14T16:08:24.715Z - normal: Watching packages
-2017-11-14T16:08:24.731Z - normal: Run Application
-2017-11-14T16:08:25.417Z - success: preview server running at http://localhost:7456
-2017-11-14T16:08:31.216Z - normal: 1.6.2
+2017-11-17T09:05:56.071Z - normal: Load ~/.CocosCreator/settings.json
+2017-11-17T09:05:56.077Z - normal: checking language setting...
+2017-11-17T09:05:56.077Z - normal: Language: zh
+2017-11-17T09:05:57.011Z - success: protocol editor-framework registered
+2017-11-17T09:05:57.011Z - success: protocol app registered
+2017-11-17T09:05:57.011Z - success: protocol theme registered
+2017-11-17T09:05:57.012Z - success: protocol profile registered
+2017-11-17T09:05:57.012Z - success: protocol packages registered
+2017-11-17T09:05:57.014Z - success: protocol unpack registerred
+2017-11-17T09:05:57.014Z - success: protocol disable-commonjs registerred
+2017-11-17T09:05:57.185Z - normal: connected!
+2017-11-17T09:05:57.189Z - normal: Check project /Users/dean/Dev/code/CocosCreator/DaDianer
+2017-11-17T09:05:57.191Z - normal: Initializing Cocos2d
+2017-11-17T09:05:57.430Z - normal: Initializing Asset Database
+2017-11-17T09:05:57.469Z - success: protocol uuid registerred
+2017-11-17T09:05:57.469Z - success: protocol db registerred
+2017-11-17T09:05:57.470Z - success: protocol thumbnail registerred
+2017-11-17T09:05:57.470Z - normal: Loading editor/builtin packages
+2017-11-17T09:05:57.500Z - success: anysdk loaded
+2017-11-17T09:05:57.643Z - success: assets loaded
+2017-11-17T09:05:57.648Z - success: builder loaded
+2017-11-17T09:05:57.654Z - success: hierarchy loaded
+2017-11-17T09:05:57.660Z - success: inspector loaded
+2017-11-17T09:05:57.661Z - success: keystore loaded
+2017-11-17T09:05:57.667Z - success: node-library loaded
+2017-11-17T09:05:57.669Z - success: package-asset loaded
+2017-11-17T09:05:57.671Z - success: preferences loaded
+2017-11-17T09:05:57.675Z - success: project-exporter loaded
+2017-11-17T09:05:57.692Z - success: project-importer loaded
+2017-11-17T09:05:57.695Z - success: project-settings loaded
+2017-11-17T09:05:57.700Z - success: ui-kit loaded
+2017-11-17T09:05:57.705Z - success: ui-grid loaded
+2017-11-17T09:05:57.713Z - success: scene loaded
+2017-11-17T09:05:57.714Z - success: sprite-editor loaded
+2017-11-17T09:05:57.720Z - success: store loaded
+2017-11-17T09:05:57.727Z - success: timeline loaded
+2017-11-17T09:05:57.727Z - normal: Loading builtin packages
+2017-11-17T09:05:57.732Z - success: asset-db-debugger loaded
+2017-11-17T09:05:57.732Z - success: color-picker loaded
+2017-11-17T09:05:57.740Z - success: console loaded
+2017-11-17T09:05:57.745Z - success: package-manager loaded
+2017-11-17T09:05:57.751Z - success: sdkbox loaded
+2017-11-17T09:05:57.755Z - success: tester loaded
+2017-11-17T09:05:57.759Z - success: ui-kit-preview-extra loaded
+2017-11-17T09:05:57.763Z - success: ui-kit-preview loaded
+2017-11-17T09:05:57.767Z - success: ui-tree loaded
+2017-11-17T09:05:58.726Z - normal: Initializing project /Users/dean/Dev/code/CocosCreator/DaDianer
+2017-11-17T09:05:58.729Z - normal: Loading packages
+2017-11-17T09:05:58.734Z - normal: Watching packages
+2017-11-17T09:05:58.749Z - normal: Run Application
+2017-11-17T09:05:59.321Z - success: preview server running at http://localhost:7456
+2017-11-17T09:06:04.410Z - normal: 1.6.2
+2017-11-17T09:07:56.680Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "android-14",
+  "appABIs": [
+    "armeabi",
+    "armeabi-v7a",
+    "arm64-v8a",
+    "x86"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/dean/Project/xuanzhan",
+  "debug": false,
+  "dest": "/Users/dean/Project/xuanzhan/jsb-default",
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "com.deanlib.dadianer",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "19ab555a-f72a-4dfd-a519-1143718c608a",
+    "a1f63068-95a2-4d7d-b227-7d12bd7f984b",
+    "5ffe2a91-d15c-4d58-937f-98323e6a00dc",
+    "b0cb47b4-9cd0-47cc-ada3-3c1383744923"
+  ],
+  "sourceMaps": true,
+  "startScene": "19ab555a-f72a-4dfd-a519-1143718c608a",
+  "template": "default",
+  "title": "xuanzhan",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "landscape",
+  "project": "/Users/dean/Dev/code/CocosCreator/DaDianer",
+  "projectName": "xuanzhan",
+  "debugBuildWorker": false
+}
+2017-11-17T09:07:56.685Z - normal: Building /Users/dean/Dev/code/CocosCreator/DaDianer
+2017-11-17T09:07:56.685Z - normal: Destination /Users/dean/Project/xuanzhan/jsb-default
+2017-11-17T09:07:57.054Z - normal: Delete /Users/dean/Project/xuanzhan/jsb-default/res/**/*,/Users/dean/Project/xuanzhan/jsb-default/src/*/
+2017-11-17T09:07:57.152Z - normal: Checked Python Version [2.7.10]
+2017-11-17T09:07:58.698Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2017-11-17T09:08:00.893Z - normal: Compiled project javascript file successfully
+2017-11-17T09:08:00.894Z - normal: Start building assets
+2017-11-17T09:08:00.895Z - normal: Start spawn build-worker
+2017-11-17T09:08:01.644Z - normal: Finish spawn build-worker
+2017-11-17T09:08:01.645Z - normal: Start init build-worker
+2017-11-17T09:08:03.360Z - normal: 1.6.2
+2017-11-17T09:08:03.484Z - normal: Finish init build-worker
+2017-11-17T09:08:03.485Z - normal: Start build-assets in worker
+2017-11-17T09:08:03.677Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2017-11-17T09:08:04.193Z - normal: Finish build-assets in worker
+2017-11-17T09:08:04.196Z - normal: Finish building assets
+2017-11-17T09:08:04.250Z - normal: Start building raw assets
+2017-11-17T09:08:04.252Z - normal: Start building plugin scripts
+2017-11-17T09:08:04.348Z - normal: Finish building raw assets
+2017-11-17T09:08:04.400Z - normal: Checked Python Version [2.7.10]
+2017-11-17T09:08:06.235Z - normal: Built to "/Users/dean/Project/xuanzhan/jsb-default" successfully
+2017-11-17T09:08:09.548Z - normal: Checked Python Version [2.7.10]
+2017-11-17T09:08:10.754Z - normal: Start to compile native project. Please wait...
+2017-11-17T09:08:10.754Z - normal: The log file path [ /Users/dean/.CocosCreator/logs/native.log ]
+2017-11-17T09:09:00.871Z - normal: Compile native project successfully.
+2017-11-17T09:09:17.722Z - normal: Start to run project
+2017-11-17T09:09:17.741Z - normal: Checked Python Version [2.7.10]
+2017-11-17T09:09:18.974Z - normal: Start to run project. Please wait...
+2017-11-17T09:09:18.974Z - normal: The log file path [ /Users/dean/.CocosCreator/logs/native.log ]
+2017-11-17T09:11:35.498Z - normal: Start to run project
+2017-11-17T09:11:35.523Z - normal: Checked Python Version [2.7.10]
+2017-11-17T09:11:36.876Z - normal: Start to run project. Please wait...
+2017-11-17T09:11:36.877Z - normal: The log file path [ /Users/dean/.CocosCreator/logs/native.log ]
+2017-11-17T09:15:21.729Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "android-14",
+  "appABIs": [
+    "armeabi",
+    "armeabi-v7a",
+    "arm64-v8a",
+    "x86"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/dean/Project/xuanzhan",
+  "debug": false,
+  "dest": "/Users/dean/Project/xuanzhan/jsb-default",
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "com.deanlib.dadianer",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "19ab555a-f72a-4dfd-a519-1143718c608a",
+    "a1f63068-95a2-4d7d-b227-7d12bd7f984b",
+    "5ffe2a91-d15c-4d58-937f-98323e6a00dc",
+    "b0cb47b4-9cd0-47cc-ada3-3c1383744923"
+  ],
+  "sourceMaps": true,
+  "startScene": "19ab555a-f72a-4dfd-a519-1143718c608a",
+  "template": "default",
+  "title": "xuanzhan",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "landscape",
+  "project": "/Users/dean/Dev/code/CocosCreator/DaDianer",
+  "projectName": "xuanzhan",
+  "debugBuildWorker": false
+}
+2017-11-17T09:15:21.747Z - normal: Building /Users/dean/Dev/code/CocosCreator/DaDianer
+2017-11-17T09:15:21.747Z - normal: Destination /Users/dean/Project/xuanzhan/jsb-default
+2017-11-17T09:15:21.748Z - normal: Delete /Users/dean/Project/xuanzhan/jsb-default/res/**/*,/Users/dean/Project/xuanzhan/jsb-default/src/*/
+2017-11-17T09:15:21.839Z - normal: Checked Python Version [2.7.10]
+2017-11-17T09:15:23.233Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2017-11-17T09:15:25.881Z - normal: Compiled project javascript file successfully
+2017-11-17T09:15:25.882Z - normal: Start building assets
+2017-11-17T09:15:25.882Z - normal: Start spawn build-worker
+2017-11-17T09:15:26.634Z - normal: Finish spawn build-worker
+2017-11-17T09:15:26.634Z - normal: Start init build-worker
+2017-11-17T09:15:28.762Z - normal: 1.6.2
+2017-11-17T09:15:28.879Z - normal: Finish init build-worker
+2017-11-17T09:15:28.879Z - normal: Start build-assets in worker
+2017-11-17T09:15:29.071Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2017-11-17T09:15:29.669Z - normal: Finish build-assets in worker
+2017-11-17T09:15:29.676Z - normal: Finish building assets
+2017-11-17T09:15:29.716Z - normal: Start building raw assets
+2017-11-17T09:15:29.718Z - normal: Start building plugin scripts
+2017-11-17T09:15:29.808Z - normal: Finish building raw assets
+2017-11-17T09:15:29.843Z - normal: Checked Python Version [2.7.10]
+2017-11-17T09:15:31.525Z - normal: Built to "/Users/dean/Project/xuanzhan/jsb-default" successfully
+2017-11-17T09:15:34.124Z - normal: Checked Python Version [2.7.10]
+2017-11-17T09:15:35.306Z - normal: Start to compile native project. Please wait...
+2017-11-17T09:15:35.306Z - normal: The log file path [ /Users/dean/.CocosCreator/logs/native.log ]
+2017-11-17T09:16:10.063Z - normal: Compile native project successfully.
+2017-11-17T09:16:37.109Z - normal: Start to run project
+2017-11-17T09:16:37.138Z - normal: Checked Python Version [2.7.10]
+2017-11-17T09:16:38.303Z - normal: Start to run project. Please wait...
+2017-11-17T09:16:38.304Z - normal: The log file path [ /Users/dean/.CocosCreator/logs/native.log ]
+2017-11-17T09:35:41.350Z - info: shutdown preview server

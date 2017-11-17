@@ -24,7 +24,7 @@ cc.Class({
 
         if(cc.sys.language == cc.sys.LANGUAGE_CHINESE){
             langjson = "language/string_cn.json";
-        }else if (cc.sys.language == LANGUAGE_ENGLISH){
+        }else if (cc.sys.language == cc.sys.LANGUAGE_ENGLISH){
             langjson = "language/string_en.json";
         }
 

@@ -228,7 +228,7 @@ cc.Class({
         this.exitBtnLabel.string = com.lang.exit;
         this.playBtnLabel.string = com.lang.play;
         this.passBtnLabel.string = com.lang.pass;
-        this.declareWarBtnLabel.string = com.lang.declare;
+        this.declareWarBtnLabel.string = com.lang.declareWar;
         this.allowBtnLabel.string = com.lang.allow;
         this.againBtnLabel.string = com.lang.again;
 
